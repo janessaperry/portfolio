@@ -11,6 +11,7 @@ export default {
       },
       pink: {
         500: "#F1A7F2",
+        700: "#c75bc9",
       },
       seafoam: {
         500: "#95DAC5",
