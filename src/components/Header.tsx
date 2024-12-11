@@ -3,10 +3,10 @@ import logo from "../assets/logos/jp-logo.svg";
 
 function Header() {
   return (
-    <header className="flex items-center justify-between py-4 w-full xl:max-w-screen-lg 2xl:max-w-screen-xl">
+    <header className="flex items-center justify-between py-4 px-4 sm:px-6 xl:px-0 w-full xl:max-w-screen-lg 2xl:max-w-screen-xl">
       <div>
         <Link to="/">
-          <img src={logo} alt="Janessa Perry logo" className="w-20" />
+          <img src={logo} alt="Janessa Perry logo" className="w-20 h-14" />
         </Link>
       </div>
 
