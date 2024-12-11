@@ -1,0 +1,7 @@
+#root {
+  @apply flex flex-col items-center min-h-screen;
+}
+
+main {
+  @apply flex-grow;
+}

@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  @apply block max-w-full;
+}
+
+:root {
+  @apply bg-blue-700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading lowercase text-pink-500 text-balance;
+}
+
+h1 {
+  @apply text-2xl;
+}
+
+h2 {
+  @apply text-lg;
+}
+
+p,
+ol,
+ul,
+li {
+  @apply font-body font-normal text-lg text-ivory-500 text-pretty antialiased;
+}
+
+input,
+button,
+textarea,
+select {
+  @apply font-body;
+}
+
+a {
+  @apply text-ivory-500 hover:underline;
+}
+
+a.active {
+  @apply text-seafoam-500 underline;
+}
