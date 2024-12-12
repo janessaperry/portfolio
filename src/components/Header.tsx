@@ -13,13 +13,28 @@ function Header() {
       <nav>
         <ul className="flex gap-x-4 sm:gap-x-6">
           <li>
-            <NavLink to="/projects">Projects</NavLink>
+            <NavLink
+              to="/projects"
+              className="lowercase font-heading font-semibold py-1 border-b-2 border-transparent hover:border-b-2 hover:border-seafoam-500"
+            >
+              Projects
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <NavLink
+              to="/about"
+              className="lowercase font-heading font-semibold py-1 border-b-2 border-transparent hover:border-b-2 hover:border-seafoam-500"
+            >
+              About
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/experience">Experience</NavLink>
+            <NavLink
+              to="/experience"
+              className="lowercase font-heading font-semibold py-1 border-b-2 border-transparent hover:border-b-2 hover:border-seafoam-500"
+            >
+              Experience
+            </NavLink>
           </li>
         </ul>
       </nav>

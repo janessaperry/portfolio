@@ -60,5 +60,5 @@ a {
 }
 
 a.active {
-  @apply text-seafoam-500;
+  @apply lowercase text-seafoam-500 py-1 border-b-2 border-seafoam-500;
 }
