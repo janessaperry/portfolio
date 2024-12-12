@@ -11,7 +11,7 @@ export default {
       },
       pink: {
         500: "#F1A7F2",
-        700: "#c75bc9",
+        700: "#59185a",
       },
       seafoam: {
         500: "#95DAC5",
@@ -28,7 +28,7 @@ export default {
     fontFamily: {
       heading: ["Comfortaa", "ui-sans-serif", "sans-serif"],
       body: ["Urbanist", "ui-sans-serif", "sans-serif"],
-      mono: ["Fira Sans", "ui-monospace"],
+      mono: ["Fira Mono", "ui-monospace"],
     },
     extend: {},
   },
