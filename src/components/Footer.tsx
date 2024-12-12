@@ -8,19 +8,19 @@ function Footer() {
         <ul className="flex gap-x-4 list-none">
           <li>
             <a href="https://github.com/janessaperry" target="_blank">
-              <GithubLogo className="text-pink-700 text-3xl" />
+              <GithubLogo className="text-blue-50 text-3xl" />
             </a>
           </li>
 
           <li>
             <a href="https://github.com/janessaperry" target="_blank">
-              <LinkedinLogo className="text-pink-700 text-3xl" />
+              <LinkedinLogo className="text-blue-50 text-3xl" />
             </a>
           </li>
 
           <li>
             <a href="https://github.com/janessaperry" target="_blank">
-              <Envelope className="text-pink-700 text-3xl" />
+              <Envelope className="text-blue-50 text-3xl" />
             </a>
           </li>
         </ul>
