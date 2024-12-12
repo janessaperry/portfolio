@@ -38,14 +38,14 @@ h1 {
 }
 
 h2 {
-  @apply text-lg;
+  @apply text-xl;
 }
 
 p,
 ol,
 ul,
 li {
-  @apply font-body font-normal text-lg text-ivory-500 text-pretty antialiased;
+  @apply font-body font-normal text-lg text-blue-50 text-pretty antialiased;
 }
 
 input,
@@ -56,9 +56,9 @@ select {
 }
 
 a {
-  @apply text-ivory-500 hover:underline;
+  @apply text-ivory-500;
 }
 
 a.active {
-  @apply text-seafoam-500 underline;
+  @apply text-seafoam-500;
 }
