@@ -1,7 +1,7 @@
 import { ArrowRight, Envelope, LinkedinLogo } from "@phosphor-icons/react";
 import { Link } from "react-router";
-import { showcaseProjects } from "../data/showcaseProjects";
-import ShowcaseProject from "../components/ShowcaseProject";
+import { allProjects } from "../data/allProjects";
+import ShowcaseProject from "../components/ProjectCard";
 
 function Home() {
   return (
@@ -50,16 +50,17 @@ function Home() {
               </Link>
             </div>
 
-            {showcaseProjects.map((project) => {
-              return (
-                <ShowcaseProject
-                  key={project.id}
-                  thumbnailInfo={project.thumbnailInfo}
-                  title={project.title}
-                  description={project.description}
-                />
-              );
-            })}
+            {allProjects
+              .filter((project) => project.showcase)
+              .map((project) => {
+                return (
+                  <ShowcaseProject
+                    key={project.id}
+                    projectDetails={project}
+                    layout="horizontal"
+                  />
+                );
+              })}
           </section>
 
           <section className="p-6 flex flex-col gap-4 bg-blue-500 rounded-3xl">
