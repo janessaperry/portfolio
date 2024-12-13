@@ -6,6 +6,7 @@ export default {
       transparent: "transparent",
       blue: {
         50: "#C4C1D5",
+        100: "#474168",
         300: "#292661",
         500: "#171749",
         700: "#0C0C34",
