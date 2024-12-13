@@ -33,7 +33,19 @@ export default {
       body: ["Urbanist", "ui-sans-serif", "sans-serif"],
       mono: ["Fira Mono", "ui-monospace"],
     },
-    extend: {},
+    extend: {
+      animation: {
+        radiate: "radiate 2s linear infinite",
+      },
+      keyframes: {
+        radiate: {
+          "0%": { "box-shadow": "0 0 0 0px rgba(149, 218, 197, 00)" },
+          "40%": { "box-shadow": "0 0 0 0px rgba(149, 218, 197, 0.4)" },
+          "60%": { "box-shadow": "0 0 0 6px rgba(149, 218, 197, 0.4)" },
+          "100%": { "box-shadow": "0 0 0 8px rgba(149, 218, 197, 0)" },
+        },
+      },
+    },
   },
   plugins: [],
 };
