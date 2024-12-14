@@ -2,6 +2,8 @@ import { experienceHighlights } from "../data/experienceHighlights";
 import { contactLinks } from "../data/contactLinks";
 import { skillsAndTools } from "../data/skillsAndTools";
 import { experienceDetails } from "../data/experienceDetails";
+import { projectDetails } from "../data/projectDetails";
+import { educationDetails } from "../data/educationDetails";
 
 function Experience() {
   return (
@@ -121,10 +123,72 @@ function Experience() {
 
         <section className="md:col-span-2 md:order-7 md:col-start-2 p-6 lg:p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
           <h2>&lt;Projects&gt;</h2>
+
+          <ul className="flex flex-col gap-10 pl-10">
+            {projectDetails.map((project) => {
+              return (
+                <li
+                  key={project.id}
+                  className="relative flex flex-col gap-4
+                  before:absolute before:w-4 before:h-4 before:rounded-full before:bg-seafoam-500 before:-left-10 before:top-1.5 before:animate-radiate
+                  [&:not(:last-of-type)]:after:absolute after:bg-seafoam-500 after:opacity-30 after:w-px after:h-[calc(100%+2rem)] after:-left-8 after:top-3"
+                >
+                  <div className="flex flex-col gap-1">
+                    <p className="text-xl font-semibold">
+                      {project.projectName}
+                    </p>
+                    <p className="text-base leading-none text-mauve-500 flex justify-between">
+                      <span>{project.projectType}</span>
+                      <span>{project.yearCompleted}</span>
+                    </p>
+                  </div>
+
+                  <ul className="list-disc pl-4 flex flex-col gap-2">
+                    {project.description.map((item, index) => {
+                      return (
+                        <li key={index} className="ps-2">
+                          {item}
+                        </li>
+                      );
+                    })}
+                  </ul>
+
+                  <ul className="flex flex-wrap gap-2">
+                    {project.skillsAndTools.map((item, index) => {
+                      return (
+                        <li
+                          key={index}
+                          className="text-seafoam-500 text-base leading-none lowercase py-2 px-3 bg-blue-300 border border-blue-100 rounded-lg"
+                        >
+                          {item}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </li>
+              );
+            })}
+          </ul>
         </section>
 
         <section className="md:col-span-2 md:order-8 md:col-start-2	p-6 lg:p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
           <h2>&lt;Education&gt;</h2>
+
+          <ul className="flex flex-col gap-4">
+            {educationDetails.map((education) => {
+              return (
+                <li key={education.id}>
+                  <div className="flex flex-col gap-1">
+                    <p className="text-xl font-semibold">{education.degree}</p>
+                    <p className="text-base leading-none text-mauve-500 flex justify-between">
+                      <span>{education.institution}</span>
+                      <span>{education.yearsAttended}</span>
+                    </p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </section>
 
         <section className="md:col-span-1 row-span-1 md:order-5 p-6 lg:p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
