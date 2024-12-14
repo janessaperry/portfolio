@@ -1,4 +1,7 @@
-export interface ProjectDetails {
+import pressStartThumbnail from "../assets/images/mockups/press-start--collection--laptop.png";
+import metaHackathonThumbnail from "../assets/images/mockups/iggy-discover--flow--mobile.png";
+
+interface ProjectDetails {
   id: number;
   showcase: boolean;
   slug: string;
@@ -19,7 +22,7 @@ export const allProjects: ProjectDetails[] = [
     slug: "press-start",
     categories: ["Design", "Development"],
     thumbnailInfo: {
-      filePath: "/assets/images/mockups/press-start--collection--laptop.png",
+      filePath: pressStartThumbnail,
       altText: "Press Start laptop mockup preview",
     },
     title: "Press Start",
@@ -43,7 +46,7 @@ export const allProjects: ProjectDetails[] = [
     slug: "meta-hackathon",
     categories: ["Development"],
     thumbnailInfo: {
-      filePath: "/assets/images/mockups/iggy-discover--flow--mobile.png",
+      filePath: metaHackathonThumbnail,
       altText: "Meta Hackathon - Iggy Discover mobile mockup preview",
     },
     title: "Meta Hackathon",
