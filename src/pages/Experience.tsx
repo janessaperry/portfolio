@@ -11,7 +11,7 @@ function Experience() {
       <h1 className="sr-only">Experience</h1>
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:gap-10">
-        <section className="md:col-span-2 md:order-2 p-6 lg:p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-2 md:order-2">
           <h2>&lt;Profile&gt;</h2>
           <p className="text-xl">
             Designer turned developer, motivated by solving problems, learning
@@ -24,7 +24,7 @@ function Experience() {
           </p>
         </section>
 
-        <section className="md:col-span-1 md:order-1 p-6 lg:p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-1 md:order-1">
           <h2>&lt;Links&gt;</h2>
           <div className="flex flex-col gap-6">
             {contactLinks.map((contactItem) => {
@@ -48,7 +48,7 @@ function Experience() {
           </div>
         </section>
 
-        <section className="md:col-span-1 row-span-1 md:order-3 p-6 lg:p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-1 row-span-1 md:order-3">
           <h2>&lt;Highlights&gt;</h2>
 
           <div className="flex flex-col gap-6">
@@ -73,7 +73,7 @@ function Experience() {
           </div>
         </section>
 
-        <section className="md:col-span-2 md:row-span-3 md:order-4 p-6 lg:p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-2 md:row-span-3 md:order-4">
           <h2>&lt;Experience&gt;</h2>
 
           <ul className="flex flex-col gap-10 pl-10">
@@ -121,7 +121,7 @@ function Experience() {
           </ul>
         </section>
 
-        <section className="md:col-span-2 md:order-7 md:col-start-2 p-6 lg:p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-2 md:order-7 md:col-start-2">
           <h2>&lt;Projects&gt;</h2>
 
           <ul className="flex flex-col gap-10 pl-10">
@@ -171,7 +171,7 @@ function Experience() {
           </ul>
         </section>
 
-        <section className="md:col-span-2 md:order-8 md:col-start-2	p-6 lg:p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-2 md:order-8 md:col-start-2">
           <h2>&lt;Education&gt;</h2>
 
           <ul className="flex flex-col gap-4">
@@ -191,7 +191,7 @@ function Experience() {
           </ul>
         </section>
 
-        <section className="md:col-span-1 row-span-1 md:order-5 p-6 lg:p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-1 row-span-1 md:order-5">
           <h2>&lt;Skills&gt;</h2>
 
           <ul className="flex flex-wrap gap-2">
@@ -208,7 +208,7 @@ function Experience() {
           </ul>
         </section>
 
-        <section className="md:col-span-1 row-span-1 md:order-6 p-6 lg:p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-1 row-span-1 md:order-6">
           <h2>&lt;Tools&gt;</h2>
 
           <ul className="flex flex-wrap gap-2">

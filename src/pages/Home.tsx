@@ -9,7 +9,7 @@ function Home() {
       <h1 className="sr-only">Janessa Perry | Designer turned Developer</h1>
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">
-        <section className="md:col-span-1 md:row-span-1 md:order-1 p-6 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-1 md:row-span-1 md:order-1">
           <h2>&lt;Craft&gt;</h2>
           <p className="text-2xl">
             Bringing pixels to life with{" "}
@@ -19,7 +19,7 @@ function Home() {
           </p>
         </section>
 
-        <section className="md:col-span-1 md:row-span-2 md:order-3 p-6 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className=" section-card md:col-span-1 md:row-span-2 md:order-3">
           <h2>&lt;About&gt;</h2>
           <p>
             I'm a front-end developer with a background in design, specializing
@@ -36,7 +36,7 @@ function Home() {
           </p>
         </section>
 
-        <section className="md:col-span-2 md:row-span-2 md:order-2 p-6 flex flex-col gap-4 bg-mauve-500 rounded-3xl">
+        <section className="section-card section-card--accent md:col-span-2 md:row-span-2 md:order-2">
           <div className="flex justify-between items-baseline">
             <h2 className="text-blue-500">&lt;Showcase&gt;</h2>
             <Link
@@ -60,7 +60,7 @@ function Home() {
             })}
         </section>
 
-        <section className="md:col-span-2 md:order-4 p-6 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-2 md:order-4">
           <h2>&lt;Contact&gt;</h2>
 
           <div className="flex flex-col gap-2">

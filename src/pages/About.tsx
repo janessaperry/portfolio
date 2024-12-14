@@ -12,7 +12,7 @@ function About() {
       <h1 className="sr-only">About</h1>
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">
-        <section className="md:col-span-1 md:order-1 p-6 lg:p-8 flex flex-col divide-y-4 divide-dotted divide-mauve-500 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-1 md:order-1 divide-y-4 divide-dotted divide-mauve-500">
           <div className="pb-8">
             <img
               src={JanessaPerryHeadshot}
@@ -47,7 +47,7 @@ function About() {
           </div>
         </section>
 
-        <section className="md:col-span-1 md:order-3 p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-1 md:order-3">
           <h2>&lt;Interests&gt;</h2>
           <p>
             When I'm not at my desk being micro-managed by my cat, you can find
@@ -56,7 +56,7 @@ function About() {
           </p>
         </section>
 
-        <section className="md:col-span-2 md:order-2 p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-2 md:order-2">
           <h2>&lt;About&gt;</h2>
           <p className="text-2xl">
             Hi, I'm Janessa, a developer with a background in design and
@@ -93,7 +93,7 @@ function About() {
           </p>
         </section>
 
-        <section className="md:col-span-1 md:order-4 p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-1 md:order-4">
           <h2>&lt;Highlights&gt;</h2>
 
           <div className="card-wrapper grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 auto-rows-auto gap-4">
@@ -127,7 +127,7 @@ function About() {
           </div>
         </section>
 
-        <section className="md:col-span-1 md:order-5 p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-1 md:order-5">
           <h2>&lt;Motivations&gt;</h2>
 
           <div className="card-wrapper grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 auto-rows-auto gap-4">

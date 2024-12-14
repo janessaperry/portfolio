@@ -25,7 +25,7 @@ function Projects() {
       <h1 className="sr-only">Projects</h1>
 
       <div className="grid md:grid-cols-3 md:grid-auto-rows gap-4 md:gap-10">
-        <section className="md:col-span-1 p-6 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="section-card md:col-span-1">
           <h2>&lt;explore&gt;</h2>
           <p className="text-xl">
             Discover my journey through code and creativity. Each project
@@ -34,7 +34,7 @@ function Projects() {
           </p>
         </section>
 
-        <section className="md:col-span-2 p-6 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className=" section-card md:col-span-2">
           <h2>&lt;Projects&gt;</h2>
           <p>Check out some of my recent work below. </p>
 

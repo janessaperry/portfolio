@@ -4,6 +4,7 @@ export default {
   theme: {
     colors: {
       transparent: "transparent",
+      black: "black",
       blue: {
         50: "#C4C1D5",
         100: "#474168",
@@ -22,6 +23,7 @@ export default {
         500: "#E7E6EC",
       },
       mauve: {
+        100: "#EDC7EE",
         300: "#DDB5CB",
         500: "#BF9FB1",
         700: "#BA8CA6",
