@@ -1,8 +1,7 @@
+import { contactLinks } from "../data/contactLinks";
+
 import {
-  Envelope,
-  GithubLogo,
   Handshake,
-  LinkedinLogo,
   MagicWand,
   PuzzlePiece,
   RocketLaunch,
@@ -13,8 +12,8 @@ function About() {
     <main className="w-full md:container py-4 px-4 sm:px-6">
       <h1 className="sr-only">About</h1>
 
-      <div className="flex flex-col gap-4 lg:flex-row lg:flex-wrap md:gap-10">
-        <section className="order-1 lg:order-1 lg:basis-[calc(33%-1rem)] p-6 lg:p-8 flex flex-col divide-y-4 divide-dotted divide-mauve-500 bg-blue-500 rounded-3xl">
+      <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">
+        <section className="md:col-span-1 md:order-1 p-6 lg:p-8 flex flex-col divide-y-4 divide-dotted divide-mauve-500 bg-blue-500 rounded-3xl">
           <div className="pb-8">
             <img
               src={JanessaPerryHeadshot}
@@ -27,52 +26,29 @@ function About() {
             <p className="text-xl justify-self-center">Web Developer</p>
           </div>
 
-          <div className="pt-8 flex flex-col gap-8">
-            <a
-              href="https://github.com/janessaperry"
-              target="_blank"
-              className="flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4"
-            >
-              <GithubLogo className="text-seafoam-500 text-3xl shrink-0" />{" "}
-              <div>
-                <p className="text-xl font-semibold">git in it</p>
-                <p className="text-base leading-none text-mauve-500">
-                  github.com/janessaperry
-                </p>
-              </div>
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/janessa-perry"
-              target="_blank"
-              className="flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4"
-            >
-              <LinkedinLogo className="text-seafoam-500 text-3xl shrink-0" />{" "}
-              <div>
-                <p className="text-xl font-semibold">let connect = true;</p>
-                <p className="text-base leading-none text-mauve-500">
-                  linkedin.com/in/janessa-perry
-                </p>
-              </div>
-            </a>
-
-            <a
-              href="mailto:hello@janessaperry.com"
-              target="_blank"
-              className="flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4"
-            >
-              <Envelope className="text-seafoam-500 text-3xl shrink-0" />{" "}
-              <div>
-                <p className="text-xl font-semibold">sendEmail(hello)</p>
-                <p className="text-base leading-none text-mauve-500">
-                  hello@janessaperry.com
-                </p>
-              </div>
-            </a>
+          <div className="pt-8 flex flex-col gap-6">
+            {contactLinks.map((contactItem) => {
+              return (
+                <a
+                  key={contactItem.id}
+                  href={contactItem.url}
+                  target="_blank"
+                  className="flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4"
+                >
+                  {contactItem.icon}
+                  <div className="flex-auto flex flex-col gap-1">
+                    <p className="text-xl font-semibold">{contactItem.title}</p>
+                    <p className="text-base leading-none text-mauve-500">
+                      {contactItem.content}
+                    </p>
+                  </div>
+                </a>
+              );
+            })}
           </div>
         </section>
 
-        <section className="order-4 lg:order-3 lg:basis-[calc(33%-1rem)] p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="md:col-span-1 md:order-3 p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
           <h2>&lt;Interests&gt;</h2>
           <p>
             When I'm not at my desk being micro-managed by my cat, you can find
@@ -81,7 +57,7 @@ function About() {
           </p>
         </section>
 
-        <section className="order-2 lg:order-2 lg:basis-[calc(66%-1rem)] p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+        <section className="md:col-span-2 md:order-2 p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
           <h2>&lt;About&gt;</h2>
           <p className="text-2xl">
             Hi, I'm Janessa, a developer with a background in design and
@@ -118,75 +94,73 @@ function About() {
           </p>
         </section>
 
-        <div className="order-3 lg:order-4 lg:basis-[calc(66%-1rem)] grid lg:grid-cols-2 auto-rows-auto gap-4 md:gap-10">
-          <section className="p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
-            <h2>&lt;Highlights&gt;</h2>
+        <section className="md:col-span-1 md:order-4 p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+          <h2>&lt;Highlights&gt;</h2>
 
-            <div className="card-wrapper grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 auto-rows-auto gap-4">
-              <div className="card p-4 bg-mauve-500 rounded-xl">
-                <p className="font-heading md:text-xl text-blue-700">8 years</p>
-                <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
-                  at a small, fast paced company
-                </p>
-              </div>
-
-              <div className="card p-4 bg-mauve-500 rounded-xl">
-                <p className="font-heading md:text-xl text-blue-700">5 years</p>
-                <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
-                  UI design & development
-                </p>
-              </div>
-
-              <div className="card p-4 bg-mauve-500 rounded-xl">
-                <p className="font-heading md:text-xl text-blue-700">2 years</p>
-                <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
-                  freelancing in web design
-                </p>
-              </div>
-
-              <div className="card p-4 bg-mauve-500 rounded-xl">
-                <p className="font-heading md:text-xl text-blue-700">2024</p>
-                <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
-                  Diploma in Software Engineering
-                </p>
-              </div>
+          <div className="card-wrapper grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 auto-rows-auto gap-4">
+            <div className="card p-4 bg-mauve-500 rounded-xl">
+              <p className="font-heading md:text-xl text-blue-700">8 years</p>
+              <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
+                at a small, fast paced company
+              </p>
             </div>
-          </section>
 
-          <section className="p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
-            <h2>&lt;Motivations&gt;</h2>
-
-            <div className="card-wrapper grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 auto-rows-auto gap-4">
-              <div className="card p-4 bg-mauve-500 rounded-xl">
-                <RocketLaunch className="text-mauve-800 text-3xl" />
-                <p className="font-heading md:text-xl leading-tight text-blue-700">
-                  continous learning
-                </p>
-              </div>
-
-              <div className="card p-4 bg-mauve-500 rounded-xl">
-                <PuzzlePiece className="text-mauve-800 text-3xl" />
-                <p className="font-heading md:text-xl leading-tight text-blue-700">
-                  solving problems
-                </p>
-              </div>
-
-              <div className="card p-4 bg-mauve-500 rounded-xl">
-                <MagicWand className="text-mauve-800 text-3xl" />
-                <p className="font-heading md:text-xl leading-tight text-blue-700">
-                  attention to detail
-                </p>
-              </div>
-
-              <div className="card p-4 bg-mauve-500 rounded-xl">
-                <Handshake className="text-mauve-800 text-3xl" />
-                <p className="font-heading md:text-xl leading-tight text-blue-700">
-                  collaboration
-                </p>
-              </div>
+            <div className="card p-4 bg-mauve-500 rounded-xl">
+              <p className="font-heading md:text-xl text-blue-700">5 years</p>
+              <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
+                UI design & development
+              </p>
             </div>
-          </section>
-        </div>
+
+            <div className="card p-4 bg-mauve-500 rounded-xl">
+              <p className="font-heading md:text-xl text-blue-700">2 years</p>
+              <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
+                freelancing in web design
+              </p>
+            </div>
+
+            <div className="card p-4 bg-mauve-500 rounded-xl">
+              <p className="font-heading md:text-xl text-blue-700">2024</p>
+              <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
+                Diploma in Software Engineering
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="md:col-span-1 md:order-5 p-8 flex flex-col gap-4 bg-blue-500 rounded-3xl">
+          <h2>&lt;Motivations&gt;</h2>
+
+          <div className="card-wrapper grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 auto-rows-auto gap-4">
+            <div className="card p-4 bg-mauve-500 rounded-xl">
+              <RocketLaunch className="text-mauve-800 text-3xl" />
+              <p className="font-heading md:text-xl leading-tight text-blue-700">
+                continous learning
+              </p>
+            </div>
+
+            <div className="card p-4 bg-mauve-500 rounded-xl">
+              <PuzzlePiece className="text-mauve-800 text-3xl" />
+              <p className="font-heading md:text-xl leading-tight text-blue-700">
+                solving problems
+              </p>
+            </div>
+
+            <div className="card p-4 bg-mauve-500 rounded-xl">
+              <MagicWand className="text-mauve-800 text-3xl" />
+              <p className="font-heading md:text-xl leading-tight text-blue-700">
+                attention to detail
+              </p>
+            </div>
+
+            <div className="card p-4 bg-mauve-500 rounded-xl">
+              <Handshake className="text-mauve-800 text-3xl" />
+              <p className="font-heading md:text-xl leading-tight text-blue-700">
+                collaboration
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );
