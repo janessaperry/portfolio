@@ -1,8 +1,8 @@
 import { Link } from "react-router";
-import { ProjectDetails } from "../data/allProjects";
+import { AllProjects } from "../data/allProjects";
 
 interface ProjectCardProps {
-  projectDetails: ProjectDetails;
+  projectDetails: AllProjects;
   colorTheme?: string;
   layout?: string;
 }

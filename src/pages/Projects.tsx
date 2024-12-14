@@ -1,5 +1,5 @@
-import { ProjectDetails, allProjects } from "../data/allProjects";
-import ShowcaseProject from "../components/ProjectCard";
+import { AllProjects, allProjects } from "../data/allProjects";
+import ProjectCard from "../components/ProjectCard";
 import ButtonLink from "../components/ButtonLink";
 import { useState } from "react";
 
@@ -12,7 +12,7 @@ function Projects() {
     if (filter === "All") {
       setFilteredProjects(allProjects);
     } else {
-      const testingFilteredProjects: ProjectDetails[] = allProjects.filter(
+      const testingFilteredProjects: AllProjects[] = allProjects.filter(
         (project) => project.categories.includes(filter)
       );
 
@@ -59,7 +59,7 @@ function Projects() {
           <div className="flex flex-col lg:flex-row gap-4">
             {filteredProjects.map((project) => {
               return (
-                <ShowcaseProject
+                <ProjectCard
                   key={project.id}
                   projectDetails={project}
                   colorTheme="accent"

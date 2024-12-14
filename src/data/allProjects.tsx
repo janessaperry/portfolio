@@ -1,7 +1,7 @@
 import pressStartThumbnail from "../assets/images/mockups/press-start--collection--laptop.png";
 import metaHackathonThumbnail from "../assets/images/mockups/iggy-discover--flow--mobile.png";
 
-interface ProjectDetails {
+export interface AllProjects {
   id: number;
   showcase: boolean;
   slug: string;
@@ -15,7 +15,7 @@ interface ProjectDetails {
   skillsAndTools: string[];
 }
 
-export const allProjects: ProjectDetails[] = [
+export const allProjects: AllProjects[] = [
   {
     id: 1,
     showcase: true,
