@@ -1,11 +1,10 @@
-import { contactLinks } from "../data/contactLinks";
-
 import {
   Handshake,
   MagicWand,
   PuzzlePiece,
   RocketLaunch,
 } from "@phosphor-icons/react";
+import { contactLinks } from "../data/contactLinks";
 import JanessaPerryHeadshot from "../assets/images/janessa-perry-headshot-2024.jpg";
 function About() {
   return (

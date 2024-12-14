@@ -19,8 +19,7 @@ export const allProjects: ProjectDetails[] = [
     slug: "press-start",
     categories: ["Design", "Development"],
     thumbnailInfo: {
-      filePath:
-        "/src/assets/images/mockups/press-start--collection--laptop.png",
+      filePath: "/assets/images/mockups/press-start--collection--laptop.png",
       altText: "Press Start laptop mockup preview",
     },
     title: "Press Start",
@@ -44,7 +43,7 @@ export const allProjects: ProjectDetails[] = [
     slug: "meta-hackathon",
     categories: ["Development"],
     thumbnailInfo: {
-      filePath: "/src/assets/images/mockups/iggy-discover--flow--mobile.png",
+      filePath: "/assets/images/mockups/iggy-discover--flow--mobile.png",
       altText: "Meta Hackathon - Iggy Discover mobile mockup preview",
     },
     title: "Meta Hackathon",
