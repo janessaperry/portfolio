@@ -14,7 +14,7 @@ function ProjectCard({
 }: ProjectCardProps) {
   return (
     <Link
-      to="/projects"
+      to={`/projects/${projectDetails.slug}`}
       className={`card ${
         colorTheme === "accent"
           ? "p-6 bg-mauve-500 lg:basis-1/2"
@@ -31,7 +31,7 @@ function ProjectCard({
 
       <div className="md:basis-2/3 flex flex-col gap-2">
         <h2 className="text-pink-700">{projectDetails.title}</h2>
-        <p className="text-blue-500">{projectDetails.description}</p>
+        <p className="text-blue-500">{projectDetails.overview}</p>
 
         <ul className="flex flex-wrap gap-2">
           {projectDetails.skillsAndTools.map((label) => {

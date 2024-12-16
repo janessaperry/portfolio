@@ -2,7 +2,7 @@ import { experienceHighlights } from "../data/experienceHighlights";
 import { contactLinks } from "../data/contactLinks";
 import { skillsAndTools } from "../data/skillsAndTools";
 import { experienceDetails } from "../data/experienceDetails";
-import { projectDetails } from "../data/projectDetails";
+import { allProjects } from "../data/allProjects";
 import { educationDetails } from "../data/educationDetails";
 
 function Experience() {
@@ -125,7 +125,7 @@ function Experience() {
           <h2>&lt;Projects&gt;</h2>
 
           <ul className="flex flex-col gap-10 pl-10">
-            {projectDetails.map((project) => {
+            {allProjects.map((project) => {
               return (
                 <li
                   key={project.id}
@@ -134,11 +134,9 @@ function Experience() {
                   [&:not(:last-of-type)]:after:absolute after:bg-seafoam-500 after:opacity-30 after:w-px after:h-[calc(100%+2rem)] after:-left-8 after:top-3"
                 >
                   <div className="flex flex-col gap-1">
-                    <p className="text-xl font-semibold">
-                      {project.projectName}
-                    </p>
+                    <p className="text-xl font-semibold">{project.title}</p>
                     <p className="text-base leading-none text-mauve-500 flex justify-between">
-                      <span>{project.projectType}</span>
+                      <span>{project.type}</span>
                       <span>{project.yearCompleted}</span>
                     </p>
                   </div>
