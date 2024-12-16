@@ -45,7 +45,7 @@ p,
 ol,
 ul,
 li {
-  @apply font-body font-normal text-lg text-blue-50 text-pretty antialiased;
+  @apply font-body font-normal text-lg leading-normal text-blue-50 text-pretty antialiased;
 }
 
 input,

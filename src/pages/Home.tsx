@@ -5,13 +5,13 @@ import ProjectCard from "../components/ProjectCard";
 
 function Home() {
   return (
-    <main className="w-full md:container py-4 px-4 sm:px-6">
+    <main className="w-full md:container py-4 px-4 md:px-6">
       <h1 className="sr-only">Janessa Perry | Designer turned Developer</h1>
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">
         <section className="section-card md:col-span-1 md:row-span-1 md:order-1">
           <h2>&lt;Craft&gt;</h2>
-          <p className="text-2xl">
+          <p className="text-xl">
             Bringing pixels to life with{" "}
             <span className="font-mono text-seafoam-500">&lt;code/&gt;</span>{" "}
             and <span className="font-mono text-seafoam-500">creativity()</span>
@@ -19,7 +19,7 @@ function Home() {
           </p>
         </section>
 
-        <section className=" section-card md:col-span-1 md:row-span-2 md:order-3">
+        <section className="section-card md:col-span-1 md:row-span-2 md:order-3">
           <h2>&lt;About&gt;</h2>
           <p>
             I'm a front-end developer with a background in design, specializing

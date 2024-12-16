@@ -47,18 +47,9 @@ function About() {
           </div>
         </section>
 
-        <section className="section-card md:col-span-1 md:order-3">
-          <h2>&lt;Interests&gt;</h2>
-          <p>
-            When I'm not at my desk being micro-managed by my cat, you can find
-            us snuggled up on the couch playing video games, watching the
-            Seahawks, or getting lost in a fantasy book.
-          </p>
-        </section>
-
         <section className="section-card md:col-span-2 md:order-2">
           <h2>&lt;About&gt;</h2>
-          <p className="text-2xl">
+          <p className="text-xl">
             Hi, I'm Janessa, a developer with a background in design and
             creating seamless, intuitive digital experiences.
           </p>
@@ -159,6 +150,15 @@ function About() {
               </p>
             </div>
           </div>
+        </section>
+
+        <section className="section-card md:col-span-1 md:order-3">
+          <h2>&lt;Interests&gt;</h2>
+          <p>
+            When I'm not at my desk being micro-managed by my cat, you can find
+            us snuggled up on the couch playing video games, watching the
+            Seahawks, or getting lost in a fantasy book.
+          </p>
         </section>
       </div>
     </main>

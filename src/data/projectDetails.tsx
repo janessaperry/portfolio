@@ -10,7 +10,7 @@ interface ProjectDetails {
 export const projectDetails: ProjectDetails[] = [
   {
     id: "press-start--capstone",
-    projectName: "Freelance Designer",
+    projectName: "Press Start",
     projectType: "BrainStation Capstone",
     yearCompleted: "2024",
     description: [
