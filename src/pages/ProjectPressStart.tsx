@@ -198,7 +198,13 @@ function ProjectPressStart() {
 
                 <div className="border border-blue-700 rounded-lg overflow-hidden">
                   <img src={BrowserFrame} />
-                  <video src={AddToCollection} controls autoPlay muted />
+                  <video
+                    src={AddToCollection}
+                    controls
+                    autoPlay
+                    playsInline
+                    muted
+                  />
                 </div>
               </div>
             </div>
@@ -223,7 +229,13 @@ function ProjectPressStart() {
 
                 <div className="border border-blue-700 rounded-lg overflow-hidden">
                   <img src={BrowserFrame} />
-                  <video src={ManageCollection} controls autoPlay muted />
+                  <video
+                    src={ManageCollection}
+                    controls
+                    autoPlay
+                    playsInline
+                    muted
+                  />
                 </div>
               </div>
             </div>
@@ -248,7 +260,13 @@ function ProjectPressStart() {
 
                 <div className="border border-blue-700 rounded-lg overflow-hidden">
                   <img src={BrowserFrame} />
-                  <video src={FilterCollection} controls autoPlay muted />
+                  <video
+                    src={FilterCollection}
+                    controls
+                    autoPlay
+                    playsInline
+                    muted
+                  />
                 </div>
               </div>
             </div>
@@ -273,7 +291,13 @@ function ProjectPressStart() {
 
                 <div className="border border-blue-700 rounded-lg overflow-hidden">
                   <img src={BrowserFrame} />
-                  <video src={ExploreGames} controls autoPlay muted />
+                  <video
+                    src={ExploreGames}
+                    controls
+                    autoPlay
+                    playsInline
+                    muted
+                  />
                 </div>
               </div>
             </div>

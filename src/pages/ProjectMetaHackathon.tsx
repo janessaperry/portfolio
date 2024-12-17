@@ -188,7 +188,13 @@ function ProjectMetaHackathon() {
 
                 <div className="md:w-1/3 self-center border border-blue-700 rounded-md overflow-hidden">
                   <img src={BrowserFrame} />
-                  <video src={VisualSearch} controls autoPlay muted />
+                  <video
+                    src={VisualSearch}
+                    controls
+                    autoPlay
+                    playsInline
+                    muted
+                  />
                 </div>
               </div>
             </div>
@@ -216,7 +222,13 @@ function ProjectMetaHackathon() {
 
                 <div className="md:w-1/3 self-center border border-blue-700 rounded-md overflow-hidden">
                   <img src={BrowserFrame} />
-                  <video src={ExploreAccounts} controls autoPlay muted />
+                  <video
+                    src={ExploreAccounts}
+                    controls
+                    autoPlay
+                    playsInline
+                    muted
+                  />
                 </div>
               </div>
             </div>
