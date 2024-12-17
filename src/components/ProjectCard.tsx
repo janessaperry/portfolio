@@ -17,9 +17,11 @@ function ProjectCard({
       to={`/projects/${projectDetails.slug}`}
       className={`card ${
         colorTheme === "accent"
-          ? "p-6 bg-fuschia-50 lg:basis-1/2"
-          : "py-6 lg:flex-row"
-      } ${layout} py-6 flex flex-col gap-8 rounded-3xl`}
+          ? "bg-fuschia-50 p-6 lg:p-8"
+          : "bg-transparent py-6 lg:py-8"
+      } ${
+        layout === "vertical" ? "lg:basis-1/2" : "lg:flex-row lg:px-0"
+      } flex flex-col gap-8 rounded-3xl`}
     >
       <div className="md:basis-1/3">
         <img
