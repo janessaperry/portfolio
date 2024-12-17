@@ -18,7 +18,7 @@ function ProjectCard({
       className={`card ${
         colorTheme === "accent"
           ? "bg-fuschia-50 p-6 lg:p-8"
-          : "bg-transparent py-6 lg:py-8"
+          : "bg-transparent py-6"
       } ${
         layout === "vertical" ? "lg:basis-1/2" : "lg:flex-row lg:px-0"
       } flex flex-col gap-8 rounded-3xl`}
