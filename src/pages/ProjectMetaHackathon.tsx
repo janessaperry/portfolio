@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 import { allProjects } from "../data/allProjects";
 import MetaHackathonHero from "../assets/images/mockups/iggy-discover--flow--mobile.png";
 import BrowserFrame from "../assets/graphics/browser-container.svg";
@@ -18,7 +18,7 @@ function ProjectMetaHackathon() {
   )?.skillsAndTools;
 
   return (
-    <main className="w-full md:container py-4 px-4 sm:px-6">
+    <main className="w-full lg:container py-4 px-4 sm:px-6">
       <section className="flex flex-col gap-8 items-center py-8">
         <div className="flex flex-col gap-4 lg:max-w-screen-xl">
           <h1 className="text-4xl text-center">Meta Hackathon</h1>

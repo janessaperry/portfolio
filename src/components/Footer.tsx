@@ -2,7 +2,7 @@ import { GithubLogo, LinkedinLogo, Envelope } from "@phosphor-icons/react";
 
 function Footer() {
   return (
-    <footer className="w-full md:container py-4 px-4 sm:px-6 flex items-center justify-between ">
+    <footer className="w-full lg:container py-4 px-4 sm:px-6 flex items-center justify-between ">
       <div className="flex flex-col gap-y-2 basis-1/2">
         <h2>Let's Connect</h2>
         <ul className="flex gap-x-4 list-none">

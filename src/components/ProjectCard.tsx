@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { AllProjects } from "../data/allProjects";
 
 interface ProjectCardProps {

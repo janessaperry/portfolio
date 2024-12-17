@@ -1,11 +1,11 @@
 import { ArrowRight, Envelope, LinkedinLogo } from "@phosphor-icons/react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { allProjects } from "../data/allProjects";
 import ProjectCard from "../components/ProjectCard";
 
 function Home() {
   return (
-    <main className="w-full md:container py-4 px-4 md:px-6">
+    <main className="w-full lg:container py-4 px-4 md:px-6">
       <h1 className="sr-only">Janessa Perry | Designer turned Developer</h1>
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">

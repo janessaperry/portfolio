@@ -21,11 +21,11 @@ function Projects() {
   };
 
   return (
-    <main className="w-full md:container py-4 px-4 sm:px-6">
+    <main className="w-full lg:container py-4 px-4 sm:px-6">
       <h1 className="sr-only">Projects</h1>
 
       <div className="grid md:grid-cols-3 md:grid-auto-rows gap-4 md:gap-10">
-        <section className="section-card md:col-span-1">
+        <section className="section-card md:col-span-1 h-fit">
           <h2>&lt;explore&gt;</h2>
           <p className="text-xl">
             Discover my journey through code and creativity. Each project
