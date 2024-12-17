@@ -146,7 +146,7 @@ function ProjectPressStart() {
                   <GithubLogo className="text-seafoam-500 text-3xl shrink-0" />
                   <div className="flex-auto flex flex-col gap-1">
                     <p className="text-xl font-semibold">git in it: client</p>
-                    <p className="text-base leading-none text-mauve-500">
+                    <p className="text-base leading-none text-fuschia-50">
                       github.com/janessaperry/press-start-client
                     </p>
                   </div>
@@ -160,7 +160,7 @@ function ProjectPressStart() {
                   <GithubLogo className="text-seafoam-500 text-3xl shrink-0" />
                   <div className="flex-auto flex flex-col gap-1">
                     <p className="text-xl font-semibold">git in it: server</p>
-                    <p className="text-base leading-none text-mauve-500">
+                    <p className="text-base leading-none text-fuschia-50">
                       github.com/janessaperry/press-start-server
                     </p>
                   </div>
@@ -180,8 +180,8 @@ function ProjectPressStart() {
 
           <div className="pt-4 flex flex-col gap-y-20">
             <div className="flex gap-4 items-start">
-              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-pink-300">
-                <TreasureChest className="text-4xl text-pink-500" />
+              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
+                <TreasureChest className="text-4xl text-fuschia-300" />
               </div>
 
               <div className="flex flex-col gap-y-4">
@@ -204,8 +204,8 @@ function ProjectPressStart() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-pink-300">
-                <GameController className="text-4xl text-pink-500" />
+              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
+                <GameController className="text-4xl text-fuschia-300" />
               </div>
 
               <div className="flex flex-col gap-y-4">
@@ -229,8 +229,8 @@ function ProjectPressStart() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-pink-300">
-                <Sliders className="text-4xl text-pink-500" />
+              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
+                <Sliders className="text-4xl text-fuschia-300" />
               </div>
 
               <div className="flex flex-col gap-y-4">
@@ -254,8 +254,8 @@ function ProjectPressStart() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-pink-300">
-                <MagnifyingGlass className="text-4xl text-pink-500" />
+              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
+                <MagnifyingGlass className="text-4xl text-fuschia-300" />
               </div>
 
               <div className="flex flex-col gap-y-4">
@@ -298,7 +298,7 @@ function ProjectPressStart() {
                 </p>
               </div>
 
-              <div className="h-px bg-gradient-to-r from-pink-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
+              <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
               <div className="grid md:grid-cols-2 gap-5 md:gap-10">
                 <div className="md:col-span-1 flex gap-x-4">
                   <IconGradientFill id="gradient--pink" icon={Warning} />
@@ -316,7 +316,7 @@ function ProjectPressStart() {
                   </p>
                 </div>
               </div>
-              <div className="h-px bg-gradient-to-r from-pink-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
+              <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
 
               <p>
                 I didn't really have a clear plan or idea on how to create a
@@ -339,7 +339,7 @@ function ProjectPressStart() {
                 </p>
               </div>
 
-              <div className="h-px bg-gradient-to-r from-pink-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
+              <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
               <div className="grid md:grid-cols-2 gap-5 md:gap-10">
                 <div className="md:col-span-1 flex gap-x-4">
                   <IconGradientFill id="gradient--pink" icon={Warning} />
@@ -358,7 +358,7 @@ function ProjectPressStart() {
                   </p>
                 </div>
               </div>
-              <div className="h-px bg-gradient-to-r from-pink-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
+              <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
 
               <p>
                 My filters pull options from the API, user collections, or both,
@@ -380,7 +380,7 @@ function ProjectPressStart() {
                 </p>
               </div>
 
-              <div className="h-px bg-gradient-to-r from-pink-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
+              <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
               <div className="grid md:grid-cols-2 gap-5 md:gap-10">
                 <div className="md:col-span-1 flex gap-x-4">
                   <IconGradientFill id="gradient--pink" icon={Warning} />
@@ -398,7 +398,7 @@ function ProjectPressStart() {
                   </p>
                 </div>
               </div>
-              <div className="h-px bg-gradient-to-r from-pink-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
+              <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
 
               <p>
                 Managing this API was a challenge. I had to extract relevant
@@ -444,8 +444,8 @@ function ProjectPressStart() {
           </p>
 
           <div className="flex gap-x-4">
-            <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-pink-300">
-              <Lightbulb className="text-4xl text-pink-500" />
+            <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
+              <Lightbulb className="text-4xl text-fuschia-300" />
             </div>
             <p className="text-xl">
               This project pushed me out of my comfort zone and made me rethink

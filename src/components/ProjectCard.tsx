@@ -17,7 +17,7 @@ function ProjectCard({
       to={`/projects/${projectDetails.slug}`}
       className={`card ${
         colorTheme === "accent"
-          ? "p-6 bg-mauve-500 lg:basis-1/2"
+          ? "p-6 bg-fuschia-50 lg:basis-1/2"
           : "py-6 lg:flex-row"
       } ${layout} py-6 flex flex-col gap-8 rounded-3xl`}
     >
@@ -30,7 +30,7 @@ function ProjectCard({
       </div>
 
       <div className="md:basis-2/3 flex flex-col gap-2">
-        <h2 className="text-pink-700">{projectDetails.title}</h2>
+        <h2 className="text-fuschia-700">{projectDetails.title}</h2>
         <p className="text-blue-500">{projectDetails.overview}</p>
 
         <ul className="flex flex-wrap gap-2">
@@ -38,7 +38,7 @@ function ProjectCard({
             return (
               <li
                 key={label}
-                className="text-blue-300 text-base leading-none	lowercase py-2 px-3 bg-mauve-300 border border-mauve-700 rounded-lg"
+                className="text-blue-300 text-base leading-none	lowercase py-2 px-3 bg-fuschia-50 border border-fuschia-muted rounded-lg"
               >
                 {label}
               </li>

@@ -134,7 +134,7 @@ function ProjectMetaHackathon() {
                   <GithubLogo className="text-seafoam-500 text-3xl shrink-0" />
                   <div className="flex-auto flex flex-col gap-1">
                     <p className="text-xl font-semibold">git in it: client</p>
-                    <p className="text-base leading-none text-mauve-500">
+                    <p className="text-base leading-none text-fuschia-50">
                       github.com/janessaperry/meta-visual-search
                     </p>
                   </div>
@@ -150,7 +150,7 @@ function ProjectMetaHackathon() {
                   <GithubLogo className="text-seafoam-500 text-3xl shrink-0" />
                   <div className="flex-auto flex flex-col gap-1">
                     <p className="text-xl font-semibold">git in it: server</p>
-                    <p className="text-base leading-none text-mauve-500">
+                    <p className="text-base leading-none text-fuschia-50">
                       github.com/janessaperry/meta-visual-search-api
                     </p>
                   </div>
@@ -169,8 +169,8 @@ function ProjectMetaHackathon() {
 
           <div className="pt-4 flex flex-col gap-y-20">
             <div className="flex gap-4 items-start">
-              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-pink-300">
-                <Image className="text-4xl text-pink-500" />
+              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
+                <Image className="text-4xl text-fuschia-300" />
               </div>
 
               <div className="flex flex-col gap-y-4">
@@ -194,8 +194,8 @@ function ProjectMetaHackathon() {
             </div>
 
             <div className="flex gap-4 items-start">
-              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-pink-300">
-                <Storefront className="text-4xl text-pink-500" />
+              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
+                <Storefront className="text-4xl text-fuschia-300" />
               </div>
 
               <div className="flex flex-col gap-y-4">
@@ -238,8 +238,8 @@ function ProjectMetaHackathon() {
           </p>
 
           <div className="flex gap-x-4">
-            <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-pink-300">
-              <Lightbulb className="text-4xl text-pink-500" />
+            <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
+              <Lightbulb className="text-4xl text-fuschia-300" />
             </div>
             <p className="text-xl">
               The hackathon taught me valuable lessons in working under

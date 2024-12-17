@@ -12,7 +12,7 @@ function About() {
       <h1 className="sr-only">About</h1>
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">
-        <section className="section-card md:col-span-1 md:order-1 divide-y-4 divide-dotted divide-mauve-500">
+        <section className="section-card md:col-span-1 md:order-1 divide-y-4 divide-dotted divide-fuschia-50">
           <div className="pb-8">
             <img
               src={JanessaPerryHeadshot}
@@ -37,7 +37,7 @@ function About() {
                   {contactItem.icon}
                   <div className="flex-auto flex flex-col gap-1">
                     <p className="text-xl font-semibold">{contactItem.title}</p>
-                    <p className="text-base leading-none text-mauve-500">
+                    <p className="text-base leading-none text-fuschia-50">
                       {contactItem.content}
                     </p>
                   </div>
@@ -88,28 +88,28 @@ function About() {
           <h2>&lt;Highlights&gt;</h2>
 
           <div className="card-wrapper grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 auto-rows-auto gap-4">
-            <div className="card p-4 bg-mauve-500 rounded-xl">
+            <div className="card p-4 bg-fuschia-50 rounded-xl">
               <p className="font-heading md:text-xl text-blue-700">8 years</p>
               <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
                 at a small, fast paced company
               </p>
             </div>
 
-            <div className="card p-4 bg-mauve-500 rounded-xl">
+            <div className="card p-4 bg-fuschia-50 rounded-xl">
               <p className="font-heading md:text-xl text-blue-700">5 years</p>
               <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
                 UI design & development
               </p>
             </div>
 
-            <div className="card p-4 bg-mauve-500 rounded-xl">
+            <div className="card p-4 bg-fuschia-50 rounded-xl">
               <p className="font-heading md:text-xl text-blue-700">2 years</p>
               <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
                 freelancing in web design
               </p>
             </div>
 
-            <div className="card p-4 bg-mauve-500 rounded-xl">
+            <div className="card p-4 bg-fuschia-50 rounded-xl">
               <p className="font-heading md:text-xl text-blue-700">2024</p>
               <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
                 Diploma in Software Engineering
@@ -122,29 +122,29 @@ function About() {
           <h2>&lt;Motivations&gt;</h2>
 
           <div className="card-wrapper grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 auto-rows-auto gap-4">
-            <div className="card p-4 bg-mauve-500 rounded-xl">
-              <RocketLaunch className="text-mauve-800 text-3xl" />
+            <div className="card p-4 bg-fuschia-50 rounded-xl">
+              <RocketLaunch className="text-fuschia-700 text-3xl" />
               <p className="font-heading md:text-xl leading-tight text-blue-700">
                 continous learning
               </p>
             </div>
 
-            <div className="card p-4 bg-mauve-500 rounded-xl">
-              <PuzzlePiece className="text-mauve-800 text-3xl" />
+            <div className="card p-4 bg-fuschia-50 rounded-xl">
+              <PuzzlePiece className="text-fuschia-700 text-3xl" />
               <p className="font-heading md:text-xl leading-tight text-blue-700">
                 solving problems
               </p>
             </div>
 
-            <div className="card p-4 bg-mauve-500 rounded-xl">
-              <MagicWand className="text-mauve-800 text-3xl" />
+            <div className="card p-4 bg-fuschia-50 rounded-xl">
+              <MagicWand className="text-fuschia-700 text-3xl" />
               <p className="font-heading md:text-xl leading-tight text-blue-700">
                 attention to detail
               </p>
             </div>
 
-            <div className="card p-4 bg-mauve-500 rounded-xl">
-              <Handshake className="text-mauve-800 text-3xl" />
+            <div className="card p-4 bg-fuschia-50 rounded-xl">
+              <Handshake className="text-fuschia-700 text-3xl" />
               <p className="font-heading md:text-xl leading-tight text-blue-700">
                 collaboration
               </p>

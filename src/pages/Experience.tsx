@@ -38,7 +38,7 @@ function Experience() {
                   {contactItem.icon}
                   <div className="flex-auto flex flex-col gap-1">
                     <p className="text-xl font-semibold">{contactItem.title}</p>
-                    <p className="text-base leading-none text-mauve-500">
+                    <p className="text-base leading-none text-fuschia-50">
                       {contactItem.content}
                     </p>
                   </div>
@@ -62,7 +62,7 @@ function Experience() {
 
                   <div className="flex-auto flex flex-col gap-1">
                     <p className="text-xl font-semibold">{highlight.title}</p>
-                    <p className="text-base leading-none text-mauve-500 flex justify-between">
+                    <p className="text-base leading-none text-fuschia-50 flex justify-between">
                       <span>{highlight.location}</span>
                       <span>{highlight.year}</span>
                     </p>
@@ -87,7 +87,7 @@ function Experience() {
                 >
                   <div className="flex flex-col gap-1">
                     <p className="text-xl font-semibold">{role.jobTitle}</p>
-                    <p className="text-base leading-none text-mauve-500 flex justify-between">
+                    <p className="text-base leading-none text-fuschia-50 flex justify-between">
                       <span>{role.company}</span>
                       <span>{role.yearRange}</span>
                     </p>
@@ -108,7 +108,7 @@ function Experience() {
                       return (
                         <li
                           key={index}
-                          className="text-seafoam-500 text-base leading-none lowercase py-2 px-3 bg-blue-300 border border-blue-100 rounded-lg"
+                          className="text-blue-500 text-base leading-none lowercase py-2 px-3 bg-fuschia-50 border border-fuschia-muted rounded-lg"
                         >
                           {item}
                         </li>
@@ -135,7 +135,7 @@ function Experience() {
                 >
                   <div className="flex flex-col gap-1">
                     <p className="text-xl font-semibold">{project.title}</p>
-                    <p className="text-base leading-none text-mauve-500 flex justify-between">
+                    <p className="text-base leading-none text-fuschia-50 flex justify-between">
                       <span>{project.type}</span>
                       <span>{project.yearCompleted}</span>
                     </p>
@@ -156,7 +156,7 @@ function Experience() {
                       return (
                         <li
                           key={index}
-                          className="text-seafoam-500 text-base leading-none lowercase py-2 px-3 bg-blue-300 border border-blue-100 rounded-lg"
+                          className="text-blue-500 text-base leading-none lowercase py-2 px-3 bg-fuschia-50 border border-fuschia-muted rounded-lg"
                         >
                           {item}
                         </li>
@@ -178,7 +178,7 @@ function Experience() {
                 <li key={education.id}>
                   <div className="flex flex-col gap-1">
                     <p className="text-xl font-semibold">{education.degree}</p>
-                    <p className="text-base leading-none text-mauve-500 flex justify-between">
+                    <p className="text-base leading-none text-fuschia-50 flex justify-between">
                       <span>{education.institution}</span>
                       <span>{education.yearsAttended}</span>
                     </p>

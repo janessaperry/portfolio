@@ -38,10 +38,10 @@ function Home() {
 
         <section className="section-card section-card--accent md:col-span-2 md:row-span-2 md:order-2">
           <div className="flex justify-between items-baseline">
-            <h2 className="text-blue-500">&lt;Showcase&gt;</h2>
+            <h2 className="text-fuschia-700">&lt;Showcase&gt;</h2>
             <Link
               to="/projects"
-              className="flex gap-x-2 items-center font-heading text-blue-500 hover:text-blue-700"
+              className="flex gap-x-2 items-center font-heading text-blue-500 hover:text-fuschia-700"
             >
               View all projects <ArrowRight />
             </Link>
