@@ -66,8 +66,16 @@ function Home() {
           <div className="flex flex-col gap-2">
             <p>I'm currently open to new work opportunities.</p>
             <div className="flex gap-2">
-              <LinkedinLogo className="text-seafoam-500 text-3xl" />
-              <Envelope className="text-seafoam-500 text-3xl" />
+              <a
+                href="https://www.linkedin.com/in/janessa-perry"
+                target="_blank"
+              >
+                <LinkedinLogo className="text-seafoam-500 text-3xl" />
+              </a>
+
+              <a href="mailto:hello@janessaperry.com" target="_blank">
+                <Envelope className="text-seafoam-500 text-3xl" />
+              </a>
             </div>
           </div>
         </section>

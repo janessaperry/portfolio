@@ -13,13 +13,13 @@ function Footer() {
           </li>
 
           <li>
-            <a href="https://github.com/janessaperry" target="_blank">
+            <a href="https://www.linkedin.com/in/janessa-perry" target="_blank">
               <LinkedinLogo className="text-blue-50 text-3xl" />
             </a>
           </li>
 
           <li>
-            <a href="https://github.com/janessaperry" target="_blank">
+            <a href="mailto:hello@janessaperry.com" target="_blank">
               <Envelope className="text-blue-50 text-3xl" />
             </a>
           </li>
