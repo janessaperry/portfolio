@@ -18,10 +18,10 @@ export const contactLinks: ContactLinks[] = [
   },
   {
     id: 2,
-    url: "https://www.linkedin.com/in/janessa-perry/",
+    url: "https://www.linkedin.com/in/janessa-perry",
     icon: <LinkedinLogo className="text-seafoam-500 text-3xl shrink-0" />,
     title: "let connect = true;",
-    content: "linkedin.com/in/janessa-perry/",
+    content: "linkedin.com/in/janessa-perry",
   },
   {
     id: 3,
