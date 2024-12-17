@@ -9,7 +9,7 @@
 }
 
 * {
-  margin: 0;
+  @apply m-0 scroll-smooth;
 }
 
 img,
@@ -41,6 +41,10 @@ h2 {
   @apply text-xl;
 }
 
+h3 {
+  @apply text-lg text-seafoam-500;
+}
+
 p,
 ol,
 ul,
@@ -56,7 +60,7 @@ select {
 }
 
 a {
-  @apply text-ivory-500;
+  @apply lowercase font-heading text-ivory-500;
 }
 
 a.active {

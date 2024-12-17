@@ -6,6 +6,7 @@ import Experience from "./pages/Experience";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
+import ProjectPressStart from "./pages/ProjectPressStart";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
+          <Route
+            path="/projects/press-start"
+            element={<ProjectPressStart />}
+          ></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/experience" element={<Experience />}></Route>
         </Routes>
