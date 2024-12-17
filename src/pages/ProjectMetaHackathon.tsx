@@ -190,13 +190,14 @@ function ProjectMetaHackathon() {
                   <img
                     src={BrowserFrame}
                     alt="Browser frame for video"
-                    className="w-full"
+                    className="w-full h-fit"
                   />
                   <video
                     src={VisualSearch}
                     controls
                     autoPlay
                     playsInline
+                    loop
                     muted
                   />
                 </div>
@@ -228,13 +229,14 @@ function ProjectMetaHackathon() {
                   <img
                     src={BrowserFrame}
                     alt="Browser frame for video"
-                    className="w-full"
+                    className="w-full h-fit"
                   />
                   <video
                     src={ExploreAccounts}
                     controls
                     autoPlay
                     playsInline
+                    loop
                     muted
                   />
                 </div>

@@ -30,8 +30,8 @@ function Header() {
             src={logo}
             alt="Janessa Perry logo"
             className={`${
-              isScrolled ? "w-12 h-8" : "w-20 h-14"
-            } transition-all ease-in-out`}
+              isScrolled && "md:w-12 md:h-8"
+            } w-12 h-8 md:w-20 md:h-14 transition-all ease-in-out`}
           />
         </Link>
       </div>

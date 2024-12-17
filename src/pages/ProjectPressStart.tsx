@@ -200,13 +200,14 @@ function ProjectPressStart() {
                   <img
                     src={BrowserFrame}
                     alt="Browser frame for video"
-                    className="w-full"
+                    className="w-full h-fit"
                   />
                   <video
                     src={AddToCollection}
                     controls
                     autoPlay
                     playsInline
+                    loop
                     muted
                   />
                 </div>
@@ -235,13 +236,14 @@ function ProjectPressStart() {
                   <img
                     src={BrowserFrame}
                     alt="Browser frame for video"
-                    className="w-full"
+                    className="w-full h-fit"
                   />
                   <video
                     src={ManageCollection}
                     controls
                     autoPlay
                     playsInline
+                    loop
                     muted
                   />
                 </div>
@@ -270,13 +272,14 @@ function ProjectPressStart() {
                   <img
                     src={BrowserFrame}
                     alt="Browser frame for video"
-                    className="w-full"
+                    className="w-full h-fit"
                   />
                   <video
                     src={FilterCollection}
                     controls
                     autoPlay
                     playsInline
+                    loop
                     muted
                   />
                 </div>
@@ -305,13 +308,14 @@ function ProjectPressStart() {
                   <img
                     src={BrowserFrame}
                     alt="Browser frame for video"
-                    className="w-full"
+                    className="w-full h-fit"
                   />
                   <video
                     src={ExploreGames}
                     controls
                     autoPlay
                     playsInline
+                    loop
                     muted
                   />
                 </div>
