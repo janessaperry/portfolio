@@ -5,7 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 
 function Home() {
   return (
-    <main className="w-full lg:container py-4 px-4 md:px-6">
+    <main className="main-container">
       <h1 className="sr-only">Janessa Perry | Designer turned Developer</h1>
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">

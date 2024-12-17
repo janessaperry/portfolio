@@ -18,7 +18,7 @@ function ProjectMetaHackathon() {
   )?.skillsAndTools;
 
   return (
-    <main className="w-full lg:container py-4 px-4 sm:px-6">
+    <main className="main-container">
       <section className="flex flex-col gap-8 items-center py-8">
         <div className="flex flex-col gap-4 lg:max-w-screen-xl">
           <h1 className="text-4xl text-center">Meta Hackathon</h1>

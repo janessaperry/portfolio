@@ -1,12 +1,39 @@
+import { useEffect, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/logos/jp-logo.svg";
 
 function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="w-full lg:container py-4 px-4 sm:px-6 flex items-center justify-between">
+    <header
+      className={`w-full lg:container py-6 px-4 sm:px-6 flex items-center justify-between fixed top-0 bg-blue-700/60 backdrop-blur-sm z-10`}
+    >
       <div>
         <Link to="/">
-          <img src={logo} alt="Janessa Perry logo" className="w-20 h-14" />
+          <img
+            src={logo}
+            alt="Janessa Perry logo"
+            className={`${
+              isScrolled ? "w-12 h-8" : "w-20 h-14"
+            } transition-all ease-in-out`}
+          />
         </Link>
       </div>
 

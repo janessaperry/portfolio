@@ -7,7 +7,7 @@ import { educationDetails } from "../data/educationDetails";
 
 function Experience() {
   return (
-    <main className="w-full lg:container py-4 px-4 sm:px-6">
+    <main className="main-container">
       <h1 className="sr-only">Experience</h1>
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:gap-10">
