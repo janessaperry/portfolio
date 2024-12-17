@@ -6,7 +6,6 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = () => {
-    console.log(window.scrollY);
     if (window.scrollY >= 50) {
       setIsScrolled(true);
     } else {
