@@ -29,7 +29,7 @@ function ProjectPressStart() {
       <section className="flex flex-col gap-8 items-center py-8">
         <div className="flex flex-col gap-4 lg:max-w-screen-xl">
           <h1 className="text-4xl text-center">Press Start</h1>
-          <p className="text-2xl text-center">
+          <p className="text-xl md:text-2xl text-center">
             Created a full-stack web app that helps users track, rate, and get
             recommendations for their video game collection, with a responsive,
             user-friendly interface and real-time data synchronization.
@@ -43,8 +43,8 @@ function ProjectPressStart() {
         />
       </section>
 
-      <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">
-        <section className="section-card col-span-1 sticky top-10 h-fit flex flex-col gap-8">
+      <div className="grid md:grid-cols-3 gap-4 md:gap-10">
+        <section className="hidden md:section-card md:col-span-1 md:sticky md:top-10 md:h-fit">
           <div className="flex flex-col gap-4">
             <h2>&lt;Contents&gt;</h2>
             {/* TODO UPDATE THIS SO IT HIGHLIGHTS ACTIVE SECTION AS USER SCROLLS */}
@@ -91,7 +91,7 @@ function ProjectPressStart() {
           </div>
         </section>
 
-        <section className="section-card col-span-2">
+        <section className="section-card md:col-span-2">
           <h2 id="overview">&lt;Overview&gt;</h2>
 
           <p className="text-xl">
@@ -170,7 +170,7 @@ function ProjectPressStart() {
           </div>
         </section>
 
-        <section className="section-card col-span-2 col-start-2">
+        <section className="section-card md:col-span-2 md:col-start-2">
           <h2 id="features">&lt;Features&gt;</h2>
 
           <p className="text-xl">
@@ -280,7 +280,7 @@ function ProjectPressStart() {
           </div>
         </section>
 
-        <section className="section-card col-span-2 col-start-2">
+        <section className="section-card md:col-span-2 md:col-start-2">
           <h2 id="challenges">&lt;Challenges&gt;</h2>
 
           <p className="text-xl">
@@ -299,8 +299,8 @@ function ProjectPressStart() {
               </div>
 
               <div className="h-px bg-gradient-to-r from-pink-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
-              <div className="grid grid-cols-2 gap-10">
-                <div className="col-span-1 flex gap-x-4">
+              <div className="grid md:grid-cols-2 gap-5 md:gap-10">
+                <div className="md:col-span-1 flex gap-x-4">
                   <IconGradientFill id="gradient--pink" icon={Warning} />
                   <p>
                     Structuring a database and building a proxy server for the
@@ -308,7 +308,7 @@ function ProjectPressStart() {
                   </p>
                 </div>
 
-                <div className="col-span-1 flex gap-x-4">
+                <div className="md:col-span-1 flex gap-x-4">
                   <IconGradientFill id="gradient--seafoam" icon={Target} />
                   <p>
                     Focused on getting a working solution by experimenting with
@@ -340,8 +340,8 @@ function ProjectPressStart() {
               </div>
 
               <div className="h-px bg-gradient-to-r from-pink-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
-              <div className="grid grid-cols-2 gap-10">
-                <div className="col-span-1 flex gap-x-4">
+              <div className="grid md:grid-cols-2 gap-5 md:gap-10">
+                <div className="md:col-span-1 flex gap-x-4">
                   <IconGradientFill id="gradient--pink" icon={Warning} />
                   <p>
                     Managing filters with data coming from both the database and
@@ -349,7 +349,7 @@ function ProjectPressStart() {
                   </p>
                 </div>
 
-                <div className="col-span-1 flex gap-x-4">
+                <div className="md:col-span-1 flex gap-x-4">
                   <IconGradientFill id="gradient--seafoam" icon={Target} />
                   <p>
                     While my current solution works, I've identified ways to
@@ -381,8 +381,8 @@ function ProjectPressStart() {
               </div>
 
               <div className="h-px bg-gradient-to-r from-pink-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
-              <div className="grid grid-cols-2 gap-10">
-                <div className="col-span-1 flex gap-x-4">
+              <div className="grid md:grid-cols-2 gap-5 md:gap-10">
+                <div className="md:col-span-1 flex gap-x-4">
                   <IconGradientFill id="gradient--pink" icon={Warning} />
                   <p>
                     Managing filters with data coming from both the database and
@@ -390,7 +390,7 @@ function ProjectPressStart() {
                   </p>
                 </div>
 
-                <div className="col-span-1 flex gap-x-4">
+                <div className="md:col-span-1 flex gap-x-4">
                   <IconGradientFill id="gradient--seafoam" icon={Target} />
                   <p>
                     Extensively tested API requests with Postman and iteratively
@@ -417,7 +417,7 @@ function ProjectPressStart() {
           </div>
         </section>
 
-        <section className="section-card col-span-2 col-start-2">
+        <section className="section-card md:col-span-2 md:col-start-2">
           <h2 id="retrospective">&lt;Retrospective&gt;</h2>
 
           <p>
@@ -457,7 +457,7 @@ function ProjectPressStart() {
           </div>
         </section>
 
-        <section className="section-card col-span-2 col-start-2">
+        <section className="section-card md:col-span-2 md:col-start-2">
           <h2 id="road-map">&lt;Road map&gt;</h2>
 
           <p className="text-xl">

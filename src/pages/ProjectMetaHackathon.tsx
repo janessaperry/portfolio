@@ -22,7 +22,7 @@ function ProjectMetaHackathon() {
       <section className="flex flex-col gap-8 items-center py-8">
         <div className="flex flex-col gap-4 lg:max-w-screen-xl">
           <h1 className="text-4xl text-center">Meta Hackathon</h1>
-          <p className="text-2xl text-center">
+          <p className="text-lg md:text-2xl text-center">
             Developed an Instagram Discovery Tool during a 24-hour hackathon
             with Meta, allowing users to search for accounts by uploading images
             and discovering similar content and profiles.
@@ -37,7 +37,7 @@ function ProjectMetaHackathon() {
       </section>
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">
-        <section className="section-card col-span-1 sticky top-10 h-fit flex flex-col gap-8">
+        <section className="hidden md:section-card md:col-span-1 md:sticky md:top-10 md:h-fit">
           <div className="flex flex-col gap-4">
             <h2>&lt;Contents&gt;</h2>
             {/* TODO UPDATE THIS SO IT HIGHLIGHTS ACTIVE SECTION AS USER SCROLLS */}
@@ -84,7 +84,7 @@ function ProjectMetaHackathon() {
           </div>
         </section>
 
-        <section className="section-card col-span-2">
+        <section className="section-card md:col-span-2">
           <h2 id="overview">&lt;Overview&gt;</h2>
 
           <p className="text-xl">
@@ -160,7 +160,7 @@ function ProjectMetaHackathon() {
           </div>
         </section>
 
-        <section className="section-card col-span-2 col-start-2">
+        <section className="section-card md:col-span-2 md:col-start-2">
           <h2 id="features">&lt;Features&gt;</h2>
 
           <p className="text-xl">
@@ -223,7 +223,7 @@ function ProjectMetaHackathon() {
           </div>
         </section>
 
-        <section className="section-card col-span-2 col-start-2">
+        <section className="section-card md:col-span-2 md:col-start-2">
           <h2 id="retrospective">&lt;Retrospective&gt;</h2>
 
           <p>

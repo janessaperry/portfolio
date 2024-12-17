@@ -60,17 +60,19 @@ select {
 }
 
 a {
-  @apply lowercase font-heading text-ivory-500;
+  @apply lowercase font-heading text-blue-50;
 }
 
 a.active {
   @apply lowercase text-seafoam-500 py-1 border-b-2 border-seafoam-500;
 }
 
-.section-card {
-  @apply p-6 md:p-8 shadow-[inset_0_2px_4px_0_rgba(103,58,183,0.2)] border-t border-t-mauve-100/20 flex flex-col gap-4 bg-blue-500 rounded-3xl;
-}
+@layer utilities {
+  .section-card {
+    @apply p-6 md:p-8 shadow-[inset_0_2px_4px_0_rgba(103,58,183,0.2)] border-t border-t-mauve-100/20 flex flex-col gap-4 bg-blue-500 rounded-3xl;
+  }
 
-.section-card--accent {
-  @apply bg-mauve-500 shadow-[inset_0_2px_4px_0_rgba(255,255,255,0.2)] border-t border-t-mauve-700;
+  .section-card--accent {
+    @apply bg-mauve-500 shadow-[inset_0_2px_4px_0_rgba(255,255,255,0.2)] border-t border-t-mauve-700;
+  }
 }
