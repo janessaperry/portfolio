@@ -68,16 +68,14 @@ function About() {
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">
         <section className="section-card md:col-span-1 md:order-1">
-          <div className="pb-4">
+          <div className="pb-4 flex flex-col items-center">
             <img
               src={JanessaPerryHeadshot}
               alt="Janessa Perry headshot"
-              className="mb-4 rounded-full max-w-48 justify-self-center"
+              className="mb-4 rounded-full max-w-48"
             />
-            <p className="text-2xl font-medium justify-self-center">
-              Janessa Perry
-            </p>
-            <p className="text-xl justify-self-center">Web Developer</p>
+            <p className="text-2xl font-medium">Janessa Perry</p>
+            <p className="text-xl ">Web Developer</p>
           </div>
 
           <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>

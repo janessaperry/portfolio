@@ -5,7 +5,7 @@ import { experienceDetails } from "../data/experienceDetails";
 import { allProjects } from "../data/allProjects";
 import { educationDetails } from "../data/educationDetails";
 import JanessaPerryResume from "../assets/files/JanessaPerry-SoftwareDeveloperResume.pdf";
-import { DownloadSimple, FileArrowDown } from "@phosphor-icons/react";
+import { DownloadSimple } from "@phosphor-icons/react";
 
 function Experience() {
   return (
