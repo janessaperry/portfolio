@@ -20,7 +20,7 @@ import BrowserFrame from "../assets/graphics/browser-container.svg";
 import IconGradientFill from "../components/IconGradientFill";
 
 function ProjectPressStart() {
-  const techStack = allProjects.find(
+  const toolkit = allProjects.find(
     (project) => project.id === "press-start--capstone"
   )?.skillsAndTools;
 
@@ -117,7 +117,7 @@ function ProjectPressStart() {
           <div className="grid gap-8">
             <div className="md:col-span-1 flex flex-col gap-4">
               <h3>&lt;Toolkit&gt;</h3>
-              {techStack?.length ? <ChipList labels={techStack} /> : <p>TBD</p>}
+              {toolkit?.length ? <ChipList labels={toolkit} /> : <p>TBD</p>}
             </div>
 
             <div className="md:col-span-1 flex flex-col gap-4">

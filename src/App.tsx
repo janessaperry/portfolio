@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
 import ProjectPressStart from "./pages/ProjectPressStart";
+import ProjectMetaHackathon from "./pages/ProjectMetaHackathon";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
           <Route
             path="/projects/press-start"
             element={<ProjectPressStart />}
+          ></Route>
+          <Route
+            path="/projects/meta-hackathon"
+            element={<ProjectMetaHackathon />}
           ></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/experience" element={<Experience />}></Route>
