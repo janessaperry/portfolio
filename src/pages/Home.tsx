@@ -6,7 +6,17 @@ import ProjectCard from "../components/ProjectCard";
 function Home() {
   return (
     <main className="main-container">
-      <h1 className="sr-only">Janessa Perry | Designer turned Developer</h1>
+      <section className="flex flex-col gap-8 items-center py-8">
+        <div className="flex flex-col gap-4 lg:max-w-screen-xl">
+          <h1 className="text-4xl text-center">Hey there, I'm Janessa</h1>
+          <p className="text-xl md:text-2xl text-center">
+            I'm a designer-turned-developer who loves bringing pixels to life
+            with code and creativity. I specialize in building clean, responsive
+            websites that are both beautiful and functional, focusing on
+            creating seamless, user-friendly experiences.
+          </p>
+        </div>
+      </section>
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">
         <section className="section-card md:col-span-1 md:row-span-1 md:order-1">

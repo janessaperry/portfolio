@@ -200,7 +200,7 @@ function ProjectPressStart() {
                   <img
                     src={BrowserFrame}
                     alt="Browser frame for video"
-                    className="w-full h-fit"
+                    className="w-full bg-blue-700"
                   />
                   <video
                     src={AddToCollection}
@@ -236,7 +236,7 @@ function ProjectPressStart() {
                   <img
                     src={BrowserFrame}
                     alt="Browser frame for video"
-                    className="w-full h-fit"
+                    className="w-full bg-blue-700"
                   />
                   <video
                     src={ManageCollection}
@@ -272,7 +272,7 @@ function ProjectPressStart() {
                   <img
                     src={BrowserFrame}
                     alt="Browser frame for video"
-                    className="w-full h-fit"
+                    className="w-full bg-blue-700"
                   />
                   <video
                     src={FilterCollection}
@@ -308,7 +308,7 @@ function ProjectPressStart() {
                   <img
                     src={BrowserFrame}
                     alt="Browser frame for video"
-                    className="w-full h-fit"
+                    className="w-full bg-blue-700"
                   />
                   <video
                     src={ExploreGames}

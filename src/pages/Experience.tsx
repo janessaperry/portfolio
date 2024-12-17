@@ -4,11 +4,27 @@ import { skillsAndTools } from "../data/skillsAndTools";
 import { experienceDetails } from "../data/experienceDetails";
 import { allProjects } from "../data/allProjects";
 import { educationDetails } from "../data/educationDetails";
+import JanessaPerryResume from "../assets/files/JanessaPerry-SoftwareDeveloperResume.pdf";
+import { DownloadSimple, FileArrowDown } from "@phosphor-icons/react";
 
 function Experience() {
   return (
     <main className="main-container">
-      <h1 className="sr-only">Experience</h1>
+      <section className="flex flex-col gap-8 items-center py-8">
+        <div className="flex flex-col gap-4 lg:max-w-screen-xl">
+          <h1 className="text-4xl text-center">My Experience</h1>
+          <p className="text-xl md:text-2xl text-center">
+            Check out my career journey below!
+          </p>
+          <a
+            href={JanessaPerryResume}
+            target="_blank"
+            className="text-seafoam-500 flex gap-2 justify-center items-center hover:text-seafoam-700 transition-all ease-in-out"
+          >
+            Download Resume <DownloadSimple weight="bold" className="text-lg" />
+          </a>
+        </div>
+      </section>
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:gap-10">
         <section className="section-card md:col-span-2 md:order-2">

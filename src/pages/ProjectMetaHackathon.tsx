@@ -190,7 +190,7 @@ function ProjectMetaHackathon() {
                   <img
                     src={BrowserFrame}
                     alt="Browser frame for video"
-                    className="w-full h-fit"
+                    className="w-full bg-blue-700"
                   />
                   <video
                     src={VisualSearch}
@@ -229,7 +229,7 @@ function ProjectMetaHackathon() {
                   <img
                     src={BrowserFrame}
                     alt="Browser frame for video"
-                    className="w-full h-fit"
+                    className="w-full bg-blue-700"
                   />
                   <video
                     src={ExploreAccounts}

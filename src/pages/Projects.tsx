@@ -22,21 +22,34 @@ function Projects() {
 
   return (
     <main className="main-container">
-      <h1 className="sr-only">Projects</h1>
-
-      <div className="grid md:grid-cols-3 md:grid-auto-rows gap-4 md:gap-10">
-        <section className="section-card md:col-span-1 h-fit">
-          <h2>&lt;explore&gt;</h2>
-          <p className="text-xl">
+      <section className="flex flex-col gap-8 items-center py-8">
+        <div className="flex flex-col gap-4 lg:max-w-screen-xl">
+          <h1 className="text-4xl text-center">Explore my Work</h1>
+          <p className="text-xl md:text-2xl text-center">
             Discover my journey through code and creativity. Each project
             reflects problem-solving, innovation, and a passion for crafting
             seamless user experiences.
+          </p>
+        </div>
+      </section>
+
+      <div className="grid md:grid-cols-3 md:grid-auto-rows gap-4 md:gap-10">
+        <section className="section-card md:col-span-1 h-fit">
+          <h2>&lt;Word on the Street&gt;</h2>
+          <p className="text-xl italic">
+            Janessa's ability to jump into technical challenges and solve
+            problems really shines! She has a background writing code and
+            wearing many hats, which is apparent in the way that Janessa takes a
+            creative and technical approach to writing code.
+          </p>
+          <p className="text-right text-fuschia-50 text-base italic">
+            – Educator, Software Engineering, BrainStation
           </p>
         </section>
 
         <section className=" section-card md:col-span-2">
           <h2>&lt;Projects&gt;</h2>
-          <p>Check out some of my recent work below. </p>
+          <p className="text-xl">Check out some of my recent work below. </p>
 
           <div className="flex gap-8">
             <ButtonLink

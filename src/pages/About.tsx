@@ -56,7 +56,15 @@ function About() {
 
   return (
     <main className="main-container">
-      <h1 className="sr-only">About</h1>
+      <section className="flex flex-col gap-8 items-center py-8">
+        <div className="flex flex-col gap-4 lg:max-w-screen-xl">
+          <h1 className="text-4xl text-center">A Little About Me</h1>
+          <p className="text-xl md:text-2xl text-center">
+            Hi, I'm Janessa, a developer with a background in design and
+            creating seamless, intuitive digital experiences.
+          </p>
+        </div>
+      </section>
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">
         <section className="section-card md:col-span-1 md:order-1">
@@ -97,11 +105,7 @@ function About() {
         </section>
 
         <section className="section-card md:col-span-2 md:order-2">
-          <h2>&lt;About&gt;</h2>
-          <p className="text-xl">
-            Hi, I'm Janessa, a developer with a background in design and
-            creating seamless, intuitive digital experiences.
-          </p>
+          <h2>&lt;Journey&gt;</h2>
 
           <p>
             My journey into development began at The Sentis Group, where I
