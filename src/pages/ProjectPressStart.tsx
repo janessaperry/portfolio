@@ -197,7 +197,11 @@ function ProjectPressStart() {
                 </div>
 
                 <div className="border border-blue-700 rounded-lg overflow-hidden">
-                  <img src={BrowserFrame} />
+                  <img
+                    src={BrowserFrame}
+                    alt="Browser frame for video"
+                    className="w-full"
+                  />
                   <video
                     src={AddToCollection}
                     controls
@@ -228,7 +232,11 @@ function ProjectPressStart() {
                 </div>
 
                 <div className="border border-blue-700 rounded-lg overflow-hidden">
-                  <img src={BrowserFrame} />
+                  <img
+                    src={BrowserFrame}
+                    alt="Browser frame for video"
+                    className="w-full"
+                  />
                   <video
                     src={ManageCollection}
                     controls
@@ -259,7 +267,11 @@ function ProjectPressStart() {
                 </div>
 
                 <div className="border border-blue-700 rounded-lg overflow-hidden">
-                  <img src={BrowserFrame} />
+                  <img
+                    src={BrowserFrame}
+                    alt="Browser frame for video"
+                    className="w-full"
+                  />
                   <video
                     src={FilterCollection}
                     controls
@@ -290,7 +302,11 @@ function ProjectPressStart() {
                 </div>
 
                 <div className="border border-blue-700 rounded-lg overflow-hidden">
-                  <img src={BrowserFrame} />
+                  <img
+                    src={BrowserFrame}
+                    alt="Browser frame for video"
+                    className="w-full"
+                  />
                   <video
                     src={ExploreGames}
                     controls

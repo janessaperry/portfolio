@@ -187,7 +187,11 @@ function ProjectMetaHackathon() {
                 </div>
 
                 <div className="md:w-1/3 self-center border border-blue-700 rounded-md overflow-hidden">
-                  <img src={BrowserFrame} />
+                  <img
+                    src={BrowserFrame}
+                    alt="Browser frame for video"
+                    className="w-full"
+                  />
                   <video
                     src={VisualSearch}
                     controls
@@ -221,7 +225,11 @@ function ProjectMetaHackathon() {
                 </div>
 
                 <div className="md:w-1/3 self-center border border-blue-700 rounded-md overflow-hidden">
-                  <img src={BrowserFrame} />
+                  <img
+                    src={BrowserFrame}
+                    alt="Browser frame for video"
+                    className="w-full"
+                  />
                   <video
                     src={ExploreAccounts}
                     controls
