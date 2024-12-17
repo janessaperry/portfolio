@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import {
+  ArrowSquareOut,
   GameController,
   GithubLogo,
   Lightbulb,
@@ -34,6 +35,13 @@ function ProjectPressStart() {
             recommendations for their video game collection, with a responsive,
             user-friendly interface and real-time data synchronization.
           </p>
+          <a
+            href="https://github.com/janessaperry/press-start-client"
+            target="_blank"
+            className="text-xl text-seafoam-500 flex gap-2 justify-center items-center hover:text-seafoam-700 transition-all ease-in-out"
+          >
+            View on GitHub <ArrowSquareOut weight="bold" className="text-xl" />
+          </a>
         </div>
 
         <img
@@ -44,9 +52,9 @@ function ProjectPressStart() {
       </section>
 
       <div className="grid md:grid-cols-3 gap-4 md:gap-10">
-        <section className="hidden md:section-card md:col-span-1 md:sticky md:top-10 md:h-fit">
-          <div className="flex flex-col gap-4">
-            <h2>&lt;Contents&gt;</h2>
+        <section className="hidden md:section-card md:col-span-1 md:sticky md:top-32 md:h-fit">
+          <div className="flex flex-col gap-2">
+            <h3 className="text-fuschia-300">&lt;Contents&gt;</h3>
             {/* TODO UPDATE THIS SO IT HIGHLIGHTS ACTIVE SECTION AS USER SCROLLS */}
             <nav>
               <ul className="flex flex-col gap-2">
@@ -73,8 +81,8 @@ function ProjectPressStart() {
             </nav>
           </div>
 
-          <div className="flex flex-col gap-4">
-            <h2>&lt;Projects&gt;</h2>
+          <div className="flex flex-col gap-2">
+            <h3 className="text-fuschia-300">&lt;Projects&gt;</h3>
             <nav>
               <ul className="flex flex-col gap-2">
                 <li>

@@ -6,6 +6,7 @@ import VisualSearch from "../assets/videos/iggy-discover--visual-search.mp4";
 import ExploreAccounts from "../assets/videos/iggy-discover--explore-accounts.mp4";
 import ChipList from "../components/ChipList";
 import {
+  ArrowSquareOut,
   GithubLogo,
   Image,
   Lightbulb,
@@ -27,6 +28,13 @@ function ProjectMetaHackathon() {
             with Meta, allowing users to search for accounts by uploading images
             and discovering similar content and profiles.
           </p>
+          <a
+            href="https://github.com/janessaperry/meta-visual-search"
+            target="_blank"
+            className="text-xl text-seafoam-500 flex gap-2 justify-center items-center hover:text-seafoam-700 transition-all ease-in-out"
+          >
+            View on GitHub <ArrowSquareOut weight="bold" className="text-xl" />
+          </a>
         </div>
 
         <img

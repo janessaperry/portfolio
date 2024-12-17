@@ -19,9 +19,9 @@ function Experience() {
           <a
             href={JanessaPerryResume}
             target="_blank"
-            className="text-seafoam-500 flex gap-2 justify-center items-center hover:text-seafoam-700 transition-all ease-in-out"
+            className="text-xl text-seafoam-500 flex gap-2 justify-center items-center hover:text-seafoam-700 transition-all ease-in-out"
           >
-            Download Resume <DownloadSimple weight="bold" className="text-lg" />
+            Download Resume <DownloadSimple weight="bold" className="text-xl" />
           </a>
         </div>
       </section>
