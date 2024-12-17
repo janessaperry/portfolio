@@ -6,14 +6,61 @@ import {
 } from "@phosphor-icons/react";
 import { contactLinks } from "../data/contactLinks";
 import JanessaPerryHeadshot from "../assets/images/janessa-perry-headshot-2024.jpg";
+
+interface Highlights {
+  id: string;
+  timeline: string;
+  text: string;
+}
+
+interface Motivations {
+  id: string;
+  icon: JSX.Element;
+  text: string;
+}
+
 function About() {
+  const highlights: Highlights[] = [
+    { id: "fast", timeline: "8 years", text: "at a small, fast paced company" },
+    { id: "design", timeline: "5 years", text: "UI Design & Development" },
+    { id: "freelance", timeline: "2 years", text: "Freelancing in Web Design" },
+    {
+      id: "diploma",
+      timeline: "2024",
+      text: "Diploma in Software Engineering",
+    },
+  ];
+
+  const motivations: Motivations[] = [
+    {
+      id: "learning",
+      icon: <RocketLaunch className="text-fuschia-500 text-3xl" />,
+      text: "Continous Learning",
+    },
+    {
+      id: "solving",
+      icon: <PuzzlePiece className="text-fuschia-500 text-3xl" />,
+      text: "Problem Solving",
+    },
+    {
+      id: "detail",
+      icon: <MagicWand className="text-fuschia-500 text-3xl" />,
+      text: "Attention to Detail",
+    },
+    {
+      id: "collaboration",
+      icon: <Handshake className="text-fuschia-500 text-3xl" />,
+      text: "Collaboration",
+    },
+  ];
+
   return (
     <main className="main-container">
       <h1 className="sr-only">About</h1>
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">
-        <section className="section-card md:col-span-1 md:order-1 divide-y-4 divide-dotted divide-fuschia-50">
-          <div className="pb-8">
+        <section className="section-card md:col-span-1 md:order-1">
+          <div className="pb-4">
             <img
               src={JanessaPerryHeadshot}
               alt="Janessa Perry headshot"
@@ -25,7 +72,9 @@ function About() {
             <p className="text-xl justify-self-center">Web Developer</p>
           </div>
 
-          <div className="pt-8 flex flex-col gap-6">
+          <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
+
+          <div className="pt-4 flex flex-col gap-6">
             {contactLinks.map((contactItem) => {
               return (
                 <a
@@ -84,71 +133,45 @@ function About() {
           </p>
         </section>
 
-        <section className="section-card md:col-span-1 md:order-4">
+        <section className="section-card md:col-span-2 md:col-start-2 md:order-4 xl:col-span-1">
           <h2>&lt;Highlights&gt;</h2>
 
-          <div className="card-wrapper grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 auto-rows-auto gap-4">
-            <div className="card p-4 bg-fuschia-50 rounded-xl">
-              <p className="font-heading md:text-xl text-blue-700">8 years</p>
-              <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
-                at a small, fast paced company
-              </p>
-            </div>
-
-            <div className="card p-4 bg-fuschia-50 rounded-xl">
-              <p className="font-heading md:text-xl text-blue-700">5 years</p>
-              <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
-                UI design & development
-              </p>
-            </div>
-
-            <div className="card p-4 bg-fuschia-50 rounded-xl">
-              <p className="font-heading md:text-xl text-blue-700">2 years</p>
-              <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
-                freelancing in web design
-              </p>
-            </div>
-
-            <div className="card p-4 bg-fuschia-50 rounded-xl">
-              <p className="font-heading md:text-xl text-blue-700">2024</p>
-              <p className="text-blue-500 text-base md:text-lg leading-tight lowercase">
-                Diploma in Software Engineering
-              </p>
-            </div>
+          <div className="card-wrapper grid grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2 auto-rows-auto gap-4">
+            {highlights.map((highlight) => {
+              return (
+                <div
+                  key={highlight.id}
+                  className="card p-4 bg-fuschia-50 rounded-xl"
+                >
+                  <p className="font-heading md:text-xl text-blue-700">
+                    {highlight.timeline}
+                  </p>
+                  <p className="text-blue-500 text-lg leading-tight lowercase">
+                    {highlight.text}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </section>
 
-        <section className="section-card md:col-span-1 md:order-5">
+        <section className="section-card md:col-span-2 md:col-start-2 md:order-5 xl:col-span-1">
           <h2>&lt;Motivations&gt;</h2>
 
-          <div className="card-wrapper grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 auto-rows-auto gap-4">
-            <div className="card p-4 bg-fuschia-50 rounded-xl">
-              <RocketLaunch className="text-fuschia-700 text-3xl" />
-              <p className="font-heading md:text-xl leading-tight text-blue-700">
-                continous learning
-              </p>
-            </div>
-
-            <div className="card p-4 bg-fuschia-50 rounded-xl">
-              <PuzzlePiece className="text-fuschia-700 text-3xl" />
-              <p className="font-heading md:text-xl leading-tight text-blue-700">
-                solving problems
-              </p>
-            </div>
-
-            <div className="card p-4 bg-fuschia-50 rounded-xl">
-              <MagicWand className="text-fuschia-700 text-3xl" />
-              <p className="font-heading md:text-xl leading-tight text-blue-700">
-                attention to detail
-              </p>
-            </div>
-
-            <div className="card p-4 bg-fuschia-50 rounded-xl">
-              <Handshake className="text-fuschia-700 text-3xl" />
-              <p className="font-heading md:text-xl leading-tight text-blue-700">
-                collaboration
-              </p>
-            </div>
+          <div className="card-wrapper grid grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2 auto-rows-auto gap-4">
+            {motivations.map((motivation) => {
+              return (
+                <div
+                  key={motivation.id}
+                  className="card p-4 bg-fuschia-50 rounded-xl"
+                >
+                  {motivation.icon}
+                  <p className="font-heading md:text-xl text-blue-700">
+                    {motivation.text}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </section>
 
