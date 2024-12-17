@@ -40,6 +40,6 @@ export const skillsAndTools: SkillsAndTools = {
     "Chrome DevTools",
     "Figma",
     "Affinity Designer",
-    "Afinity Photo",
+    "Affinity Photo",
   ],
 };
