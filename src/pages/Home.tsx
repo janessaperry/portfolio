@@ -2,12 +2,13 @@ import { ArrowRight, Envelope, LinkedinLogo } from "@phosphor-icons/react";
 import { allProjects } from "../data/allProjects";
 import ProjectCard from "../components/ProjectCard";
 import LinkButton from "../components/LinkButton";
+import LinkIcon from "../components/LinkIcon";
 
 function Home() {
   return (
     <main className="main-container">
-      <section className="flex flex-col items-center py-8 md:py-16">
-        <div className="flex flex-col gap-4 lg:max-w-screen-lg">
+      <section className="py-8 md:py-16">
+        <div className="mx-auto space-y-4 lg:max-w-screen-lg">
           <h1 className="text-4xl text-center">Hey there, I'm Janessa</h1>
           <p className="text-xl md:text-2xl text-center">
             I'm a designer-turned-developer who loves creating clean, responsive
@@ -72,19 +73,15 @@ function Home() {
         <section className="section-card md:col-span-2 md:order-4">
           <h2>&lt;Contact&gt;</h2>
 
-          <div className="flex flex-col gap-2">
+          <div className="space-y-2">
             <p>I'm currently open to new work opportunities.</p>
             <div className="flex gap-2">
-              <a
-                href="https://www.linkedin.com/in/janessa-perry"
-                target="_blank"
-              >
-                <LinkedinLogo className="text-seafoam-500 text-3xl" />
-              </a>
+              <LinkIcon
+                url="https://www.linkedin.com/in/janessa-perry"
+                icon={LinkedinLogo}
+              />
 
-              <a href="mailto:hello@janessaperry.com" target="_blank">
-                <Envelope className="text-seafoam-500 text-3xl" />
-              </a>
+              <LinkIcon url="mailto:hello@janessaperry.com" icon={Envelope} />
             </div>
           </div>
         </section>

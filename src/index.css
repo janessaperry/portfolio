@@ -73,7 +73,7 @@ a.active {
 
 @layer utilities {
   .section-card {
-    @apply p-6 md:p-8 shadow-[inset_0_2px_4px_0_rgba(103,58,183,0.2)] border-t border-t-fuschia-300/20 flex flex-col gap-4 bg-blue-500 rounded-3xl;
+    @apply p-6 md:p-8 shadow-[inset_0_2px_4px_0_rgba(103,58,183,0.2)] border-t border-t-fuschia-300/20 space-y-4 bg-blue-500 rounded-3xl;
   }
 
   .section-card--accent {
