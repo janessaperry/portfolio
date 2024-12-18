@@ -5,3 +5,29 @@
 main {
   @apply flex-grow;
 }
+
+body {
+  background: radial-gradient(
+    circle at 50% 0,
+    rgba(252, 0, 255, 0.15) 5vw,
+    rgba(0, 157, 255, 0.1) 15vw,
+    transparent 60vw
+  );
+
+  background-size: 120vw 120vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: moveBokeh 4s linear infinite alternate;
+}
+
+@keyframes moveBokeh {
+  0% {
+    background-position: 40% 0;
+  }
+  50% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 60% 0;
+  }
+}

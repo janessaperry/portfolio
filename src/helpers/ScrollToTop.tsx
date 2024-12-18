@@ -12,7 +12,7 @@ function ScrollToTop() {
     });
   }, [pathname]);
 
-  return <div>ScrollToTop</div>;
+  return <></>;
 }
 
 export default ScrollToTop;
