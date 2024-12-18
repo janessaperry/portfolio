@@ -7,6 +7,7 @@ import { educationDetails } from "../data/educationDetails";
 import JanessaPerryResume from "../assets/files/JanessaPerry-SoftwareDeveloperResume.pdf";
 import { DownloadSimple } from "@phosphor-icons/react";
 import LinkButton from "../components/LinkButton";
+import LinkSocial from "../components/LinkSocial";
 
 function Experience() {
   return (
@@ -46,20 +47,13 @@ function Experience() {
           <div className="flex flex-col gap-6">
             {contactLinks.map((contactItem) => {
               return (
-                <a
+                <LinkSocial
                   key={contactItem.id}
-                  href={contactItem.url}
-                  target="_blank"
-                  className="flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4"
-                >
-                  {contactItem.icon}
-                  <div className="flex-auto flex flex-col gap-1">
-                    <p className="text-xl font-semibold">{contactItem.title}</p>
-                    <p className="text-base leading-none text-fuschia-50">
-                      {contactItem.content}
-                    </p>
-                  </div>
-                </a>
+                  url={contactItem.url}
+                  icon={contactItem.icon}
+                  title={contactItem.title}
+                  content={contactItem.content}
+                />
               );
             })}
           </div>

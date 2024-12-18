@@ -6,6 +6,7 @@ import {
 } from "@phosphor-icons/react";
 import { contactLinks } from "../data/contactLinks";
 import JanessaPerryHeadshot from "../assets/images/janessa-perry-headshot-2024.jpg";
+import LinkSocial from "../components/LinkSocial";
 
 interface Highlights {
   id: string;
@@ -166,20 +167,13 @@ function About() {
           <div className="pt-4 flex flex-col gap-6">
             {contactLinks.map((contactItem) => {
               return (
-                <a
+                <LinkSocial
                   key={contactItem.id}
-                  href={contactItem.url}
-                  target="_blank"
-                  className="flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4"
-                >
-                  {contactItem.icon}
-                  <div className="flex-auto flex flex-col gap-1">
-                    <p className="text-xl font-semibold">{contactItem.title}</p>
-                    <p className="text-base leading-none text-fuschia-50">
-                      {contactItem.content}
-                    </p>
-                  </div>
-                </a>
+                  url={contactItem.url}
+                  icon={contactItem.icon}
+                  title={contactItem.title}
+                  content={contactItem.content}
+                />
               );
             })}
           </div>
