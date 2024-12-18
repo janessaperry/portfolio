@@ -19,6 +19,7 @@ import FilterCollection from "../assets/videos/press-start--filter-collection.mp
 import ExploreGames from "../assets/videos/press-start--explore.mp4";
 import BrowserFrame from "../assets/graphics/browser-container.svg";
 import IconGradientFill from "../components/IconGradientFill";
+import LinkButton from "../components/LinkButton";
 
 function ProjectPressStart() {
   const toolkit = allProjects.find(
@@ -35,13 +36,14 @@ function ProjectPressStart() {
             track of their video game collection so they can decide what to play
             next.
           </p>
-          <a
+
+          <LinkButton
+            label="View on GitHub"
             href="https://github.com/janessaperry/press-start-client"
+            size="lg"
             target="_blank"
-            className="text-xl text-seafoam-500 flex gap-2 justify-center items-center hover:text-seafoam-700 transition-all ease-in-out"
-          >
-            View on GitHub <ArrowSquareOut weight="bold" className="text-xl" />
-          </a>
+            iconRight={<ArrowSquareOut weight="bold" className="text-xl" />}
+          />
         </div>
 
         <img

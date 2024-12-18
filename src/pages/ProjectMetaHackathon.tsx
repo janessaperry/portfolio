@@ -12,6 +12,7 @@ import {
   Lightbulb,
   Storefront,
 } from "@phosphor-icons/react";
+import LinkButton from "../components/LinkButton";
 
 function ProjectMetaHackathon() {
   const toolkit = allProjects.find(
@@ -27,13 +28,14 @@ function ProjectMetaHackathon() {
             Developed an Instagram Discovery Tool during a 24-hour hackathon
             that allows users to search for visually similar images using AI.
           </p>
-          <a
+
+          <LinkButton
+            label="View on GitHub"
             href="https://github.com/janessaperry/meta-visual-search"
+            size="lg"
             target="_blank"
-            className="text-xl text-seafoam-500 flex gap-2 justify-center items-center hover:text-seafoam-700 transition-all ease-in-out"
-          >
-            View on GitHub <ArrowSquareOut weight="bold" className="text-xl" />
-          </a>
+            iconRight={<ArrowSquareOut weight="bold" className="text-xl" />}
+          />
         </div>
 
         <img

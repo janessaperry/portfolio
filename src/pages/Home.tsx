@@ -1,12 +1,9 @@
 import { ArrowRight, Envelope, LinkedinLogo } from "@phosphor-icons/react";
-import { useNavigate } from "react-router-dom";
 import { allProjects } from "../data/allProjects";
 import ProjectCard from "../components/ProjectCard";
-import ButtonLink from "../components/ButtonLink";
+import LinkButton from "../components/LinkButton";
 
 function Home() {
-  const navigate = useNavigate();
-
   return (
     <main className="main-container">
       <section className="flex flex-col items-center py-8 md:py-16">
@@ -51,10 +48,10 @@ function Home() {
         <section className="section-card section-card--accent md:col-span-2 md:row-span-2 md:order-2">
           <div className="flex justify-between items-baseline">
             <h2 className="text-fuschia-700">&lt;Showcase&gt;</h2>
-            <ButtonLink
-              variant="secondary"
-              handleClick={() => navigate("/projects")}
+            <LinkButton
               label="View all projects"
+              href="/projects"
+              variant="secondary"
               iconRight={<ArrowRight />}
             />
           </div>

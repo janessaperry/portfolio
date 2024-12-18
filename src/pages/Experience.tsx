@@ -6,6 +6,7 @@ import { allProjects } from "../data/allProjects";
 import { educationDetails } from "../data/educationDetails";
 import JanessaPerryResume from "../assets/files/JanessaPerry-SoftwareDeveloperResume.pdf";
 import { DownloadSimple } from "@phosphor-icons/react";
+import LinkButton from "../components/LinkButton";
 
 function Experience() {
   return (
@@ -16,13 +17,13 @@ function Experience() {
           <p className="text-xl md:text-2xl text-center">
             Check out my career journey below!
           </p>
-          <a
+          <LinkButton
+            label="Download Resume"
             href={JanessaPerryResume}
+            size="lg"
             target="_blank"
-            className="text-xl text-seafoam-500 flex gap-2 justify-center items-center hover:text-seafoam-700 transition-all ease-in-out"
-          >
-            Download Resume <DownloadSimple weight="bold" className="text-xl" />
-          </a>
+            iconRight={<DownloadSimple weight="bold" className="text-xl" />}
+          />
         </div>
       </section>
 

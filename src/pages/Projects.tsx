@@ -1,6 +1,6 @@
 import { AllProjects, allProjects } from "../data/allProjects";
 import ProjectCard from "../components/ProjectCard";
-import ButtonLink from "../components/ButtonLink";
+import ButtonFilter from "../components/ButtonFilter";
 import { useState } from "react";
 
 function Projects() {
@@ -41,17 +41,17 @@ function Projects() {
           </p>
 
           <div className="flex gap-8">
-            <ButtonLink
+            <ButtonFilter
               label="All"
               handleClick={() => handleFilterClick("All")}
               ariaPressed={activeFilter === "All"}
             />
-            <ButtonLink
+            <ButtonFilter
               label="Development"
               handleClick={() => handleFilterClick("Development")}
               ariaPressed={activeFilter === "Development"}
             />
-            <ButtonLink
+            <ButtonFilter
               label="Design"
               handleClick={() => handleFilterClick("Design")}
               ariaPressed={activeFilter === "Design"}
