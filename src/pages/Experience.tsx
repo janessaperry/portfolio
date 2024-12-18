@@ -10,8 +10,8 @@ import { DownloadSimple } from "@phosphor-icons/react";
 function Experience() {
   return (
     <main className="main-container">
-      <section className="flex flex-col gap-8 items-center py-8">
-        <div className="flex flex-col gap-4 lg:max-w-screen-xl">
+      <section className="flex flex-col gap-8 items-center py-8 md:py-16">
+        <div className="flex flex-col gap-4 lg:max-w-screen-lg">
           <h1 className="text-4xl text-center">My Experience</h1>
           <p className="text-xl md:text-2xl text-center">
             Check out my career journey below!

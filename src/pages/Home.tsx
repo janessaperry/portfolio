@@ -6,14 +6,13 @@ import ProjectCard from "../components/ProjectCard";
 function Home() {
   return (
     <main className="main-container">
-      <section className="flex flex-col gap-8 items-center py-8">
-        <div className="flex flex-col gap-4 lg:max-w-screen-xl">
+      <section className="flex flex-col items-center py-8 md:py-16">
+        <div className="flex flex-col gap-4 lg:max-w-screen-lg">
           <h1 className="text-4xl text-center">Hey there, I'm Janessa</h1>
           <p className="text-xl md:text-2xl text-center">
-            I'm a designer-turned-developer who loves bringing pixels to life
-            with code and creativity. I specialize in building clean, responsive
-            websites that are both beautiful and functional, focusing on
-            creating seamless, user-friendly experiences.
+            I'm a designer-turned-developer who loves creating clean, responsive
+            websites that look great and work even better. My focus is on
+            building user-friendly experiences that feel seamless and intuitive.
           </p>
         </div>
       </section>
@@ -29,13 +28,13 @@ function Home() {
           </p>
         </section>
 
-        <section className="section-card md:col-span-1 md:row-span-2 md:order-3">
+        <section className="section-card md:col-span-1 md:row-span-2 md:order-3 md:h-fit lg:h-auto">
           <h2>&lt;About&gt;</h2>
           <p>
-            I'm a front-end developer with a background in design, specializing
-            in creating responsive, user-friendly websites. My work combines
-            design expertise with development skills, transforming ideas into
-            clean, functional web experiences.
+            I'm a web developer with a background in design, specializing in
+            creating responsive, user-friendly websites. My work combines design
+            expertise with development skills, transforming ideas into clean,
+            functional web experiences.
           </p>
           <p>
             Since graduating from a coding bootcamp, I've built projects using

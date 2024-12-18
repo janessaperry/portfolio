@@ -56,52 +56,16 @@ function About() {
 
   return (
     <main className="main-container">
-      <section className="flex flex-col gap-8 items-center py-8">
-        <div className="flex flex-col gap-4 lg:max-w-screen-xl">
+      <section className="flex flex-col gap-8 items-center py-8 md:py-16">
+        <div className="flex flex-col gap-4 lg:max-w-screen-lg">
           <h1 className="text-4xl text-center">A Little About Me</h1>
           <p className="text-xl md:text-2xl text-center">
-            Hi, I'm Janessa, a developer with a background in design and
-            creating seamless, intuitive digital experiences.
+            Designer, developer, gamer, cat-mom, often lost in a fantasy book.
           </p>
         </div>
       </section>
 
       <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">
-        <section className="section-card md:col-span-1 md:order-1">
-          <div className="pb-4 flex flex-col items-center">
-            <img
-              src={JanessaPerryHeadshot}
-              alt="Janessa Perry headshot"
-              className="mb-4 rounded-full max-w-48"
-            />
-            <p className="text-2xl font-medium">Janessa Perry</p>
-            <p className="text-xl ">Web Developer</p>
-          </div>
-
-          <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
-
-          <div className="pt-4 flex flex-col gap-6">
-            {contactLinks.map((contactItem) => {
-              return (
-                <a
-                  key={contactItem.id}
-                  href={contactItem.url}
-                  target="_blank"
-                  className="flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4"
-                >
-                  {contactItem.icon}
-                  <div className="flex-auto flex flex-col gap-1">
-                    <p className="text-xl font-semibold">{contactItem.title}</p>
-                    <p className="text-base leading-none text-fuschia-50">
-                      {contactItem.content}
-                    </p>
-                  </div>
-                </a>
-              );
-            })}
-          </div>
-        </section>
-
         <section className="section-card md:col-span-2 md:order-2">
           <h2>&lt;Journey&gt;</h2>
 
@@ -184,6 +148,41 @@ function About() {
             us snuggled up on the couch playing video games, watching the
             Seahawks, or getting lost in a fantasy book.
           </p>
+        </section>
+
+        <section className="section-card md:col-span-1 md:order-1">
+          <div className="pb-4 flex flex-col items-center">
+            <img
+              src={JanessaPerryHeadshot}
+              alt="Janessa Perry headshot"
+              className="mb-4 rounded-full max-w-48"
+            />
+            <p className="text-2xl font-medium">Janessa Perry</p>
+            <p className="text-xl ">Web Developer</p>
+          </div>
+
+          <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
+
+          <div className="pt-4 flex flex-col gap-6">
+            {contactLinks.map((contactItem) => {
+              return (
+                <a
+                  key={contactItem.id}
+                  href={contactItem.url}
+                  target="_blank"
+                  className="flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4"
+                >
+                  {contactItem.icon}
+                  <div className="flex-auto flex flex-col gap-1">
+                    <p className="text-xl font-semibold">{contactItem.title}</p>
+                    <p className="text-base leading-none text-fuschia-50">
+                      {contactItem.content}
+                    </p>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
         </section>
       </div>
     </main>

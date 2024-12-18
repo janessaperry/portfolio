@@ -33,7 +33,7 @@ function ProjectCard({
 
       <div className="md:basis-2/3 flex flex-col gap-2">
         <h2 className="text-fuschia-700">{projectDetails.title}</h2>
-        <p className="text-blue-500">{projectDetails.overview}</p>
+        <p className="text-blue-500 normal-case">{projectDetails.overview}</p>
 
         <ul className="flex flex-wrap gap-2">
           {projectDetails.skillsAndTools.map((label) => {

@@ -33,7 +33,7 @@ export const allProjects: AllProjects[] = [
     type: "BrainStation Capstone",
     yearCompleted: "2024",
     overview:
-      "Designed and developed a full-stack web app that helps users keep track of their video game collection so they can decide what to play next. The site is fully responsive with a user-friendly interface and real-time data synchronization.",
+      "Designed and developed a full-stack web app that helps users keep track of their video game collection so they can decide what to play next.",
     description: [
       "Leveraged design and full-stack development skills to create a website that helps users keep track of their video game collection and decide what to play next. ",
       "Built features for users to track games, rate them, and get recommendations based on their preferences and play history.",
@@ -44,6 +44,8 @@ export const allProjects: AllProjects[] = [
       "React",
       "Sass",
       "JavaScript",
+      "REST APIs",
+      "IGDB API",
       "Node JS",
       "Express",
       "MySQL",
@@ -65,7 +67,7 @@ export const allProjects: AllProjects[] = [
     type: "BrainStation | Meta",
     yearCompleted: "2024",
     overview:
-      "Developed an Instagram Discovery Tool during a 24-hour hackathon with Meta, allowing users to search for accounts by uploading images and discovering similar content and profiles.",
+      "Developed an Instagram Discovery Tool during a 24-hour hackathon that allows users to search for visually similar images using AI.",
     description: [
       "Participated in a 24-hour hackathon with Meta to conceptualize and build a tool designed to enhance user engagement with visual content.",
       "Developed an Instagram Discovery Tool that allows users to search for accounts by uploading images, connecting them to similar content and profiles.",

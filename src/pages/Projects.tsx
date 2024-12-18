@@ -22,13 +22,11 @@ function Projects() {
 
   return (
     <main className="main-container">
-      <section className="flex flex-col gap-8 items-center py-8">
-        <div className="flex flex-col gap-4 lg:max-w-screen-xl">
+      <section className="flex flex-col gap-8 items-center py-8 md:py-16">
+        <div className="flex flex-col gap-4 lg:max-w-screen-lg">
           <h1 className="text-4xl text-center">Explore my Work</h1>
           <p className="text-xl md:text-2xl text-center">
-            Discover my journey through code and creativity. Each project
-            reflects problem-solving, innovation, and a passion for crafting
-            seamless user experiences.
+            Discover my journey through code and creativity.
           </p>
         </div>
       </section>
@@ -36,7 +34,11 @@ function Projects() {
       <div className="grid md:grid-cols-3 md:grid-auto-rows gap-4 md:gap-10">
         <section className=" section-card md:col-span-2 md:order-2">
           <h2>&lt;Projects&gt;</h2>
-          <p className="text-xl">Check out some of my recent work below. </p>
+          <p className="text-xl">
+            Check out some of my recent work below. Each project reflects
+            problem-solving, innovation, and a passion for crafting seamless
+            user experiences.
+          </p>
 
           <div className="flex gap-8">
             <ButtonLink

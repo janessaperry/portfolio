@@ -20,13 +20,12 @@ function ProjectMetaHackathon() {
 
   return (
     <main className="main-container">
-      <section className="flex flex-col gap-8 items-center py-8">
-        <div className="flex flex-col gap-4 lg:max-w-screen-xl">
+      <section className="flex flex-col gap-8 items-center py-8 md:py-16">
+        <div className="flex flex-col gap-4 lg:max-w-screen-lg">
           <h1 className="text-4xl text-center">Meta Hackathon</h1>
           <p className="text-lg md:text-2xl text-center">
             Developed an Instagram Discovery Tool during a 24-hour hackathon
-            with Meta, allowing users to search for accounts by uploading images
-            and discovering similar content and profiles.
+            that allows users to search for visually similar images using AI.
           </p>
           <a
             href="https://github.com/janessaperry/meta-visual-search"
