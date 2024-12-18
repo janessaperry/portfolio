@@ -107,7 +107,7 @@ function About() {
               return (
                 <div
                   key={highlight.id}
-                  className="card p-4 bg-fuschia-50 rounded-xl"
+                  className="card p-4 bg-fuschia-100 rounded-xl"
                 >
                   <p className="font-heading md:text-xl text-blue-700">
                     {highlight.timeline}
@@ -129,7 +129,7 @@ function About() {
               return (
                 <div
                   key={motivation.id}
-                  className="card p-4 bg-fuschia-50 rounded-xl"
+                  className="card p-4 bg-fuschia-100 rounded-xl"
                 >
                   {motivation.icon}
                   <p className="font-heading md:text-xl text-blue-700">

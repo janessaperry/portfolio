@@ -77,6 +77,6 @@ a.active {
   }
 
   .section-card--accent {
-    @apply bg-fuschia-50 shadow-[inset_0_2px_4px_0_rgba(241,167,242,0.4)] border-t border-t-fuschia-neon/10;
+    @apply bg-fuschia-100 shadow-[inset_0_2px_4px_0_rgba(241,167,242,0.4)] border-t border-t-fuschia-neon/10;
   }
 }

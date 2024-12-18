@@ -15,6 +15,7 @@ export default {
       },
       fuschia: {
         50: "#FACFFA",
+        100: "#E3ADE3",
         300: "#F1A7F2",
         500: "#911791",
         700: "#59185A",
