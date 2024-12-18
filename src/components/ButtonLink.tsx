@@ -1,29 +1,41 @@
 interface ButtonLinkProps {
   label: string;
-  contextClasses?: string;
-  iconRight?: any;
+  variant?: "primary" | "secondary";
+  iconRight?: JSX.Element;
   handleClick?: () => void;
   ariaPressed?: boolean;
 }
+
 function ButtonLink({
   label,
-  contextClasses,
+  variant = "primary",
   iconRight,
   handleClick,
   ariaPressed,
 }: ButtonLinkProps) {
+  const variantClasses = {
+    primary:
+      "text-blue-50 hover:border-seafoam-500 aria-pressed:border-seafoam-500",
+    secondary: "text-blue-700 hover:text-fuschia-700 hover:border-fuschia-500",
+  };
+
   return (
     <button
       onClick={handleClick}
       aria-pressed={ariaPressed}
       className={`
-        ${contextClasses} 
-        font-heading text-lg text-blue-50 lowercase 
+        ${variantClasses[variant]}
+        font-heading text-base lowercase 
         border-b-2 border-transparent
-        hover:border-b-2 hover:border-seafoam-500
-        aria-pressed:border-b-2 aria-pressed:border-seafoam-500`}
+        flex justify-center items-center
+        group`}
     >
-      {label} {iconRight}
+      {label}
+      {iconRight && (
+        <span className="pl-2 transition-transform ease-out group-hover:translate-x-2">
+          {iconRight}
+        </span>
+      )}
     </button>
   );
 }
