@@ -79,24 +79,26 @@ function About() {
             JavaScript along the way. This experience led me to contribute to
             the company's survey platform, where I designed and developed
             responsive surveys, ensuring functionality across devices and
-            browsers. Working closely with experienced developers, I gained
-            hands-on experience in problem-solving and building optimized,
-            user-friendly web solutions.
+            browsers. Collaborating with experienced developers, I gained
+            hands-on experience in problem-solving and addressing the unique
+            challenges of building and maintaining real-world web solutions,
+            such as debugging, browser and device optimization, and quick issue
+            resolution on the fly.
           </p>
 
           <p>
             After eight years at Sentis, I transitioned to freelancing, focusing
             on designing websites and creating internal tools to streamline
-            workflows for clients. Wanting to tackle more technical challenges,
-            I enrolled in a software engineering bootcamp, where I sharpened my
-            skills in React, Sass, Node.js, and MySQL.
+            workflows for clients. Missing the problem-solving and technical
+            challenges of coding, I enrolled in a software engineering bootcamp,
+            where I sharpened my skills in React, Sass, Node.js, and MySQL.
           </p>
 
           <p>
             If you're looking for a developer who can bridge the gap between
             design and development while focusing on creating high-quality,
-            user-centered web applications, I'd love to connect and explore how
-            I can contribute to your team.
+            user-centered web applications, I'd love to connect and chat about
+            how I can contribute to your team.
           </p>
         </section>
 
