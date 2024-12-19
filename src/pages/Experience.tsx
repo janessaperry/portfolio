@@ -8,12 +8,13 @@ import JanessaPerryResume from "../assets/files/JanessaPerry-SoftwareDeveloperRe
 import { DownloadSimple } from "@phosphor-icons/react";
 import LinkButton from "../components/LinkButton";
 import LinkSocial from "../components/LinkSocial";
+import ChipList from "../components/ChipList";
 
 function Experience() {
   return (
     <main className="main-container">
-      <section className="flex flex-col gap-8 items-center py-8 md:py-16">
-        <div className="flex flex-col gap-4 lg:max-w-screen-lg">
+      <section className="py-8 md:py-16">
+        <div className="mx-auto space-y-4 lg:max-w-screen-lg">
           <h1 className="text-4xl text-center">My Experience</h1>
           <p className="text-xl md:text-2xl text-center">
             Check out my career journey below!
@@ -44,7 +45,7 @@ function Experience() {
 
         <section className="section-card md:col-span-1 md:order-1">
           <h2>&lt;Links&gt;</h2>
-          <div className="flex flex-col gap-6">
+          <div className="space-y-6">
             {contactLinks.map((contactItem) => {
               return (
                 <LinkSocial
@@ -202,36 +203,12 @@ function Experience() {
 
         <section className="section-card md:col-span-1 row-span-1 md:order-5">
           <h2>&lt;Skills&gt;</h2>
-
-          <ul className="flex flex-wrap gap-2">
-            {skillsAndTools.skills.map((skill) => {
-              return (
-                <li
-                  key={skill}
-                  className="text-seafoam-500 text-base leading-none	lowercase py-2 px-3 bg-blue-300 border border-blue-100 rounded-lg"
-                >
-                  {skill}
-                </li>
-              );
-            })}
-          </ul>
+          <ChipList labels={skillsAndTools.skills} variant="secondary" />
         </section>
 
         <section className="section-card md:col-span-1 row-span-1 md:order-6">
           <h2>&lt;Tools&gt;</h2>
-
-          <ul className="flex flex-wrap gap-2">
-            {skillsAndTools.tools.map((tool) => {
-              return (
-                <li
-                  key={tool}
-                  className="text-seafoam-500 text-base leading-none	lowercase py-2 px-3 bg-blue-300 border border-blue-100 rounded-lg"
-                >
-                  {tool}
-                </li>
-              );
-            })}
-          </ul>
+          <ChipList labels={skillsAndTools.tools} variant="secondary" />
         </section>
       </div>
     </main>
