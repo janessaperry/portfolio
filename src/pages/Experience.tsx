@@ -38,9 +38,9 @@ function Experience() {
             new skills, and collaborating with others to create seamless digital
             experiences. Skilled in HTML, CSS, JavaScript, and modern
             frameworks, I bring a unique blend of design sensibility and
-            development skills to create seamless digital experiences. I’m
-            excited to join a collaborative team where I can contribute to
-            user-focused projects and grow as a developer.
+            development expertise. I'm excited to join a collaborative team
+            where I can contribute to impactful projects and grow as a
+            developer.
           </p>
         </section>
 

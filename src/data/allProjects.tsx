@@ -35,10 +35,9 @@ export const allProjects: AllProjects[] = [
     overview:
       "Designed and developed a full-stack web app that helps users keep track of their video game collection so they can decide what to play next.",
     description: [
-      "Leveraged design and full-stack development skills to create a website that helps users keep track of their video game collection and decide what to play next. ",
-      "Built features for users to track games, rate them, and get recommendations based on their preferences and play history.",
-      "Implemented a responsive, user-friendly interface with seamless navigation and real-time data synchronization.",
-      "Utilized modern web technologies to ensure a smooth user experience and scalability.",
+      "Designed and developed a full-stack web app to help user's keep track of their video game collections, using React for the front-end and Node JS and Express for the backend.",
+      "Built a proxy server to securely communicate with the IGDB API, retrieving game data while being mindful of API rate limits and handling requests efficiently to ensure a consistent user experience.",
+      "Designed and implemented a user-friendly interface with seamless navigation, leveraging responsive design techniques and real-time data synchronization to ensure an optimal experience across devices.",
     ],
     skillsAndTools: [
       "React",
@@ -67,11 +66,11 @@ export const allProjects: AllProjects[] = [
     type: "BrainStation | Meta",
     yearCompleted: "2024",
     overview:
-      "Developed an Instagram Discovery Tool during a 24-hour hackathon that allows users to search for visually similar images using AI.",
+      "Developed an Instagram Discovery Tool during a 24-hour hackathon that allows users to search for visually similar images.",
     description: [
-      "Participated in a 24-hour hackathon with Meta to conceptualize and build a tool designed to enhance user engagement with visual content.",
-      "Developed an Instagram Discovery Tool that allows users to search for accounts by uploading images, connecting them to similar content and profiles.",
-      "Implemented an image-based search feature to help users discover new accounts based on visual similarities, enhancing user exploration and interaction.",
+      "Participated in a 24-hour hackathon with Meta to conceptualize and build a tool aimed at enhancing user engagement and trust in AI features.",
+      "Developed an Instagram Discovery Tool that enables users to search for visually similar images from their feed.",
+      "Engineered an image-based search feature that allows users to discover visually similar accounts and content, driving engagement and discovery.",
     ],
     skillsAndTools: [
       "React",

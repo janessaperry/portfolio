@@ -38,9 +38,9 @@ export const experienceDetails: ExperienceDetails[] = [
     company: "The Sentis Group",
     yearRange: "2017 - 2022",
     description: [
-      "Led the design and development of the survey platform, ensuring all features met user needs and optimized for cross-browser and device compatibility.",
+      "Led the design of the survey platform and collaborated with senior developers to implement features, ensuring they met user needs and were optimized for cross-browser and device compatibility",
       "Trained new hires in survey programming fundamentals and maintained comprehensive platform documentation to support onboarding.",
-      "Leveraged a variety of tools and technologies to design and maintain Sentis' website and brand collateral.",
+      "Used a range of design and development tools to create and maintain Sentis' website and brand collateral, ensuring consistency and functionality across platforms.",
       "Collaborated with project managers and full-stack developers to design KPI dashboards, empowering clients to make data-driven decisions.",
     ],
     skillsAndTools: [
