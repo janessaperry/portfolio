@@ -353,6 +353,9 @@ function ProjectPressStart() {
               </div>
 
               <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
+              <p className="font-heading text-base uppercase font-medium text-blue-50/60">
+                Challenges & Solutions
+              </p>
               <div className="grid md:grid-cols-2 gap-5 md:gap-10">
                 <div className="md:col-span-1 flex gap-x-4">
                   <IconGradientFill id="gradient--pink" icon={Warning} />
@@ -394,6 +397,9 @@ function ProjectPressStart() {
               </div>
 
               <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
+              <p className="font-heading text-base uppercase font-medium text-blue-50/60">
+                Challenges & Solutions
+              </p>
               <div className="grid md:grid-cols-2 gap-5 md:gap-10">
                 <div className="md:col-span-1 flex gap-x-4">
                   <IconGradientFill id="gradient--pink" icon={Warning} />
@@ -428,27 +434,28 @@ function ProjectPressStart() {
                 <h3>API Integration</h3>
                 <p className="text-xl">
                   This was the most robust and complex API I've worked with,
-                  requiring me to retrieve and clean large amounts of data. I
-                  extensively tested API requests with Postman, refining
-                  filtering logic to meet specific use cases.
+                  requiring me to retrieve and clean large amounts of data.
                 </p>
               </div>
 
               <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
+              <p className="font-heading text-base uppercase font-medium text-blue-50/60">
+                Challenges & Solutions
+              </p>
               <div className="grid md:grid-cols-2 gap-5 md:gap-10">
                 <div className="md:col-span-1 flex gap-x-4">
                   <IconGradientFill id="gradient--pink" icon={Warning} />
                   <p>
-                    Managing filters with data coming from both the database and
-                    the API.
+                    Working with a complex API to retrieve and clean large
+                    amounts of data.
                   </p>
                 </div>
 
                 <div className="md:col-span-1 flex gap-x-4">
                   <IconGradientFill id="gradient--seafoam" icon={Target} />
                   <p>
-                    Extensively tested API requests with Postman and iteratively
-                    refined filtering logic to address specific use cases.
+                    Tested API requests with Postman and iteratively refined
+                    filtering logic to address specific use cases.
                   </p>
                 </div>
               </div>
@@ -482,19 +489,19 @@ function ProjectPressStart() {
           </p>
 
           <p>
-            Data filtering was more complicated than expected, and I realized
-            the importance of planning the data flow from the start. I struggled
-            with integrating filters from both the database and API. A clearer
-            plan from the beginning could've prevented confusion and streamlined
-            the filtering process.
+            Filtering data from both the database and API was more complicated
+            than expected. I realized the importance of having a clear plan for
+            data flow from the beginning. The lack of structure made it
+            difficult to integrate filters effectively, which caused unnecessary
+            complexity.
           </p>
 
           <p>
-            Working with a complex API required extensive testing and careful
-            data retrieval to meet project goals. The API was the most complex
-            I've used. It taught me how crucial it is to understand its
-            structure and data flow early on, which would've saved time and
-            effort in refining requests.
+            The complexity of the API was another significant challenge.
+            Extensive testing and refining of the API calls were necessary to
+            meet project goals. Working with this API taught me how crucial it
+            is to understand its structure and data flow early on, which
+            would've saved time and effort in refining requests.
           </p>
 
           <div className="flex gap-x-4">
@@ -522,11 +529,11 @@ function ProjectPressStart() {
           <div className="flex flex-col gap-2">
             <h3>So, what's next for Press Start?</h3>
             <ul className="list-disc pl-4">
-              <li>Refactoring the code for scalability.</li>
-              <li>Adding user authentication.</li>
-              <li>Expanding filters and sorting options.</li>
-              <li>Adding franchise tracking with release alerts.</li>
-              <li>Improving responsive design.</li>
+              <li>Refactor code for scalability.</li>
+              <li>Add user authentication.</li>
+              <li>Expand filters and sorting options.</li>
+              <li>Add franchise tracking with release alerts.</li>
+              <li>Improve responsive design.</li>
             </ul>
           </div>
         </section>
