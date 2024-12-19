@@ -30,11 +30,7 @@ function Projects() {
       <div className="grid md:grid-cols-3 md:grid-auto-rows gap-4 md:gap-10">
         <section className="section-card md:col-span-2 md:order-2">
           <h2>&lt;Projects&gt;</h2>
-          <p className="text-xl">
-            Check out some of my recent work below. Each project reflects
-            problem-solving, innovation, and a passion for crafting seamless
-            user experiences.
-          </p>
+          <p className="text-xl">Check out some of my recent work below.</p>
 
           <div className="flex gap-8">
             <ButtonFilter
