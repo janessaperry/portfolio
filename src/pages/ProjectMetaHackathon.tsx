@@ -103,12 +103,12 @@ function ProjectMetaHackathon() {
           </p>
           <p>
             Iggy Discover is an Instagram discovery tool designed for young
-            adult users, allowing them to upload images and find similar
-            content, profiles, and businesses. The project was developed during
-            a hackathon with Meta, focused on supporting users in adapting to AI
+            adult users, allowing them to find visually similar content,
+            profiles, and businesses. The project was developed during a
+            hackathon with Meta, focused on supporting users in adapting to AI
             innovations. With just 24 hours to brainstorm, code, and present our
             solution, we created a prototype that delivers visually similar
-            posts and accounts based on image uploads.
+            posts and accounts based on the image a user searched for.
           </p>
 
           <div className="grid gap-8">
