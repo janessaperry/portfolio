@@ -6,40 +6,40 @@ import {
 } from "@phosphor-icons/react";
 
 interface ExperienceHighlights {
-  id: number;
-  icon: JSX.Element;
+  id: string;
+  icon: React.ElementType;
   title: string;
   location: string;
-  year: string;
+  dateInfo: string;
 }
 
 export const experienceHighlights: ExperienceHighlights[] = [
   {
-    id: 1,
-    icon: <Certificate className="text-seafoam-500 text-3xl shrink-0" />,
+    id: "experience--brainstation",
+    icon: Certificate,
     title: "Software Engineering Diploma",
     location: "BrainStation",
-    year: "2024",
+    dateInfo: "2024",
   },
   {
-    id: 2,
-    icon: <DiamondsFour className="text-seafoam-500 text-3xl shrink-0" />,
+    id: "experience--freelance",
+    icon: DiamondsFour,
     title: "Freelance Web Design",
     location: "Self-employed",
-    year: "2022-2024",
+    dateInfo: "2022-2024",
   },
   {
-    id: 3,
-    icon: <CheckSquare className="text-seafoam-500 text-3xl shrink-0" />,
+    id: "experience--sentis",
+    icon: CheckSquare,
     title: "Survey Design & Development",
     location: "The Sentis Group",
-    year: "2017-2022",
+    dateInfo: "2017-2022",
   },
   {
-    id: 4,
-    icon: <Laptop className="text-seafoam-500 text-3xl shrink-0" />,
+    id: "experience--fnesx",
+    icon: Laptop,
     title: "Online Learning Platform Design",
     location: "FNESC",
-    year: "2023-2024",
+    dateInfo: "2023-2024",
   },
 ];

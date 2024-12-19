@@ -1,33 +1,40 @@
+import { Code, GraduationCap, Layout, Palette } from "@phosphor-icons/react";
+
 interface EducationDetails {
   id: string;
-  degree: string;
-  institution: string;
-  yearsAttended: string;
+  icon: React.ElementType;
+  title: string;
+  location: string;
+  dateInfo: string;
 }
 
 export const educationDetails: EducationDetails[] = [
   {
     id: "software-engineering--brainstation",
-    degree: "Diploma of Software Engineering",
-    institution: "BrainStation",
-    yearsAttended: "2024",
+    icon: Code,
+    title: "Diploma of Software Engineering",
+    location: "BrainStation",
+    dateInfo: "2024",
   },
   {
     id: "ux-design--brainstation",
-    degree: "UX Design Certificate",
-    institution: "BrainStation",
-    yearsAttended: "2018",
+    icon: Layout,
+    title: "UX Design Certificate",
+    location: "BrainStation",
+    dateInfo: "2018",
   },
   {
     id: "ui-design--brainstation",
-    degree: "UI Design Certificate",
-    institution: "BrainStation",
-    yearsAttended: "2018",
+    icon: Palette,
+    title: "UI Design Certificate",
+    location: "BrainStation",
+    dateInfo: "2018",
   },
   {
     id: "bcomm--tmu",
-    degree: "Bachelor of Commerce",
-    institution: "Toronto Metropolitan University",
-    yearsAttended: "2009-2013",
+    icon: GraduationCap,
+    title: "Bachelor of Commerce",
+    location: "Toronto Metropolitan University",
+    dateInfo: "2009-2013",
   },
 ];

@@ -9,6 +9,7 @@ import { DownloadSimple } from "@phosphor-icons/react";
 import LinkButton from "../components/LinkButton";
 import LinkSocial from "../components/LinkSocial";
 import ChipList from "../components/ChipList";
+import IconList from "../components/IconList";
 
 function Experience() {
   return (
@@ -62,27 +63,7 @@ function Experience() {
 
         <section className="section-card md:col-span-1 row-span-1 md:order-3">
           <h2>&lt;Highlights&gt;</h2>
-
-          <div className="flex flex-col gap-6">
-            {experienceHighlights.map((highlight) => {
-              return (
-                <div
-                  key={highlight.id}
-                  className="flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4"
-                >
-                  {highlight.icon}
-
-                  <div className="flex-auto flex flex-col gap-1">
-                    <p className="text-xl font-semibold">{highlight.title}</p>
-                    <p className="text-base leading-none text-fuschia-50 flex justify-between">
-                      <span>{highlight.location}</span>
-                      <span>{highlight.year}</span>
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          <IconList listItems={experienceHighlights} />
         </section>
 
         <section className="section-card md:col-span-2 md:row-span-3 md:order-4">
@@ -183,22 +164,7 @@ function Experience() {
 
         <section className="section-card md:col-span-2 md:order-8 md:col-start-2">
           <h2>&lt;Education&gt;</h2>
-
-          <ul className="flex flex-col gap-4">
-            {educationDetails.map((education) => {
-              return (
-                <li key={education.id}>
-                  <div className="flex flex-col gap-1">
-                    <p className="text-xl font-semibold">{education.degree}</p>
-                    <p className="text-base leading-none text-fuschia-50 flex justify-between">
-                      <span>{education.institution}</span>
-                      <span>{education.yearsAttended}</span>
-                    </p>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
+          <IconList listItems={educationDetails} />
         </section>
 
         <section className="section-card md:col-span-1 row-span-1 md:order-5">
