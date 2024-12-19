@@ -1,19 +1,27 @@
-import { ArrowRight, Envelope, LinkedinLogo } from "@phosphor-icons/react";
+import { ArrowRight } from "@phosphor-icons/react";
 import { allProjects } from "../data/allProjects";
 import LinkButton from "../components/LinkButton";
-import LinkIcon from "../components/LinkIcon";
 import ProjectList from "../components/ProjectList";
 
 function Home() {
   return (
     <main className="main-container">
       <section className="py-8 md:py-16">
-        <div className="mx-auto space-y-4 lg:max-w-screen-lg">
-          <h1 className="text-4xl text-center">Hey there, I'm Janessa</h1>
-          <p className="text-xl md:text-2xl text-center">
-            I'm a designer-turned-developer who loves creating clean, responsive
-            websites that look great and work even better. My focus is on
-            building user-friendly experiences that feel seamless and intuitive.
+        <div className="mx-auto space-y-8 lg:max-w-screen-lg">
+          <div className="space-y-4">
+            <h1 className="text-4xl text-center">Hey there, I'm Janessa</h1>
+            <p className="text-xl md:text-2xl text-center">
+              Designer Turned Developer • Creative Problem Solver • Forever
+              Curious, Always Evolving
+            </p>
+          </div>
+
+          <p className="font-semibold w-fit mx-auto pl-9 pr-4 py-1 rounded-full bg-fuschia-700">
+            <span
+              className="relative before:absolute before:w-3 before:h-3 before:rounded-full before:bg-seafoam-500 before:-left-6 before:top-1 before:animate-radiate
+                  [&:not(:last-of-type)]:after:absolute after:bg-seafoam-500 after:opacity-30 after:w-px after:h-[calc(100%+2rem)] after:-left-8 after:top-3"
+            ></span>
+            Available for work
           </p>
         </div>
       </section>
@@ -29,7 +37,7 @@ function Home() {
           </p>
         </section>
 
-        <section className="section-card md:col-span-1 md:row-span-2 md:order-3 md:h-fit lg:h-auto">
+        <section className="section-card md:col-span-1 md:order-3 md:h-fit lg:h-auto">
           <h2>&lt;About&gt;</h2>
           <p>
             I'm a web developer with a background in design, specializing in
@@ -39,9 +47,9 @@ function Home() {
           </p>
           <p>
             Since graduating from a coding bootcamp, I've built projects using
-            React, Vue, Node.js, and Express. I'm excited to bring my unique
-            perspective as a designer-turned-developer to a collaborative team,
-            building innovative digital solutions that prioritize usability and
+            React, Vue, Node.js, and Express (to name a few). I'm excited to
+            bring my unique perspective to a collaborative team, building
+            innovative digital solutions that prioritize usability and
             creativity.
           </p>
         </section>
@@ -61,22 +69,6 @@ function Home() {
             projectsData={allProjects.filter((project) => project.showcase)}
             variant="showcase"
           />
-        </section>
-
-        <section className="section-card md:col-span-2 md:order-4">
-          <h2>&lt;Contact&gt;</h2>
-
-          <div className="space-y-2">
-            <p>I'm currently open to new work opportunities.</p>
-            <div className="flex gap-2">
-              <LinkIcon
-                url="https://www.linkedin.com/in/janessa-perry"
-                icon={LinkedinLogo}
-              />
-
-              <LinkIcon url="mailto:hello@janessaperry.com" icon={Envelope} />
-            </div>
-          </div>
         </section>
       </div>
     </main>
