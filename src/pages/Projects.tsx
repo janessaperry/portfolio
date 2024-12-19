@@ -1,7 +1,7 @@
-import { AllProjects, allProjects } from "../data/allProjects";
-import ProjectCard from "../components/ProjectCard";
-import ButtonFilter from "../components/ButtonFilter";
 import { useState } from "react";
+import { allProjects } from "../data/allProjects";
+import ButtonFilter from "../components/ButtonFilter";
+import ProjectList from "../components/ProjectList";
 
 function Projects() {
   const [filteredProjects, setFilteredProjects] = useState(allProjects);
@@ -9,21 +9,17 @@ function Projects() {
 
   const handleFilterClick = (filter: string) => {
     setActiveFilter(filter);
-    if (filter === "All") {
-      setFilteredProjects(allProjects);
-    } else {
-      const testingFilteredProjects: AllProjects[] = allProjects.filter(
-        (project) => project.categories.includes(filter)
-      );
-
-      setFilteredProjects(testingFilteredProjects);
-    }
+    setFilteredProjects(
+      filter === "All"
+        ? allProjects
+        : allProjects.filter((project) => project.categories.includes(filter))
+    );
   };
 
   return (
     <main className="main-container">
-      <section className="flex flex-col gap-8 items-center py-8 md:py-16">
-        <div className="flex flex-col gap-4 lg:max-w-screen-lg">
+      <section className="py-8 md:py-16">
+        <div className="mx-auto space-y-4 lg:max-w-screen-lg">
           <h1 className="text-4xl text-center">Explore my Work</h1>
           <p className="text-xl md:text-2xl text-center">
             Discover my journey through code and creativity.
@@ -32,7 +28,7 @@ function Projects() {
       </section>
 
       <div className="grid md:grid-cols-3 md:grid-auto-rows gap-4 md:gap-10">
-        <section className=" section-card md:col-span-2 md:order-2">
+        <section className="section-card md:col-span-2 md:order-2">
           <h2>&lt;Projects&gt;</h2>
           <p className="text-xl">
             Check out some of my recent work below. Each project reflects
@@ -58,18 +54,7 @@ function Projects() {
             />
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-4">
-            {filteredProjects.map((project) => {
-              return (
-                <ProjectCard
-                  key={project.id}
-                  projectDetails={project}
-                  colorTheme="accent"
-                  layout="vertical"
-                />
-              );
-            })}
-          </div>
+          <ProjectList projectsData={filteredProjects} />
         </section>
 
         <section className="section-card md:col-span-1 md:order-1 h-fit">

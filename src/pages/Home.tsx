@@ -1,8 +1,8 @@
 import { ArrowRight, Envelope, LinkedinLogo } from "@phosphor-icons/react";
 import { allProjects } from "../data/allProjects";
-import ProjectCard from "../components/ProjectCard";
 import LinkButton from "../components/LinkButton";
 import LinkIcon from "../components/LinkIcon";
+import ProjectList from "../components/ProjectList";
 
 function Home() {
   return (
@@ -57,17 +57,10 @@ function Home() {
             />
           </div>
 
-          {allProjects
-            .filter((project) => project.showcase)
-            .map((project) => {
-              return (
-                <ProjectCard
-                  key={project.id}
-                  projectDetails={project}
-                  layout="horizontal"
-                />
-              );
-            })}
+          <ProjectList
+            projectsData={allProjects.filter((project) => project.showcase)}
+            variant="showcase"
+          />
         </section>
 
         <section className="section-card md:col-span-2 md:order-4">

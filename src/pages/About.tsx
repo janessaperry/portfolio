@@ -5,8 +5,8 @@ import {
   RocketLaunch,
 } from "@phosphor-icons/react";
 import { contactLinks } from "../data/contactLinks";
-import JanessaPerryHeadshot from "../assets/images/janessa-perry-headshot-2024.jpg";
 import LinkSocial from "../components/LinkSocial";
+import JanessaPerryHeadshot from "../assets/images/janessa-perry-headshot-2024.jpg";
 
 interface Highlights {
   id: string;
@@ -16,7 +16,7 @@ interface Highlights {
 
 interface Motivations {
   id: string;
-  icon: JSX.Element;
+  icon: React.ElementType;
   text: string;
 }
 
@@ -35,22 +35,22 @@ function About() {
   const motivations: Motivations[] = [
     {
       id: "learning",
-      icon: <RocketLaunch className="text-fuschia-500 text-3xl" />,
+      icon: RocketLaunch,
       text: "Continous Learning",
     },
     {
       id: "solving",
-      icon: <PuzzlePiece className="text-fuschia-500 text-3xl" />,
+      icon: PuzzlePiece,
       text: "Problem Solving",
     },
     {
       id: "detail",
-      icon: <MagicWand className="text-fuschia-500 text-3xl" />,
+      icon: MagicWand,
       text: "Attention to Detail",
     },
     {
       id: "collaboration",
-      icon: <Handshake className="text-fuschia-500 text-3xl" />,
+      icon: Handshake,
       text: "Collaboration",
     },
   ];
@@ -103,14 +103,14 @@ function About() {
         <section className="section-card md:col-span-2 md:col-start-2 md:order-4 xl:col-span-1">
           <h2>&lt;Highlights&gt;</h2>
 
-          <div className="card-wrapper grid grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2 auto-rows-auto gap-4">
+          <div className="grid grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2 auto-rows-auto gap-4">
             {highlights.map((highlight) => {
               return (
                 <div
                   key={highlight.id}
-                  className="card p-4 bg-fuschia-100 rounded-xl"
+                  className="p-4 bg-fuschia-100 rounded-xl"
                 >
-                  <p className="font-heading md:text-xl text-blue-700">
+                  <p className="text-blue-700 font-heading text-lg md:text-xl">
                     {highlight.timeline}
                   </p>
                   <p className="text-blue-500 text-lg leading-tight lowercase">
@@ -125,15 +125,17 @@ function About() {
         <section className="section-card md:col-span-2 md:col-start-2 md:order-5 xl:col-span-1">
           <h2>&lt;Motivations&gt;</h2>
 
-          <div className="card-wrapper grid grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2 auto-rows-auto gap-4">
+          <div className="grid grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2 auto-rows-auto gap-4">
             {motivations.map((motivation) => {
+              const Icon = motivation.icon;
+
               return (
                 <div
                   key={motivation.id}
-                  className="card p-4 bg-fuschia-100 rounded-xl"
+                  className="p-4 bg-fuschia-100 rounded-xl space-y-2"
                 >
-                  {motivation.icon}
-                  <p className="font-heading md:text-xl text-blue-700">
+                  <Icon className="text-fuschia-500 text-3xl" />
+                  <p className="text-blue-700 font-heading text-lg md:text-xl">
                     {motivation.text}
                   </p>
                 </div>
