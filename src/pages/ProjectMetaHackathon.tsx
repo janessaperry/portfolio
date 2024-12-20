@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { allProjects } from "../data/allProjects";
 import MetaHackathonHero from "../assets/images/mockups/iggy-discover--flow--mobile.png";
-import BrowserFrame from "../assets/graphics/browser-container.svg";
 import VisualSearch from "../assets/videos/iggy-discover--visual-search.mp4";
 import ExploreAccounts from "../assets/videos/iggy-discover--explore-accounts.mp4";
 import ChipList from "../components/ChipList";
@@ -13,29 +12,33 @@ import {
   Storefront,
 } from "@phosphor-icons/react";
 import LinkButton from "../components/LinkButton";
+import LinkSocial from "../components/LinkSocial";
+import ProjectFeature from "../components/ProjectFeature";
+import ProjectHighlight from "../components/ProjectHighlight";
 
 function ProjectMetaHackathon() {
-  const toolkit = allProjects.find(
+  const projectDetails = allProjects.find(
     (project) => project.id === "meta-hackathon--brainstation"
-  )?.skillsAndTools;
+  );
 
   return (
     <main className="main-container">
       <section className="flex flex-col gap-8 items-center py-8 md:py-16">
         <div className="flex flex-col gap-4 lg:max-w-screen-lg">
-          <h1 className="text-4xl text-center">Meta Hackathon</h1>
-          <p className="text-lg md:text-2xl text-center">
-            Developed an Instagram Discovery Tool during a 24-hour hackathon
-            that allows users to search for visually similar images using AI.
+          <h1 className="text-4xl text-center">{projectDetails?.title}</h1>
+          <p className="text-xl md:text-2xl text-center">
+            {projectDetails?.overview}
           </p>
 
-          <LinkButton
-            label="View on GitHub"
-            href="https://github.com/janessaperry/meta-visual-search"
-            size="lg"
-            target="_blank"
-            iconRight={<ArrowSquareOut weight="bold" className="text-xl" />}
-          />
+          {projectDetails?.githubRepos && (
+            <LinkButton
+              label="View on GitHub"
+              href="https://github.com/janessaperry/meta-hackathon-client"
+              size="lg"
+              target="_blank"
+              iconRight={<ArrowSquareOut weight="bold" className="text-xl" />}
+            />
+          )}
         </div>
 
         <img
@@ -49,27 +52,24 @@ function ProjectMetaHackathon() {
         <section className="hidden md:section-card md:col-span-1 md:sticky md:top-10 md:h-fit">
           <div className="flex flex-col gap-4">
             <h2>&lt;Contents&gt;</h2>
-            {/* TODO UPDATE THIS SO IT HIGHLIGHTS ACTIVE SECTION AS USER SCROLLS */}
             <nav>
               <ul className="flex flex-col gap-2">
                 <li>
-                  <a href="#overview">Overview</a>
+                  <a href="#overview" className="text-link">
+                    Overview
+                  </a>
                 </li>
                 <li>
                   {" "}
-                  <a href="#features">Features</a>
+                  <a href="#features" className="text-link">
+                    Features
+                  </a>
                 </li>
                 <li>
                   {" "}
-                  <a href="#challenges">Challenges</a>
-                </li>
-                <li>
-                  {" "}
-                  <a href="#retrospective">Retrospective</a>
-                </li>
-                <li>
-                  {" "}
-                  <a href="#road-map">Road Map</a>
+                  <a href="#retrospective" className="text-link">
+                    Retrospective
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -79,15 +79,18 @@ function ProjectMetaHackathon() {
             <h2>&lt;Projects&gt;</h2>
             <nav>
               <ul className="flex flex-col gap-2">
-                <li>
-                  <NavLink to="/projects/press-start">Press Start</NavLink>
-                </li>
-                <li>
-                  {" "}
-                  <NavLink to="/projects/meta-hackathon">
-                    Meta Hackathon
-                  </NavLink>
-                </li>
+                {allProjects.map((project) => {
+                  return (
+                    <li key={project.id}>
+                      <NavLink
+                        to={`/projects/${project.slug}`}
+                        className="text-link"
+                      >
+                        {project.title}
+                      </NavLink>
+                    </li>
+                  );
+                })}
               </ul>
             </nav>
           </div>
@@ -114,7 +117,11 @@ function ProjectMetaHackathon() {
           <div className="grid gap-8">
             <div className="md:col-span-1 flex flex-col gap-4">
               <h3>&lt;Toolkit&gt;</h3>
-              {toolkit?.length ? <ChipList labels={toolkit} /> : <p>TBD</p>}
+              {projectDetails?.skillsAndTools?.length ? (
+                <ChipList labels={projectDetails?.skillsAndTools} />
+              ) : (
+                <p>Stay tuned for details!</p>
+              )}
             </div>
 
             <div className="md:col-span-1 flex flex-col gap-4">
@@ -134,36 +141,19 @@ function ProjectMetaHackathon() {
 
             <div className="md:col-span-2 flex flex-col gap-4">
               <h3>&lt;GitHub&gt;</h3>
-              <div className="flex flex-col md:flex-row gap-6">
-                <a
-                  href={"https://github.com/janessaperry/meta-visual-search"}
-                  target="_blank"
-                  className="md:basis-1/2 flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4"
-                >
-                  <GithubLogo className="text-seafoam-500 text-3xl shrink-0" />
-                  <div className="flex-auto flex flex-col gap-1">
-                    <p className="text-xl font-semibold">git in it: client</p>
-                    <p className="text-base leading-none text-fuschia-50">
-                      github.com/janessaperry/meta-visual-search
-                    </p>
-                  </div>
-                </a>
 
-                <a
-                  href={
-                    "https://github.com/janessaperry/meta-visual-search-api"
-                  }
-                  target="_blank"
-                  className="md:basis-1/2 flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4"
-                >
-                  <GithubLogo className="text-seafoam-500 text-3xl shrink-0" />
-                  <div className="flex-auto flex flex-col gap-1">
-                    <p className="text-xl font-semibold">git in it: server</p>
-                    <p className="text-base leading-none text-fuschia-50">
-                      github.com/janessaperry/meta-visual-search-api
-                    </p>
-                  </div>
-                </a>
+              <div className="flex flex-col lg:flex-row gap-6">
+                {projectDetails?.githubRepos?.map((repo) => {
+                  return (
+                    <LinkSocial
+                      key={repo.title}
+                      url={`https://${repo.url}`}
+                      icon={GithubLogo}
+                      title={repo.title}
+                      content={repo.url}
+                    />
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -177,80 +167,25 @@ function ProjectMetaHackathon() {
           </p>
 
           <div className="pt-4 flex flex-col gap-y-20">
-            <div className="flex gap-4 items-start">
-              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
-                <Image className="text-4xl text-fuschia-300" />
-              </div>
+            <ProjectFeature
+              icon={Image}
+              title="Discover similar content using visual search."
+              description={[
+                "Iggy Discover lets users search for images from their Instagram feed to find similar posts. Whether it's a photo of pasta or a cityscape, the tool uses AI to return related content, helping users explore more of what they enjoy.",
+              ]}
+              videoSrc={VisualSearch}
+              videoLayout="portrait"
+            />
 
-              <div className="flex flex-col gap-y-4">
-                <div className="">
-                  <p className="text-lg font-heading font-medium text-seafoam-500">
-                    Discover similar content using visual search.{" "}
-                  </p>
-                  <p>
-                    Iggy Discover lets users search for images from their
-                    Instagram feed to find similar posts. Whether it's a photo
-                    of pasta or a cityscape, the tool uses AI to return related
-                    content, helping users explore more of what they enjoy.
-                  </p>
-                </div>
-
-                <div className="md:w-1/3 self-center border border-blue-700 rounded-md overflow-hidden">
-                  <img
-                    src={BrowserFrame}
-                    alt="Browser frame for video"
-                    className="w-full bg-blue-700"
-                  />
-                  <video
-                    src={VisualSearch}
-                    controls
-                    autoPlay
-                    playsInline
-                    loop
-                    muted
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="flex gap-4 items-start">
-              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
-                <Storefront className="text-4xl text-fuschia-300" />
-              </div>
-
-              <div className="flex flex-col gap-y-4">
-                <div className="">
-                  <p className="text-lg font-heading font-medium text-seafoam-500">
-                    Find shops, restaurants, and brands with similar images in
-                    their posts.
-                  </p>
-                  <p>
-                    Beyond posts, Iggy Discover helps users discover businesses
-                    or brands that offer products similar to the images being
-                    searched for. In the example below, you can discover
-                    restaurants serving up some delicious pasta. It's a great
-                    way to find new places, products, or services that match
-                    your tastes.
-                  </p>
-                </div>
-
-                <div className="md:w-1/3 self-center border border-blue-700 rounded-md overflow-hidden">
-                  <img
-                    src={BrowserFrame}
-                    alt="Browser frame for video"
-                    className="w-full bg-blue-700"
-                  />
-                  <video
-                    src={ExploreAccounts}
-                    controls
-                    autoPlay
-                    playsInline
-                    loop
-                    muted
-                  />
-                </div>
-              </div>
-            </div>
+            <ProjectFeature
+              icon={Storefront}
+              title="Find shops, restaurants, and brands with similar images in their posts."
+              description={[
+                "Beyond posts, Iggy Discover helps users discover businesses or brands that offer products similar to the images being searched for. In the example below, you can discover restaurants serving up some delicious pasta. It's a great way to find new places, products, or services that match your tastes.",
+              ]}
+              videoSrc={ExploreAccounts}
+              videoLayout="portrait"
+            />
           </div>
         </section>
 
@@ -268,20 +203,12 @@ function ProjectMetaHackathon() {
             to deliver a working prototype on schedule.
           </p>
 
-          <div className="flex gap-x-4">
-            <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
-              <Lightbulb className="text-4xl text-fuschia-300" />
-            </div>
-            <p className="text-xl">
-              The hackathon taught me valuable lessons in working under
-              pressure, prioritizing features, and collaborating with a diverse
-              team. Although we didn't get to explore AI as much as we'd hoped,
-              it sparked my interest in the potential of AI-driven content
-              discovery. If given more time, I would love to explore
-              implementing AI models for more dynamic results and refine the
-              user experience.
-            </p>
-          </div>
+          <ProjectHighlight
+            icon={Lightbulb}
+            content={
+              "The hackathon taught me valuable lessons in working under pressure, prioritizing features, and collaborating with a diverse team. Although we didn't get to explore AI as much as we'd hoped, it sparked my interest in the potential of AI-driven content discovery. If given more time, I would love to explore implementing AI models for more dynamic results and refine the user experience."
+            }
+          />
         </section>
       </div>
     </main>
