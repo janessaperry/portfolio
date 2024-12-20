@@ -21,7 +21,7 @@ function LinkSocial({
     >
       <Icon className="text-seafoam-500 text-3xl shrink-0" />
       <div className="flex-auto flex flex-col gap-1">
-        <p className="text-xl font-semibold">{title}</p>
+        <p className="text-xl font-medium">{title}</p>
         <p className="text-base leading-none text-fuschia-50">{content}</p>
       </div>
     </a>
