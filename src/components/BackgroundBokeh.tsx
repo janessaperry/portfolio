@@ -2,28 +2,28 @@ function BackgroundBokeh() {
   const circles = [
     {
       size: "w-32 h-32 md:w-1/4 md:h-64 lg:w-1/3",
-      color: "bg-blue-neon/80",
+      color: "bg-blue-neon/80 lg:bg-blue-neon/50",
       blur: "blur-[100px] md:blur-[180px]",
       animation: "animate-bokeh1",
       position: "-top-16 md:-top-32 left-0",
     },
     {
       size: "w-32 h-32 md:w-1/4 md:h-64 lg:w-5/12",
-      color: "bg-fuschia-neon/80",
+      color: "bg-fuschia-neon/80 lg:bg-fuschia-neon/50",
       blur: "blur-[100px] md:blur-[180px]",
       animation: "animate-bokeh2",
       position: "-top-16 md:-top-28 left-1/4",
     },
     {
       size: "w-32 h-32 md:w-1/4 md:h-64 lg:w-5/12",
-      color: "bg-fuschia-neon/80",
+      color: "bg-fuschia-neon/80 lg:bg-fuschia-neon/50",
       blur: "blur-[100px] md:blur-[180px]",
       animation: "animate-bokeh3",
       position: "-top-16 md:-top-28 left-1/2",
     },
     {
       size: "w-32 h-32 md:w-1/4 md:h-64 lg:w-1/3",
-      color: "bg-blue-neon/80",
+      color: "bg-blue-neon/80 lg:bg-blue-neon/50",
       blur: "blur-[100px] md:blur-[180px]",
       animation: "animate-bokeh4",
       position: "-top-16 md:-top-32 left-3/4",
