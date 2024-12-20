@@ -60,11 +60,11 @@ function ProjectPressStart() {
       </section>
 
       <div className="grid md:grid-cols-3 gap-4 md:gap-10">
-        <section className="hidden md:section-card md:col-span-1 md:sticky md:top-32 md:h-fit">
-          <div className="flex flex-col gap-2">
+        <section className="hidden md:section-card md:col-span-1 md:sticky md:top-32 md:h-fit md:!space-y-10">
+          <div className="space-y-4">
             <h3 className="text-fuschia-300">&lt;Contents&gt;</h3>
             <nav>
-              <ul className="flex flex-col gap-2">
+              <ul className="space-y-4 list-none">
                 <li>
                   <a href="#overview" className="text-link">
                     Overview
@@ -98,10 +98,10 @@ function ProjectPressStart() {
             </nav>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="space-y-4">
             <h3 className="text-fuschia-300">&lt;Projects&gt;</h3>
             <nav>
-              <ul className="flex flex-col gap-2">
+              <ul className="space-y-4 list-none">
                 {allProjects.map((project) => {
                   return (
                     <li key={project.id}>
