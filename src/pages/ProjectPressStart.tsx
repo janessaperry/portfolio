@@ -55,7 +55,7 @@ function ProjectPressStart() {
         <img
           src={PressStartHero}
           alt="Press Start collection page preview"
-          className="sm:w-1/2 md:w-full lg:max-w-screen-lg xl:object-contain justify-self-center"
+          className="py-16 sm:w-1/2 md:w-full lg:max-w-screen-lg xl:object-contain justify-self-center"
         />
       </section>
 

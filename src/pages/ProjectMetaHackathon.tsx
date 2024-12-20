@@ -34,7 +34,11 @@ function ProjectMetaHackathon() {
             <div className="w-fit mx-auto">
               <LinkButton
                 label="View on GitHub"
-                href="https://github.com/janessaperry/meta-hackathon-client"
+                href={`https://${
+                  projectDetails?.githubRepos?.find(
+                    (repo) => repo.type === "client"
+                  )?.url
+                }`}
                 size="lg"
                 target="_blank"
                 iconRight={<ArrowSquareOut weight="bold" className="text-xl" />}
@@ -45,8 +49,8 @@ function ProjectMetaHackathon() {
 
         <img
           src={MetaHackathonHero}
-          alt="Press Start collection page preview"
-          className="sm:w-1/2 md:w-full lg:max-w-screen-lg xl:object-contain justify-self-center"
+          alt="Iggy Discover preview"
+          className="py-16 sm:w-1/2 md:w-full lg:max-w-screen-lg xl:object-contain justify-self-center"
         />
       </section>
 
