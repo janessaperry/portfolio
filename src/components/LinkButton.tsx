@@ -29,7 +29,7 @@ function LinkButton({
         ${variantClasses[variant]}
         font-heading text-${size} lowercase 
         flex justify-center items-center
-        transition-all ease-in-out`}
+        transition-all ease-in-out duration-300`}
     >
       {label}
       {iconRight && <span className="pl-1">{iconRight}</span>}

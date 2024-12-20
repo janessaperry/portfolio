@@ -36,17 +36,19 @@ function ProjectPressStart() {
           </p>
 
           {projectDetails?.githubRepos && (
-            <LinkButton
-              label="View on GitHub"
-              href={`https://${
-                projectDetails?.githubRepos?.find(
-                  (repo) => repo.type === "client"
-                )?.url
-              }`}
-              size="lg"
-              target="_blank"
-              iconRight={<ArrowSquareOut weight="bold" className="text-xl" />}
-            />
+            <div className="w-fit mx-auto">
+              <LinkButton
+                label="View on GitHub"
+                href={`https://${
+                  projectDetails?.githubRepos?.find(
+                    (repo) => repo.type === "client"
+                  )?.url
+                }`}
+                size="lg"
+                target="_blank"
+                iconRight={<ArrowSquareOut weight="bold" className="text-xl" />}
+              />
+            </div>
           )}
         </div>
 

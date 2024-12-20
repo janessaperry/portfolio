@@ -20,13 +20,16 @@ function Experience() {
           <p className="text-xl md:text-2xl text-center">
             Check out my career journey below!
           </p>
-          <LinkButton
-            label="Download Resume"
-            href={JanessaPerryResume}
-            size="lg"
-            target="_blank"
-            iconRight={<DownloadSimple weight="bold" className="text-xl" />}
-          />
+
+          <div className="w-fit mx-auto">
+            <LinkButton
+              label="Download Resume"
+              href={JanessaPerryResume}
+              size="lg"
+              target="_blank"
+              iconRight={<DownloadSimple weight="bold" className="text-xl" />}
+            />
+          </div>
         </div>
       </section>
 

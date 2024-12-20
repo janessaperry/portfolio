@@ -31,13 +31,15 @@ function ProjectMetaHackathon() {
           </p>
 
           {projectDetails?.githubRepos && (
-            <LinkButton
-              label="View on GitHub"
-              href="https://github.com/janessaperry/meta-hackathon-client"
-              size="lg"
-              target="_blank"
-              iconRight={<ArrowSquareOut weight="bold" className="text-xl" />}
-            />
+            <div className="w-fit mx-auto">
+              <LinkButton
+                label="View on GitHub"
+                href="https://github.com/janessaperry/meta-hackathon-client"
+                size="lg"
+                target="_blank"
+                iconRight={<ArrowSquareOut weight="bold" className="text-xl" />}
+              />
+            </div>
           )}
         </div>
 

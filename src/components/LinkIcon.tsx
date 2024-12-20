@@ -12,8 +12,8 @@ function LinkIcon({
   variant = "primary",
 }: LinkIconProps) {
   const variantClasses = {
-    primary: "text-seafoam-500",
-    secondary: "text-blue-50",
+    primary: "text-seafoam-500 hover:text-seafoam-700",
+    secondary: "text-blue-50 hover:text-seafoam-500",
   };
   return (
     <a href={url} target={target}>

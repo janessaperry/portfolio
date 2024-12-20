@@ -64,15 +64,15 @@ a {
 }
 
 a.text-link {
-  @apply py-1;
+  @apply py-1 border-b border-transparent;
 }
 
 a.text-link:hover {
-  @apply border-b border-seafoam-500;
+  @apply border-seafoam-500 transition duration-300;
 }
 
 a.text-link.active {
-  @apply text-seafoam-500 border-b border-seafoam-500;
+  @apply text-seafoam-500 border-seafoam-500;
 }
 
 .main-container {
