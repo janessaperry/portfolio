@@ -9,7 +9,7 @@ function IconGradientFill({ id, icon: Icon }: IconGradientFill) {
   let to: string;
 
   switch (id) {
-    case "gradient--pink":
+    case "gradient--fuschia":
       from = "#EFA4F0";
       to = "#AD33AD";
       break;
@@ -19,7 +19,7 @@ function IconGradientFill({ id, icon: Icon }: IconGradientFill) {
       to = "#46A78A";
       break;
 
-    case "gradient--pink-seafoam":
+    case "gradient--fuschia-seafoam":
       from = "#ADE7D6";
       via = "#009DFF";
       to = "#46A78A";
