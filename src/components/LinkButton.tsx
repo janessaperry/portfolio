@@ -18,7 +18,7 @@ function LinkButton({
   const variantClasses = {
     primary: "text-seafoam-500 hover:text-seafoam-700",
     secondary:
-      "text-blue-700 border-b-2 border-transparent hover:text-fuschia-700 hover:border-fuschia-500",
+      "text-blue-700 border-b border-transparent hover:text-fuschia-700 hover:border-fuschia-500",
   };
 
   return (

@@ -6,7 +6,7 @@ function ChipList({ labels, variant = "primary" }: ChipListProps) {
   const variantClasses = {
     primary: "text-blue-300 bg-fuschia-100 border border-fuschia-muted",
     primaryLighten:
-      "text-blue-500 bg-fuschia-50/60 border border-fuschia-muted",
+      "text-blue-500 bg-fuschia-50/40 border border-fuschia-muted",
     secondary: "text-seafoam-500 bg-blue-300 border border-blue-100",
   };
   return (

@@ -22,7 +22,7 @@ function ProjectList({ projectsData, variant = "default" }: ProjectListProps) {
               <Link
                 key={projectDetails.id}
                 to={`/projects/${projectDetails.slug}`}
-                className={`
+                className={`group
           flex flex-col gap-8
           ${variantClasses[variant]} 
           `}
@@ -31,12 +31,15 @@ function ProjectList({ projectsData, variant = "default" }: ProjectListProps) {
                   <img
                     src={projectDetails.thumbnailInfo.filePath}
                     alt={projectDetails.thumbnailInfo.altText}
-                    className="sm:w-1/2 md:w-full lg:max-h-56 xl:object-contain justify-self-center"
+                    className="sm:w-1/2 md:w-full lg:max-h-56 xl:object-contain justify-self-center group-hover:scale-105 transition ease duration-300"
                   />
                 </div>
 
                 <div className="md:basis-2/3 flex flex-col gap-2">
-                  <h2 className="text-fuschia-700">{projectDetails.title}</h2>
+                  <h2 className="w-fit text-transparent bg-clip-text bg-fuschia-700 group-hover:bg-gradient-to-b group-hover:from-fuschia-500 group-hover:via-fuschia-500 group-hover:to-fuschia-700">
+                    {projectDetails.title}
+                  </h2>
+
                   <p className="text-blue-500 normal-case">
                     {projectDetails.overview}
                   </p>
