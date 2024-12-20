@@ -16,9 +16,9 @@ function Home() {
             </p>
           </div>
 
-          <p className="font-semibold w-fit mx-auto pl-9 pr-4 py-1 rounded-full bg-fuschia-700">
+          <p className="font-semibold w-fit mx-auto pl-10 pr-5 py-1 rounded-full bg-fuschia-700 border border-fuschia-500">
             <span
-              className="relative before:absolute before:w-3 before:h-3 before:rounded-full before:bg-seafoam-500 before:-left-6 before:top-1 before:animate-radiate
+              className="relative before:absolute before:w-3 before:h-3 before:rounded-full before:bg-seafoam-500 before:-left-6 before:top-[5px] before:animate-radiate
                   [&:not(:last-of-type)]:after:absolute after:bg-seafoam-500 after:opacity-30 after:w-px after:h-[calc(100%+2rem)] after:-left-8 after:top-3"
             ></span>
             Available for work

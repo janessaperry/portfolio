@@ -15,7 +15,7 @@ function ChipList({ labels, variant = "primary" }: ChipListProps) {
         return (
           <li
             key={label}
-            className={`${variantClasses[variant]} text-base leading-none lowercase py-1 px-2 md:py-2 md:px-3 rounded-lg`}
+            className={`${variantClasses[variant]} text-base leading-none lowercase py-1.5 px-2 md:py-2 md:px-3 rounded-lg`}
           >
             {label}
           </li>
