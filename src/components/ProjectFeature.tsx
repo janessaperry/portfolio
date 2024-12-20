@@ -5,6 +5,7 @@ interface ProjectFeatureProps {
   title: string;
   description: string[];
   videoSrc: string;
+  videoLayout?: "landscape" | "portrait";
 }
 
 function ProjectFeature({
@@ -12,7 +13,12 @@ function ProjectFeature({
   title,
   description,
   videoSrc,
+  videoLayout = "landscape",
 }: ProjectFeatureProps) {
+  const layoutClasses = {
+    landscape: "rounded-lg",
+    portrait: "rounded-md md:w-1/3 self-center",
+  };
   return (
     <div className="flex gap-4 items-start">
       <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
@@ -29,7 +35,9 @@ function ProjectFeature({
           })}
         </div>
 
-        <div className="border border-blue-700 rounded-lg overflow-hidden">
+        <div
+          className={`border border-blue-700 overflow-hidden ${layoutClasses[videoLayout]}`}
+        >
           <img
             src={browserFrame}
             alt="Browser frame for video"
