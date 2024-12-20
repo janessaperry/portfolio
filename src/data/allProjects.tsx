@@ -5,6 +5,11 @@ export interface AllProjects {
   id: string;
   showcase: boolean;
   slug: string;
+  githubRepos?: {
+    type: "client" | "server";
+    title: string;
+    url: string;
+  }[];
   categories: string[];
   thumbnailInfo: {
     filePath: string;
@@ -24,6 +29,18 @@ export const allProjects: AllProjects[] = [
     id: "press-start--capstone",
     showcase: true,
     slug: "press-start",
+    githubRepos: [
+      {
+        type: "client",
+        title: "Press Start: Client",
+        url: "github.com/janessaperry/press-start-client",
+      },
+      {
+        type: "server",
+        title: "Press Start: Server",
+        url: "github.com/janessaperry/press-start-server",
+      },
+    ],
     categories: ["Design", "Development"],
     thumbnailInfo: {
       filePath: pressStartThumbnail,
@@ -57,6 +74,18 @@ export const allProjects: AllProjects[] = [
     id: "meta-hackathon--brainstation",
     showcase: true,
     slug: "meta-hackathon",
+    githubRepos: [
+      {
+        type: "client",
+        title: "Meta Hackathon: Client",
+        url: "github.com/janessaperry/meta-hackathon-client",
+      },
+      {
+        type: "server",
+        title: "Meta Hackathon: Server",
+        url: "github.com/janessaperry/meta-hackathon-server",
+      },
+    ],
     categories: ["Development"],
     thumbnailInfo: {
       filePath: metaHackathonThumbnail,
