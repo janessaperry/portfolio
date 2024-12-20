@@ -63,8 +63,16 @@ a {
   @apply lowercase font-heading text-blue-50;
 }
 
-a.active {
-  @apply lowercase text-seafoam-500 py-1 border-b-2 border-seafoam-500;
+a.text-link {
+  @apply py-1;
+}
+
+a.text-link:hover {
+  @apply border-b border-seafoam-500;
+}
+
+a.text-link.active {
+  @apply text-seafoam-500 border-b border-seafoam-500;
 }
 
 .main-container {

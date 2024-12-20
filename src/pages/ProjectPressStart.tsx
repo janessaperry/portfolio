@@ -64,23 +64,33 @@ function ProjectPressStart() {
             <nav>
               <ul className="flex flex-col gap-2">
                 <li>
-                  <a href="#overview">Overview</a>
+                  <a href="#overview" className="text-link">
+                    Overview
+                  </a>
                 </li>
                 <li>
                   {" "}
-                  <a href="#features">Features</a>
+                  <a href="#features" className="text-link">
+                    Features
+                  </a>
                 </li>
                 <li>
                   {" "}
-                  <a href="#challenges">Challenges</a>
+                  <a href="#challenges" className="text-link">
+                    Challenges
+                  </a>
                 </li>
                 <li>
                   {" "}
-                  <a href="#retrospective">Retrospective</a>
+                  <a href="#retrospective" className="text-link">
+                    Retrospective
+                  </a>
                 </li>
                 <li>
                   {" "}
-                  <a href="#road-map">Road Map</a>
+                  <a href="#road-map" className="text-link">
+                    Road Map
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -93,7 +103,10 @@ function ProjectPressStart() {
                 {allProjects.map((project) => {
                   return (
                     <li key={project.id}>
-                      <NavLink to={`/projects/${project.slug}`}>
+                      <NavLink
+                        to={`/projects/${project.slug}`}
+                        className="text-link"
+                      >
                         {project.title}
                       </NavLink>
                     </li>
@@ -105,7 +118,9 @@ function ProjectPressStart() {
         </section>
 
         <section className="section-card md:col-span-2">
-          <h2 id="overview">&lt;Overview&gt;</h2>
+          <h2 id="overview" className="scroll-mt-40">
+            &lt;Overview&gt;
+          </h2>
 
           <p className="text-xl">
             Press Start is a web app that helps gamers manage their video game
@@ -174,7 +189,9 @@ function ProjectPressStart() {
         </section>
 
         <section className="section-card md:col-span-2 md:col-start-2">
-          <h2 id="features">&lt;Features&gt;</h2>
+          <h2 id="features" className="scroll-mt-40">
+            &lt;Features&gt;
+          </h2>
 
           <p className="text-xl">
             Here are some of the key features that make managing your game
@@ -222,7 +239,9 @@ function ProjectPressStart() {
         </section>
 
         <section className="section-card md:col-span-2 md:col-start-2">
-          <h2 id="challenges">&lt;Challenges&gt;</h2>
+          <h2 id="challenges" className="scroll-mt-40">
+            &lt;Challenges&gt;
+          </h2>
 
           <p className="text-xl">
             This project pushed me to explore new skills and tackle challenges
@@ -275,7 +294,9 @@ function ProjectPressStart() {
         </section>
 
         <section className="section-card md:col-span-2 md:col-start-2">
-          <h2 id="retrospective">&lt;Retrospective&gt;</h2>
+          <h2 id="retrospective" className="scroll-mt-40">
+            &lt;Retrospective&gt;
+          </h2>
 
           <p>
             This project introduced me to backend development—designing the
@@ -309,7 +330,9 @@ function ProjectPressStart() {
         </section>
 
         <section className="section-card md:col-span-2 md:col-start-2">
-          <h2 id="road-map">&lt;Road map&gt;</h2>
+          <h2 id="road-map" className="scroll-mt-40">
+            &lt;Road map&gt;
+          </h2>
 
           <p className="text-xl">
             I'm looking forward to keeping this project going, with the hope of
