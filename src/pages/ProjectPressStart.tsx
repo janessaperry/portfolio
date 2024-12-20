@@ -6,9 +6,7 @@ import {
   Lightbulb,
   MagnifyingGlass,
   Sliders,
-  Target,
   TreasureChest,
-  Warning,
 } from "@phosphor-icons/react";
 import { allProjects } from "../data/allProjects";
 import ChipList from "../components/ChipList";
@@ -17,33 +15,39 @@ import AddToCollection from "../assets/videos/press-start--add-to-collection.mp4
 import ManageCollection from "../assets/videos/press-start--manage-collection.mp4";
 import FilterCollection from "../assets/videos/press-start--filter-collection.mp4";
 import ExploreGames from "../assets/videos/press-start--explore.mp4";
-import BrowserFrame from "../assets/graphics/browser-container.svg";
-import IconGradientFill from "../components/IconGradientFill";
 import LinkButton from "../components/LinkButton";
+import LinkSocial from "../components/LinkSocial";
+import ProjectFeature from "../components/ProjectFeature";
+import ProjectChallenge from "../components/ProjectChallenge";
+import ProjectHighlight from "../components/ProjectHighlight";
 
 function ProjectPressStart() {
-  const toolkit = allProjects.find(
+  const projectDetails = allProjects.find(
     (project) => project.id === "press-start--capstone"
-  )?.skillsAndTools;
+  );
 
   return (
     <main className="main-container">
       <section className="flex flex-col gap-8 items-center py-8 md:py-16">
         <div className="flex flex-col gap-4 lg:max-w-screen-lg">
-          <h1 className="text-4xl text-center">Press Start</h1>
+          <h1 className="text-4xl text-center">{projectDetails?.title}</h1>
           <p className="text-xl md:text-2xl text-center">
-            Designed and developed a full-stack web app that helps users keep
-            track of their video game collection so they can decide what to play
-            next.
+            {projectDetails?.overview}
           </p>
 
-          <LinkButton
-            label="View on GitHub"
-            href="https://github.com/janessaperry/press-start-client"
-            size="lg"
-            target="_blank"
-            iconRight={<ArrowSquareOut weight="bold" className="text-xl" />}
-          />
+          {projectDetails?.githubRepos && (
+            <LinkButton
+              label="View on GitHub"
+              href={`https://${
+                projectDetails?.githubRepos?.find(
+                  (repo) => repo.type === "client"
+                )?.url
+              }`}
+              size="lg"
+              target="_blank"
+              iconRight={<ArrowSquareOut weight="bold" className="text-xl" />}
+            />
+          )}
         </div>
 
         <img
@@ -57,7 +61,6 @@ function ProjectPressStart() {
         <section className="hidden md:section-card md:col-span-1 md:sticky md:top-32 md:h-fit">
           <div className="flex flex-col gap-2">
             <h3 className="text-fuschia-300">&lt;Contents&gt;</h3>
-            {/* TODO UPDATE THIS SO IT HIGHLIGHTS ACTIVE SECTION AS USER SCROLLS */}
             <nav>
               <ul className="flex flex-col gap-2">
                 <li>
@@ -87,15 +90,15 @@ function ProjectPressStart() {
             <h3 className="text-fuschia-300">&lt;Projects&gt;</h3>
             <nav>
               <ul className="flex flex-col gap-2">
-                <li>
-                  <NavLink to="/projects/press-start">Press Start</NavLink>
-                </li>
-                <li>
-                  {" "}
-                  <NavLink to="/projects/meta-hackathon">
-                    Meta Hackathon
-                  </NavLink>
-                </li>
+                {allProjects.map((project) => {
+                  return (
+                    <li key={project.id}>
+                      <NavLink to={`/projects/${project.slug}`}>
+                        {project.title}
+                      </NavLink>
+                    </li>
+                  );
+                })}
               </ul>
             </nav>
           </div>
@@ -108,6 +111,7 @@ function ProjectPressStart() {
             Press Start is a web app that helps gamers manage their video game
             collections.
           </p>
+
           <p>
             Gamers today have more options than ever. With PlayStation, Xbox,
             Nintendo, and PC all having both physical and digital games, it gets
@@ -124,13 +128,17 @@ function ProjectPressStart() {
             what to play next.
           </p>
 
-          <div className="grid gap-8">
-            <div className="md:col-span-1 flex flex-col gap-4">
+          <div className="grid grid-cols-2 gap-8">
+            <div className="col-span-2 lg:col-span-1 flex flex-col gap-4">
               <h3>&lt;Toolkit&gt;</h3>
-              {toolkit?.length ? <ChipList labels={toolkit} /> : <p>TBD</p>}
+              {projectDetails?.skillsAndTools?.length ? (
+                <ChipList labels={projectDetails?.skillsAndTools} />
+              ) : (
+                <p>Stay tuned for details!</p>
+              )}
             </div>
 
-            <div className="md:col-span-1 flex flex-col gap-4">
+            <div className="col-span-2 lg:col-span-1 flex flex-col gap-4">
               <h3>&lt;Metadata&gt;</h3>
 
               <div className="grid grid-cols-2 gap-y-4">
@@ -147,34 +155,19 @@ function ProjectPressStart() {
 
             <div className="md:col-span-2 flex flex-col gap-4">
               <h3>&lt;GitHub&gt;</h3>
-              <div className="flex flex-col md:flex-row gap-6">
-                <a
-                  href={"https://github.com/janessaperry/press-start-client"}
-                  target="_blank"
-                  className="md:basis-1/2 flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4"
-                >
-                  <GithubLogo className="text-seafoam-500 text-3xl shrink-0" />
-                  <div className="flex-auto flex flex-col gap-1">
-                    <p className="text-xl font-semibold">git in it: client</p>
-                    <p className="text-base leading-none text-fuschia-50">
-                      github.com/janessaperry/press-start-client
-                    </p>
-                  </div>
-                </a>
 
-                <a
-                  href={"https://github.com/janessaperry/press-start-server"}
-                  target="_blank"
-                  className="md:basis-1/2 flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4"
-                >
-                  <GithubLogo className="text-seafoam-500 text-3xl shrink-0" />
-                  <div className="flex-auto flex flex-col gap-1">
-                    <p className="text-xl font-semibold">git in it: server</p>
-                    <p className="text-base leading-none text-fuschia-50">
-                      github.com/janessaperry/press-start-server
-                    </p>
-                  </div>
-                </a>
+              <div className="flex flex-col lg:flex-row gap-6">
+                {projectDetails?.githubRepos?.map((repo) => {
+                  return (
+                    <LinkSocial
+                      key={repo.title}
+                      url={`https://${repo.url}`}
+                      icon={GithubLogo}
+                      title={repo.title}
+                      content={repo.url}
+                    />
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -189,148 +182,42 @@ function ProjectPressStart() {
           </p>
 
           <div className="pt-4 flex flex-col gap-y-20">
-            <div className="flex gap-4 items-start">
-              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
-                <TreasureChest className="text-4xl text-fuschia-300" />
-              </div>
+            <ProjectFeature
+              icon={TreasureChest}
+              title="Keep track of the games you own."
+              description={[
+                "Easily add games to your collection and note which console they're for, whether they're physical or digital. It's a great way to keep everything organized!",
+              ]}
+              videoSrc={AddToCollection}
+            />
 
-              <div className="flex flex-col gap-y-4">
-                <div className="">
-                  <p className="text-lg font-heading font-medium text-seafoam-500">
-                    Keep track of the games you own.
-                  </p>
-                  <p>
-                    Easily add games to your collection and note which console
-                    they're for, whether they're physical or digital. It's a
-                    great way to keep everything organized!
-                  </p>
-                </div>
+            <ProjectFeature
+              icon={GameController}
+              title="Manage games in your collection by keeping track of play
+                    status."
+              description={[
+                "Setting the play status lets you quickly filter for games you want to play to you can dive in to your next adventure sooner.",
+              ]}
+              videoSrc={ManageCollection}
+            />
 
-                <div className="border border-blue-700 rounded-lg overflow-hidden">
-                  <img
-                    src={BrowserFrame}
-                    alt="Browser frame for video"
-                    className="w-full bg-blue-700"
-                  />
-                  <video
-                    src={AddToCollection}
-                    controls
-                    autoPlay
-                    playsInline
-                    loop
-                    muted
-                  />
-                </div>
-              </div>
-            </div>
+            <ProjectFeature
+              icon={Sliders}
+              title="Filter games in your collection decide what to play next."
+              description={[
+                "Right now, users can filter by status and console, but I'm working on adding more options—like genre or estimated playtime—so you can really narrow down what you want to play next.",
+              ]}
+              videoSrc={FilterCollection}
+            />
 
-            <div className="flex gap-4 items-start">
-              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
-                <GameController className="text-4xl text-fuschia-300" />
-              </div>
-
-              <div className="flex flex-col gap-y-4">
-                <div className="">
-                  <p className="text-lg font-heading font-medium text-seafoam-500">
-                    Manage games in your collection by keeping track of play
-                    status.
-                  </p>
-                  <p>
-                    Setting the play status lets you quickly filter for games
-                    you want to play to you can dive in to your next adventure
-                    sooner.
-                  </p>
-                </div>
-
-                <div className="border border-blue-700 rounded-lg overflow-hidden">
-                  <img
-                    src={BrowserFrame}
-                    alt="Browser frame for video"
-                    className="w-full bg-blue-700"
-                  />
-                  <video
-                    src={ManageCollection}
-                    controls
-                    autoPlay
-                    playsInline
-                    loop
-                    muted
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="flex gap-4 items-start">
-              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
-                <Sliders className="text-4xl text-fuschia-300" />
-              </div>
-
-              <div className="flex flex-col gap-y-4">
-                <div className="">
-                  <p className="text-lg font-heading font-medium text-seafoam-500">
-                    Filter games in your collection decide what to play next.
-                  </p>
-                  <p>
-                    Right now, users can filter by status and console, but I'm
-                    working on adding more options—like genre or estimated
-                    playtime—so you can really narrow down what you want to play
-                    next.
-                  </p>
-                </div>
-
-                <div className="border border-blue-700 rounded-lg overflow-hidden">
-                  <img
-                    src={BrowserFrame}
-                    alt="Browser frame for video"
-                    className="w-full bg-blue-700"
-                  />
-                  <video
-                    src={FilterCollection}
-                    controls
-                    autoPlay
-                    playsInline
-                    loop
-                    muted
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="flex gap-4 items-start">
-              <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
-                <MagnifyingGlass className="text-4xl text-fuschia-300" />
-              </div>
-
-              <div className="flex flex-col gap-y-4">
-                <div className="">
-                  <p className="text-lg font-heading font-medium text-seafoam-500">
-                    Discover new or upcoming games.
-                  </p>
-                  <p>
-                    The explore page lets you browse through games by platform
-                    or see what's coming soon. It's the perfect way to find your
-                    next adventure, whether it's a new release or something you
-                    missed.
-                  </p>
-                </div>
-
-                <div className="border border-blue-700 rounded-lg overflow-hidden">
-                  <img
-                    src={BrowserFrame}
-                    alt="Browser frame for video"
-                    className="w-full bg-blue-700"
-                  />
-                  <video
-                    src={ExploreGames}
-                    controls
-                    autoPlay
-                    playsInline
-                    loop
-                    muted
-                  />
-                </div>
-              </div>
-            </div>
+            <ProjectFeature
+              icon={MagnifyingGlass}
+              title="Discover new or upcoming games."
+              description={[
+                "The explore page lets you browse through games by platform or see what's coming soon. It's the perfect way to find your next adventure, whether it's a new release or something you missed.",
+              ]}
+              videoSrc={ExploreGames}
+            />
           </div>
         </section>
 
@@ -343,138 +230,47 @@ function ProjectPressStart() {
           </p>
 
           <div className="pt-4 flex flex-col gap-y-10">
-            <div className="flex flex-col gap-y-5">
-              <div className="title-wrapper">
-                <h3>Backend Development</h3>
-                <p className="text-xl">
-                  This was my first experience structuring and building a
-                  backend, and it required a lot of problem-solving on the fly.
-                </p>
-              </div>
+            <ProjectChallenge
+              title="Backend Development"
+              overview="This was my first experience structuring and building a backend, and it required a lot of problem-solving on the fly."
+              challengeAndSolution={{
+                challenge:
+                  "Structuring a database and building a proxy server for the first time.",
+                solution:
+                  "Focused on getting a working solution by experimenting with different approaches and refining based on trial and error.",
+              }}
+              description={[
+                "I didn't really have a clear plan or idea on how to create a scalable system, so I focused on making things work. While it wasn't the most elegant solution, it gave me a better understanding of backend development and showed me the need to learn more about backend design patterns and planning strategies. This experience also made me realize how important it is to manage the single source of truth when working with data.",
+              ]}
+            />
 
-              <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
-              <p className="font-heading text-base uppercase font-medium text-blue-50/60">
-                Challenges & Solutions
-              </p>
-              <div className="grid md:grid-cols-2 gap-5 md:gap-10">
-                <div className="md:col-span-1 flex gap-x-4">
-                  <IconGradientFill id="gradient--pink" icon={Warning} />
-                  <p>
-                    Structuring a database and building a proxy server for the
-                    first time.
-                  </p>
-                </div>
+            <ProjectChallenge
+              title="Filtering Data"
+              overview="Filtering was a new challenge for me, and my initial solution could definitely be better."
+              challengeAndSolution={{
+                challenge:
+                  "Managing filters with data coming from both the database and the API.",
+                solution:
+                  "While my current solution works, I've identified ways to make the filtering logic more modular and scalable for future improvements.",
+              }}
+              description={[
+                "My filters pull options from the API, user collections, or both, but right now, the options are sourced from multiple places. I plan to go back in and consolidate everything into one central source for the filter options. This would simplify the logic, improve consistency, and make the system easier to maintain.",
+              ]}
+            />
 
-                <div className="md:col-span-1 flex gap-x-4">
-                  <IconGradientFill id="gradient--seafoam" icon={Target} />
-                  <p>
-                    Focused on getting a working solution by experimenting with
-                    different approaches and refining based on trial and error.
-                  </p>
-                </div>
-              </div>
-              <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
-
-              <p>
-                I didn't really have a clear plan or idea on how to create a
-                scalable system, so I focused on making things work. While it
-                wasn't the most elegant solution, it gave me a better
-                understanding of backend development and showed me the need to
-                learn more about backend design patterns and planning
-                strategies. This experience also made me realize how important
-                it is to manage the "single source of truth" when working with
-                data.
-              </p>
-            </div>
-
-            <div className="challenge-item flex flex-col gap-y-5">
-              <div className="title-wrapper">
-                <h3>Filtering Data</h3>
-                <p className="text-xl">
-                  Filtering was a new challenge for me, and my initial solution
-                  could definitely be better.
-                </p>
-              </div>
-
-              <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
-              <p className="font-heading text-base uppercase font-medium text-blue-50/60">
-                Challenges & Solutions
-              </p>
-              <div className="grid md:grid-cols-2 gap-5 md:gap-10">
-                <div className="md:col-span-1 flex gap-x-4">
-                  <IconGradientFill id="gradient--pink" icon={Warning} />
-                  <p>
-                    Managing filters with data coming from both the database and
-                    the API.
-                  </p>
-                </div>
-
-                <div className="md:col-span-1 flex gap-x-4">
-                  <IconGradientFill id="gradient--seafoam" icon={Target} />
-                  <p>
-                    While my current solution works, I've identified ways to
-                    make the filtering logic more modular and scalable for
-                    future improvements.
-                  </p>
-                </div>
-              </div>
-              <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
-
-              <p>
-                My filters pull options from the API, user collections, or both,
-                but right now, the options are sourced from multiple places. I
-                plan to go back in and consolidate everything into one central
-                source for the filter options. This would simplify the logic,
-                improve consistency, and make the system easier to maintain.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-y-5">
-              <div className="title-wrapper">
-                <h3>API Integration</h3>
-                <p className="text-xl">
-                  This was the most robust and complex API I've worked with,
-                  requiring me to retrieve and clean large amounts of data.
-                </p>
-              </div>
-
-              <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
-              <p className="font-heading text-base uppercase font-medium text-blue-50/60">
-                Challenges & Solutions
-              </p>
-              <div className="grid md:grid-cols-2 gap-5 md:gap-10">
-                <div className="md:col-span-1 flex gap-x-4">
-                  <IconGradientFill id="gradient--pink" icon={Warning} />
-                  <p>
-                    Working with a complex API to retrieve and clean large
-                    amounts of data.
-                  </p>
-                </div>
-
-                <div className="md:col-span-1 flex gap-x-4">
-                  <IconGradientFill id="gradient--seafoam" icon={Target} />
-                  <p>
-                    Tested API requests with Postman and iteratively refined
-                    filtering logic to address specific use cases.
-                  </p>
-                </div>
-              </div>
-              <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
-
-              <p>
-                Managing this API was a challenge. I had to extract relevant
-                data while ensuring it aligned with the site's goals. For
-                example, I initially filtered explicit games by excluding
-                certain themes and null age ratings. However, when working on
-                the Explore page for new releases, I discovered that unreleased
-                games often didn't have age ratings either. This led me to
-                adjust my API calls to include unreleased games without age
-                ratings, while excluding games with no release date or ratings.
-                Though not a perfect solution, this approach worked within my
-                timeline and gave me a deeper understanding of the complexities
-                involved in robust API integrations.
-              </p>
-            </div>
+            <ProjectChallenge
+              title="API Integration"
+              overview="This was the most robust and complex API I've worked with, requiring me to retrieve and clean large amounts of data."
+              challengeAndSolution={{
+                challenge:
+                  "Working with a complex API to retrieve and clean large amounts of data.",
+                solution:
+                  "Tested API requests with Postman and iteratively refined filtering logic to address specific use cases.",
+              }}
+              description={[
+                "Managing this API was a challenge. I had to extract relevant data while ensuring it aligned with the site's goals. For example, I initially filtered explicit games by excluding certain themes and null age ratings. However, when working on the Explore page for new releases, I discovered that unreleased games often didn't have age ratings either. This led me to adjust my API calls to include unreleased games without age ratings, while excluding games with no release date or ratings. Though not a perfect solution, this approach worked within my timeline and gave me a deeper understanding of the complexities involved in robust API integrations.",
+              ]}
+            />
           </div>
         </section>
 
@@ -504,18 +300,12 @@ function ProjectPressStart() {
             would've saved time and effort in refining requests.
           </p>
 
-          <div className="flex gap-x-4">
-            <div className="flex justify-center items-center rounded-2xl p-2 w-12 h-12 shrink-0 bg-gradient-to-tr from-seafoam-700 via-blue-300 to-fuschia-500">
-              <Lightbulb className="text-4xl text-fuschia-300" />
-            </div>
-            <p className="text-xl">
-              This project pushed me out of my comfort zone and made me rethink
-              how I approach backend work and complex APIs. It wasn't perfect,
-              but I've learned where to be more strategic and where to clean
-              things up. Next time, I'll have a clearer plan from the start to
-              avoid repeating the same mistakes.
-            </p>
-          </div>
+          <ProjectHighlight
+            icon={Lightbulb}
+            content={
+              "This project pushed me out of my comfort zone and made me rethink how I approach backend work and complex APIs. It wasn't perfect, but I've learned where to be more strategic and where to clean things up. Next time, I'll have a clearer plan from the start to avoid repeating the same mistakes."
+            }
+          />
         </section>
 
         <section className="section-card md:col-span-2 md:col-start-2">
