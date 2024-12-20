@@ -28,9 +28,10 @@ function ProjectChallenge({
       <p className="font-heading text-base uppercase font-medium text-blue-50/60">
         Challenges & Solutions
       </p>
+
       <div className="grid md:grid-cols-2 gap-5 md:gap-10">
         <div className="md:col-span-1 flex gap-x-4">
-          <IconGradientFill id="gradient--pink" icon={Warning} />
+          <IconGradientFill id="gradient--fuschia" icon={Warning} />
           <p>{challengeAndSolution.challenge}</p>
         </div>
 
@@ -41,8 +42,8 @@ function ProjectChallenge({
       </div>
       <div className="h-px bg-gradient-to-r from-fuschia-neon/50 via-blue-neon/50 to-seafoam-neon/50 rounded-full"></div>
 
-      {description.map((paragraphText) => {
-        return <p>{paragraphText}</p>;
+      {description.map((paragraphText, index) => {
+        return <p key={index}>{paragraphText}</p>;
       })}
     </div>
   );

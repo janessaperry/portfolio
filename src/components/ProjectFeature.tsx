@@ -24,8 +24,8 @@ function ProjectFeature({
           <p className="text-lg font-heading font-medium text-seafoam-500">
             {title}
           </p>
-          {description.map((paragraphText) => {
-            return <p>{paragraphText}</p>;
+          {description.map((paragraphText, index) => {
+            return <p key={index}>{paragraphText}</p>;
           })}
         </div>
 
