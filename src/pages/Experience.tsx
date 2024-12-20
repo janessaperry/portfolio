@@ -96,18 +96,7 @@ function Experience() {
                     })}
                   </ul>
 
-                  <ul className="flex flex-wrap gap-2">
-                    {role.skillsAndTools.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className="text-blue-500 text-base leading-none lowercase py-2 px-3 bg-fuschia-100 border border-fuschia-muted rounded-lg"
-                        >
-                          {item}
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  <ChipList labels={role.skillsAndTools} />
                 </li>
               );
             })}
@@ -144,18 +133,7 @@ function Experience() {
                     })}
                   </ul>
 
-                  <ul className="flex flex-wrap gap-2">
-                    {project.skillsAndTools.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className="text-blue-500 text-base leading-none lowercase py-2 px-3 bg-fuschia-100 border border-fuschia-muted rounded-lg"
-                        >
-                          {item}
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  <ChipList labels={project.skillsAndTools} />
                 </li>
               );
             })}

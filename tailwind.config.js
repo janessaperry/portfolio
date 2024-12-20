@@ -36,6 +36,10 @@ export default {
     extend: {
       animation: {
         radiate: "radiate 2s linear infinite",
+        bokeh1: "moveBokeh1 14s infinite alternate linear",
+        bokeh2: "moveBokeh2 12s infinite alternate linear",
+        bokeh3: "moveBokeh3 14s infinite alternate linear",
+        bokeh4: "moveBokeh4 16s infinite alternate linear",
       },
       keyframes: {
         radiate: {
@@ -43,6 +47,26 @@ export default {
           "40%": { "box-shadow": "0 0 0 0px rgba(149, 218, 197, 0.4)" },
           "60%": { "box-shadow": "0 0 0 6px rgba(149, 218, 197, 0.4)" },
           "100%": { "box-shadow": "0 0 0 8px rgba(149, 218, 197, 0)" },
+        },
+        moveBokeh1: {
+          "0%": { transform: "translate(0, 0)" },
+          "50%": { transform: "translate(15%, 0)" },
+          "100%": { transform: "translate(30%, 0%)" },
+        },
+        moveBokeh2: {
+          "0%": { transform: "translate(0, 0)" },
+          "50%": { transform: "translate(-25%, 0)" },
+          "100%": { transform: "translate(50%, 0%)" },
+        },
+        moveBokeh3: {
+          "0%": { transform: "translate(0, 0)" },
+          "50%": { transform: "translate(-25%, 0)" },
+          "100%": { transform: "translate(50%, 0%)" },
+        },
+        moveBokeh4: {
+          "0%": { transform: "translate(0, 0)" },
+          "50%": { transform: "translate(-20%, 0)" },
+          "100%": { transform: "translate(-10, 0)" },
         },
       },
     },

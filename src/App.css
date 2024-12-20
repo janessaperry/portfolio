@@ -5,34 +5,3 @@
 main {
   @apply flex-grow;
 }
-
-body {
-  background: radial-gradient(
-      circle at 10vw -2vw,
-      rgba(252, 0, 255, 0.1) 10vw,
-      rgba(0, 157, 255, 0.1) 30vw,
-      transparent 80vw
-    ),
-    radial-gradient(
-      circle at 110vw -2vw,
-      rgba(252, 0, 255, 0.2) 10vw,
-      rgba(0, 157, 255, 0.1) 30vw,
-      transparent 80vw
-    );
-
-  background-size: 120% 120%;
-  background-repeat: no-repeat;
-  animation: moveBokeh 4s linear infinite alternate;
-}
-
-@keyframes moveBokeh {
-  0% {
-    background-position: 40% -2vw;
-  }
-  50% {
-    background-position: 50% -8vw;
-  }
-  100% {
-    background-position: 60% -4vw;
-  }
-}

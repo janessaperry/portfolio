@@ -9,6 +9,7 @@ import "./App.css";
 import ProjectPressStart from "./pages/ProjectPressStart";
 import ProjectMetaHackathon from "./pages/ProjectMetaHackathon";
 import ScrollToTop from "./helpers/ScrollToTop.tsx";
+import BackgroundBokeh from "./components/BackgroundBokeh.tsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Header />
+        <BackgroundBokeh />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
