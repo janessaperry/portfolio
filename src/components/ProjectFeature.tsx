@@ -1,4 +1,5 @@
 import browserFrame from "../assets/graphics/browser-container.svg";
+
 interface ProjectFeatureProps {
   icon: React.ElementType;
   title: string;
