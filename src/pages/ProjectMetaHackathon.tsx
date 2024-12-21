@@ -54,12 +54,12 @@ function ProjectMetaHackathon() {
         />
       </section>
 
-      <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">
-        <section className="hidden md:section-card md:col-span-1 md:sticky md:top-10 md:h-fit">
-          <div className="flex flex-col gap-4">
+      <div className="grid md:grid-cols-3 gap-4 md:flex-row md:gap-10">
+        <section className="hidden md:section-card md:col-span-1 md:sticky md:top-32 md:h-fit md:!space-y-10">
+          <div className="space-y-4">
             <h2>&lt;Contents&gt;</h2>
             <nav>
-              <ul className="flex flex-col gap-2">
+              <ul className="space-y-4 list-none">
                 <li>
                   <a href="#overview" className="text-link">
                     Overview
@@ -81,10 +81,10 @@ function ProjectMetaHackathon() {
             </nav>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="space-y-4">
             <h2>&lt;Projects&gt;</h2>
             <nav>
-              <ul className="flex flex-col gap-2">
+              <ul className="space-y-4 list-none">
                 {allProjects.map((project) => {
                   return (
                     <li key={project.id}>
@@ -103,7 +103,9 @@ function ProjectMetaHackathon() {
         </section>
 
         <section className="section-card md:col-span-2">
-          <h2 id="overview">&lt;Overview&gt;</h2>
+          <h2 id="overview" className="scroll-mt-40">
+            &lt;Overview&gt;
+          </h2>
 
           <p className="text-xl">
             During a 24-hour hackathon hosted by Meta, I had the chance to
@@ -166,7 +168,9 @@ function ProjectMetaHackathon() {
         </section>
 
         <section className="section-card md:col-span-2 md:col-start-2">
-          <h2 id="features">&lt;Features&gt;</h2>
+          <h2 id="features" className="scroll-mt-40">
+            &lt;Features&gt;
+          </h2>
 
           <p className="text-xl">
             Here are some of the key features of Iggy Discover.
@@ -196,7 +200,9 @@ function ProjectMetaHackathon() {
         </section>
 
         <section className="section-card md:col-span-2 md:col-start-2">
-          <h2 id="retrospective">&lt;Retrospective&gt;</h2>
+          <h2 id="retrospective" className="scroll-mt-40">
+            &lt;Retrospective&gt;
+          </h2>
 
           <p>
             Looking back, the 24-hour hackathon was a whirlwind of collaboration
