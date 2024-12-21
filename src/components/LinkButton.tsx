@@ -2,8 +2,9 @@ interface LinkButtonProps {
   label: string;
   href: string;
   variant?: "primary" | "secondary";
-  size?: "base" | "lg";
+  size?: "base" | "lg" | "xl";
   target?: "_self" | "_blank";
+  iconLeft?: JSX.Element;
   iconRight?: JSX.Element;
 }
 
@@ -13,6 +14,7 @@ function LinkButton({
   variant = "primary",
   size = "base",
   target = "_self",
+  iconLeft,
   iconRight,
 }: LinkButtonProps) {
   const variantClasses = {
@@ -31,8 +33,9 @@ function LinkButton({
         flex justify-center items-center
         transition-all ease-in-out duration-300`}
     >
+      {iconLeft && <span className="pr-3">{iconLeft}</span>}
       {label}
-      {iconRight && <span className="pl-1">{iconRight}</span>}
+      {iconRight && <span className="pl-3">{iconRight}</span>}
     </a>
   );
 }

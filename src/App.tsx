@@ -10,6 +10,7 @@ import ProjectPressStart from "./pages/ProjectPressStart";
 import ProjectMetaHackathon from "./pages/ProjectMetaHackathon";
 import ScrollToTop from "./helpers/ScrollToTop.tsx";
 import BackgroundBokeh from "./components/BackgroundBokeh.tsx";
+import NotFound from "./pages/NotFound.tsx";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           />
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
