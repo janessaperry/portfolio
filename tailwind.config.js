@@ -45,12 +45,16 @@ export default {
       },
       keyframes: {
         slideUpAndOut: {
-          "0%": { transform: "translateY(0%)" },
+          "0%": {
+            transform: "translateY(0%)",
+            opacity: "100%",
+            visibility: "visible",
+          },
           "100%": {
-            transform: "translateY(-200%)",
+            transform: "translateY(-120%)",
             opacity: "0%",
             height: 0,
-            display: "none",
+            visibility: "hidden",
           },
         },
         radiate: {

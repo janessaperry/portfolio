@@ -2,7 +2,7 @@ import BackgroundBokeh from "./BackgroundBokeh";
 
 function LogoAnimation() {
   return (
-    <div className="h-screen w-screen z-20 bg-blue-700 animate-slideOut">
+    <div className="h-screen w-screen z-20 relative bg-blue-700 animate-slideOut">
       <BackgroundBokeh />
 
       <svg
