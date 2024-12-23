@@ -14,19 +14,21 @@ import NotFound from "./pages/NotFound.tsx";
 import "./App.css";
 
 function App() {
-  const showAnimatedLogo =
-    sessionStorage.getItem("showAnimatedLogo") === null
-      ? sessionStorage.setItem("showAnimatedLogo", "true")
-      : sessionStorage.getItem("showAnimatedLogo");
-
-  if (showAnimatedLogo) {
-    sessionStorage.setItem("showAnimatedLogo", "false");
+  const showAnimatedLogo = sessionStorage.getItem("showAnimatedLogo");
+  if (showAnimatedLogo === null) {
+    sessionStorage.setItem("showAnimatedLogo", "true");
   }
+
+  const handleAnimationEnd = () => {
+    sessionStorage.setItem("showAnimatedLogo", "false");
+  };
 
   return (
     <>
       <BrowserRouter>
-        {showAnimatedLogo === "true" && <LogoAnimation />}
+        {showAnimatedLogo === "true" && (
+          <LogoAnimation handleAnimationEnd={handleAnimationEnd} />
+        )}
         <ScrollToTop />
         <Header />
         <BackgroundBokeh />

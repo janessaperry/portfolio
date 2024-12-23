@@ -1,8 +1,15 @@
 import BackgroundBokeh from "./BackgroundBokeh";
 
-function LogoAnimation() {
+function LogoAnimation({ handleAnimationEnd }: any) {
   return (
-    <div className="h-screen w-screen z-20 relative bg-blue-700 animate-slideOut">
+    <div
+      className="h-screen w-screen z-20 relative bg-blue-700 animate-slideUpAndOut"
+      onAnimationEnd={(e) => {
+        if (e.animationName === "slideUpAndOut") {
+          handleAnimationEnd();
+        }
+      }}
+    >
       <BackgroundBokeh />
 
       <svg

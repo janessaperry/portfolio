@@ -36,7 +36,7 @@ export default {
     },
     extend: {
       animation: {
-        slideOut: "slideUpAndOut 1.5s ease 3s forwards",
+        slideUpAndOut: "slideUpAndOut 1.5s ease 3s forwards",
         radiate: "radiate 2s linear infinite",
         bokeh1: "moveBokeh1 14s infinite alternate linear",
         bokeh2: "moveBokeh2 12s infinite alternate linear",
