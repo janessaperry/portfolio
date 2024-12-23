@@ -12,21 +12,29 @@ import BackgroundBokeh from "./components/BackgroundBokeh.tsx";
 import ScrollToTop from "./helpers/ScrollToTop.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import "./App.css";
+import { useEffect, useState } from "react";
 
 function App() {
-  const showAnimatedLogo = sessionStorage.getItem("showAnimatedLogo");
-  if (showAnimatedLogo === null) {
-    sessionStorage.setItem("showAnimatedLogo", "true");
-  }
+  const [showAnimatedLogo, setShowAnimatedLogo] = useState(false);
+
+  useEffect(() => {
+    const logoStorageState = sessionStorage.getItem("showAnimatedLogo");
+
+    if (logoStorageState === null) {
+      sessionStorage.setItem("showAnimatedLogo", "true");
+      setShowAnimatedLogo(true);
+    }
+  }, []);
 
   const handleAnimationEnd = () => {
     sessionStorage.setItem("showAnimatedLogo", "false");
+    setShowAnimatedLogo(false);
   };
 
   return (
     <>
       <BrowserRouter>
-        {showAnimatedLogo === "true" && (
+        {showAnimatedLogo && (
           <LogoAnimation handleAnimationEnd={handleAnimationEnd} />
         )}
         <ScrollToTop />
