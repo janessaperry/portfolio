@@ -36,6 +36,7 @@ export default {
     },
     extend: {
       animation: {
+        slideOut: "slideUpAndOut 1.5s ease 3s forwards",
         radiate: "radiate 2s linear infinite",
         bokeh1: "moveBokeh1 14s infinite alternate linear",
         bokeh2: "moveBokeh2 12s infinite alternate linear",
@@ -43,6 +44,15 @@ export default {
         bokeh4: "moveBokeh4 16s infinite alternate linear",
       },
       keyframes: {
+        slideUpAndOut: {
+          "0%": { transform: "translateY(0%)" },
+          "100%": {
+            transform: "translateY(-200%)",
+            opacity: "0%",
+            height: 0,
+            display: "none",
+          },
+        },
         radiate: {
           "0%": { "box-shadow": "0 0 0 0px rgba(149, 218, 197, 00)" },
           "40%": { "box-shadow": "0 0 0 0px rgba(149, 218, 197, 0.4)" },

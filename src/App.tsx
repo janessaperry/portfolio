@@ -5,17 +5,28 @@ import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import "./App.css";
 import ProjectPressStart from "./pages/ProjectPressStart";
 import ProjectMetaHackathon from "./pages/ProjectMetaHackathon";
-import ScrollToTop from "./helpers/ScrollToTop.tsx";
+import LogoAnimation from "./components/LogoAnimation.tsx";
 import BackgroundBokeh from "./components/BackgroundBokeh.tsx";
+import ScrollToTop from "./helpers/ScrollToTop.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import "./App.css";
 
 function App() {
+  const showAnimatedLogo =
+    sessionStorage.getItem("showAnimatedLogo") === null
+      ? sessionStorage.setItem("showAnimatedLogo", "true")
+      : sessionStorage.getItem("showAnimatedLogo");
+
+  if (showAnimatedLogo) {
+    sessionStorage.setItem("showAnimatedLogo", "false");
+  }
+
   return (
     <>
       <BrowserRouter>
+        {showAnimatedLogo === "true" && <LogoAnimation />}
         <ScrollToTop />
         <Header />
         <BackgroundBokeh />
