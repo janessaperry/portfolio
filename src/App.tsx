@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -12,7 +13,6 @@ import BackgroundBokeh from "./components/BackgroundBokeh.tsx";
 import ScrollToTop from "./helpers/ScrollToTop.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import "./App.css";
-import { useEffect, useState } from "react";
 
 function App() {
   const [showAnimatedLogo, setShowAnimatedLogo] = useState(false);
