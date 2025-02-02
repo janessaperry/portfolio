@@ -7,10 +7,21 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
-dist
-dist-ssr
-*.local
+
+# Build & Cache
+dist/
+dist-ssr/
+build/
+out/
+.vite/
+.vite-cache/
+.cache/
+*.cache
+
+# TypeScript
+*.tsbuildinfo
 
 # Editor directories and files
 .vscode/*
@@ -23,5 +34,18 @@ dist-ssr
 *.sln
 *.sw?
 
+# Environment Variables
 .env
+.env.local
 .env.production
+.env.development
+.env.test
+
+# Testing & Coverage
+coverage/
+.jest/
+.vitest/
+
+# Linting & Formatting
+.eslintcache
+.prettier.cache
