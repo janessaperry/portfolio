@@ -20,7 +20,7 @@ export const skillsAndTools: SkillsAndTools = {
     "MySQL",
     "REST APIs",
     "Git",
-    "Github",
+    "GitHub",
     "Agile",
     "UI Design",
     "Responsive Design",

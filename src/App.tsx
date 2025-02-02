@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -8,35 +7,15 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProjectPressStart from "./pages/ProjectPressStart";
 import ProjectMetaHackathon from "./pages/ProjectMetaHackathon";
-import LogoAnimation from "./components/LogoAnimation.tsx";
 import BackgroundBokeh from "./components/BackgroundBokeh.tsx";
 import ScrollToTop from "./helpers/ScrollToTop.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import "./App.css";
 
 function App() {
-  const [showAnimatedLogo, setShowAnimatedLogo] = useState(false);
-
-  useEffect(() => {
-    const logoStorageState = sessionStorage.getItem("showAnimatedLogo");
-
-    if (logoStorageState === null) {
-      sessionStorage.setItem("showAnimatedLogo", "true");
-      setShowAnimatedLogo(true);
-    }
-  }, []);
-
-  const handleAnimationEnd = () => {
-    sessionStorage.setItem("showAnimatedLogo", "false");
-    setShowAnimatedLogo(false);
-  };
-
   return (
     <>
       <BrowserRouter>
-        {showAnimatedLogo && (
-          <LogoAnimation handleAnimationEnd={handleAnimationEnd} />
-        )}
         <ScrollToTop />
         <Header />
         <BackgroundBokeh />
