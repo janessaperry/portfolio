@@ -1,50 +1,17 @@
-# React + TypeScript + Vite
+# **Welcome to My Portfolio ✨**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi there! Thanks for stopping by. Here, you'll find an overview of my work experience and personal projects, with a focus on **React** and **TypeScript**. Feel free to explore and reach out if you have any questions or just want to connect!
 
-Currently, two official plugins are available:
+## **Features**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **TypeScript** and **React** for building interactive, dynamic components
+- **Tailwind CSS** for sleek and responsive design
+- **Vite** for an ultra-fast development experience
 
-## Expanding the ESLint configuration
+## **Technologies Used**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![My Skills](https://skillicons.dev/icons?i=ts,react,tailwind,vite)
 
-- Configure the top-level `parserOptions` property like this:
+## **Contact**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+If you’d like to get in touch, you can email me at [hello@janessaperry.com](mailto:hello@janessaperry.com) or connect with me on [LinkedIn](https://linkedin.com/in/janessa-perry/). I’m always open to new opportunities and collaborations!
