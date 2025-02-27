@@ -4,7 +4,6 @@ import { skillsAndTools } from "../data/skillsAndTools";
 import { experienceDetails } from "../data/experienceDetails";
 import { allProjects } from "../data/allProjects";
 import { educationDetails } from "../data/educationDetails";
-import JanessaPerryResume from "../assets/files/JanessaPerry-SoftwareDeveloperResume.pdf";
 import { DownloadSimple } from "@phosphor-icons/react";
 import LinkButton from "../components/LinkButton";
 import LinkSocial from "../components/LinkSocial";
@@ -24,7 +23,7 @@ function Experience() {
           <div className="w-fit mx-auto">
             <LinkButton
               label="Download Resume"
-              href={JanessaPerryResume}
+              href="/files/JanessaPerry-SoftwareDeveloperResume.pdf"
               size="lg"
               target="_blank"
               iconRight={<DownloadSimple weight="bold" className="text-xl" />}
