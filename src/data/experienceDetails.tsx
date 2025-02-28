@@ -95,7 +95,7 @@ export const experienceDetails: ExperienceDetails[] = [
   },
   {
     id: "ui-design--sentis",
-    jobTitle: "Manager, UI Design & Project Solutions",
+    jobTitle: "UI Design & Project Solutions",
     company: "The Sentis Group",
     yearRange: "2016 - 2021",
     description: [
