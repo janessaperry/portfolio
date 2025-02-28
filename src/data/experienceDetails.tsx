@@ -143,7 +143,7 @@ export const experienceDetails: ExperienceDetails[] = [
   },
   {
     id: "analyst--sentis",
-    jobTitle: "Project Manager",
+    jobTitle: "Analyst",
     company: "The Sentis Group",
     yearRange: "2013 - 2015",
     description: [
