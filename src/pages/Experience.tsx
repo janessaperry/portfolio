@@ -68,7 +68,7 @@ function Experience() {
           <IconList listItems={experienceHighlights} />
         </section>
 
-        <section className="section-card md:col-span-2 md:row-span-3 md:order-4">
+        <section className="section-card md:col-span-2 md:row-span-6 md:order-4">
           <h2>&lt;Experience&gt;</h2>
 
           <ul className="flex flex-col gap-10 pl-10">

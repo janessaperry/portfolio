@@ -17,7 +17,7 @@ function LinkSocial({
     <a
       href={url}
       target={target}
-      className="flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4 group"
+      className="flex md:flex-col lg:flex-row gap-2 md:gap-1 lg:gap-4 group normal-case"
     >
       <Icon className="text-seafoam-500 text-3xl shrink-0" />
       <div className="flex-auto flex flex-col gap-1">
