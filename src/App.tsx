@@ -12,7 +12,10 @@ import ScrollToTop from "./helpers/ScrollToTop.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import "./App.css";
 import LogRocket from "logrocket";
-LogRocket.init("p4kv8o/portfolio");
+
+if (import.meta.env.PROD) {
+  LogRocket.init(import.meta.env.VITE_LOGROCKET_ID);
+}
 
 function App() {
   return (
