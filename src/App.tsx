@@ -13,7 +13,7 @@ import NotFound from "./pages/NotFound.tsx";
 import "./App.css";
 import LogRocket from "logrocket";
 
-if (import.meta.env.PROD) {
+if (import.meta.env.PROD && window.location.hostname === "janessaperry.com") {
   LogRocket.init(import.meta.env.VITE_LOGROCKET_ID);
 }
 
