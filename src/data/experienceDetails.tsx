@@ -10,7 +10,7 @@ interface ExperienceDetails {
 export const experienceDetails: ExperienceDetails[] = [
   {
     id: "teaching-assistant--brainstation",
-    jobTitle: "Teaching Assistant",
+    jobTitle: "Teaching Assistant, Software Engineering",
     company: "BrainStation",
     yearRange: "2025 - Present",
     description: [
@@ -43,15 +43,15 @@ export const experienceDetails: ExperienceDetails[] = [
     ],
   },
   {
-    id: "freelance-design--contract",
-    jobTitle: "Freelance Designer",
+    id: "web-design--freelance",
+    jobTitle: "Web Designer",
     company: "Self-employed",
     yearRange: "2022 - Present",
     description: [
       "Build and customize WordPress websites using prebuilt themes and custom CSS; provide documentation for clients to manage their sites after launch.",
       "Design and develop internal tools and resources to streamline workflows and improve productivity.",
       "Designed an online learning platform for Indigenous adults, improving access to high school credits in remote areas.",
-      "Collaborate closely with clients to define project scope, align with brand guidelines, and implement design strategies for projects.",
+      "Collaborate closely with clients to define project scope, align with brand guidelines, and implement user-focused design strategies for projects.",
     ],
     skillsAndTools: [
       "Figma",
@@ -105,7 +105,7 @@ export const experienceDetails: ExperienceDetails[] = [
       "Refactored survey platform stylesheets to establish a consistent design system, ensuring consistent typography, colour schemes, and layouts.",
       "Documented best practices for implementing custom survey questions, providing internal teams with guidance on GUI configuration and data processing.",
       "Designed interactive KPI dashboards with dynamic filtering functionality, helping clients analyze survey data and track key insights. ",
-      "Maintained company website and digital assets.",
+      "Maintained company website and digital assets, contributing to a cohesive brand identity.",
     ],
     skillsAndTools: [
       "HTML",
