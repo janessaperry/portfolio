@@ -20,7 +20,7 @@ function ProjectChallenge({
   return (
     <div className="flex flex-col gap-y-5">
       <div className="title-wrapper">
-        <h3>{title} PROP</h3>
+        <h3>{title}</h3>
         <p className="text-xl">{overview}</p>
       </div>
 
