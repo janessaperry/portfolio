@@ -6,7 +6,7 @@ import {
 } from "@phosphor-icons/react";
 import { contactLinks } from "../data/contactLinks";
 import LinkSocial from "../components/LinkSocial";
-import JanessaPerryHeadshot from "../assets/images/janessa-perry-headshot-2024.jpg";
+import JanessaPerryHeadshot from "../assets/images/janessa-perry-headshot.png";
 
 interface Highlights {
   id: string;
@@ -160,7 +160,7 @@ function About() {
             <img
               src={JanessaPerryHeadshot}
               alt="Janessa Perry headshot"
-              className="mb-4 rounded-full max-w-48"
+              className="mb-4 rounded-full max-w-48 shadow-[inset_0_2px_4px_0_rgba(103,58,183,0.4)] border-t border-t-fuschia-300/40"
             />
             <p className="text-2xl font-medium">Janessa Perry</p>
             <p className="text-xl ">Web Developer</p>
