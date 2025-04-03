@@ -12,7 +12,7 @@ export const experienceDetails: ExperienceDetails[] = [
     id: "teaching-assistant--brainstation",
     jobTitle: "Teaching Assistant, Software Engineering",
     company: "BrainStation",
-    yearRange: "2025 - Present",
+    yearRange: "Jan - Mar 2025",
     description: [
       "Provide code reviews and feedback on JavaScript, React, HTML/CSS, and Node.js/Express projects for a cohort of ~40 students.",
       "Mentor students one-on-one, helping them improve problem-solving skills and understand key software engineering concepts.",
