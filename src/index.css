@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "Hack Nerd Font Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: url(public/fonts/HackNerdFontMono-Regular.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Hack Nerd Font Mono";
+    font-style: italic;
+    font-weight: 400;
+    src: url(public/fonts/HackNerdFontMono-Italic.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Hack Nerd Font Mono";
+    font-style: normal;
+    font-weight: 600;
+    src: url(public/fonts/HackNerdFontMono-Bold.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Hack Nerd Font Mono";
+    font-style: italic;
+    font-weight: 600;
+    src: url(public/fonts/HackNerdFontMono-BoldItalic.ttf) format("truetype");
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -57,6 +87,10 @@ button,
 textarea,
 select {
   @apply font-body;
+}
+
+code {
+  @apply font-mono text-base text-blue-50 bg-blue-700 p-1 rounded-sm
 }
 
 a {
