@@ -1,5 +1,6 @@
 import pressStartThumbnail from "../assets/images/mockups/press-start--collection--laptop.png";
 import metaHackathonThumbnail from "../assets/images/mockups/iggy-discover--flow--mobile.png";
+import inStockThumbnail from "../assets/images/mockups/mockups-UPDATE.png";
 
 export interface AllProjects {
   id: string;
@@ -107,6 +108,48 @@ export const allProjects: AllProjects[] = [
       "JavaScript",
       "Node JS",
       "Express",
+      "Figma",
+    ],
+  },
+  {
+    id: "in-stock--brainstation",
+    showcase: true,
+    slug: "in-stock",
+    githubRepos: [
+      {
+        type: "client",
+        title: "InStock: Client",
+        url: "github.com/janessaperry/UPDATE",
+      },
+      {
+        type: "server",
+        title: "InStock: Server",
+        url: "github.com/janessaperry/UPDATE",
+      },
+    ],
+    categories: ["Development"],
+    thumbnailInfo: {
+      filePath: inStockThumbnail,
+      altText: "InStock - Warehouse and Inventory management web app preview.",
+    },
+    title: "InStock",
+    type: "BrainStation",
+    yearCompleted: "2025",
+    overview:
+      "A fully responsive, full-stack inventory management system built with React, TypeScript, Node.js, and PostgreSQL.",
+    description: [
+      "UPDATE - FOR EXPERIENCE PAGE",
+    ],
+    skillsAndTools: [
+      "React",
+      "TypeScript",
+      "Sass",
+      "Node JS",
+      "Express",
+      "PostgreSQL",
+      "Supabase",
+      "Winston",
+      "Node-Cron",
       "Figma",
     ],
   },
