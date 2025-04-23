@@ -49,3 +49,6 @@ coverage/
 # Linting & Formatting
 .eslintcache
 .prettier.cache
+
+# Ignore backup/draft content
+data-backups/
