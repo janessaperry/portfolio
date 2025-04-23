@@ -10,7 +10,7 @@ import ChipList from "../components/ChipList";
 import {
   ArrowSquareOut, ClockCountdown, Database,
   GithubLogo, Lightbulb, PersonArmsSpread, ShieldCheck, Stack,
-  Textbox, Trash,
+  Textbox,
 } from "@phosphor-icons/react";
 import LinkButton from "../components/LinkButton";
 import LinkSocial from "../components/LinkSocial";
@@ -219,72 +219,117 @@ function ProjectMetaHackathon() {
             <ProjectFeature
               icon={PersonArmsSpread}
               title="Building an accessible custom dropdown input."
-              description={[
-                `I built a custom dropdown input from scratch that supports screen readers, keyboard navigation, and intuitive focus management.`,
-                `Each option uses <code>role='radio'</code>, <code>aria-checked</code>, and <code>tabIndex='0'</code> to communicate state to screen readers, while keyboard events handle navigation and selection.`
+              contentBlocks={[
+                {
+                  type: "text",
+                  paragraph: `I built a custom dropdown input from scratch that supports screen readers, keyboard navigation, and intuitive focus management.`
+                },
+                {
+                  type: "text",
+                  paragraph: `Each option uses <code>role='radio'</code>, <code>aria-checked</code>, and <code>tabIndex='0'</code> to communicate state to screen readers, while keyboard events handle navigation and selection.`
+                },
+                {type: "image", imageSrc: CustomDropdownInput, imageAlt: "Alt text here"},
+                {
+                  type: "text",
+                  paragraph: `To support keyboard navigation, I manage focus with a handler that responds to <code>ArrowUp</code>, <code>ArrowDown</code>, and <code>Escape</code>.`
+                },
+                {type: "image", imageSrc: HandleOptionNav, imageAlt: "Alt text here"},
+                {
+                  type: "text",
+                  paragraph: `This was my first deep dive into accessibility, and it gave me a stronger appreciation for the work that goes into building inclusive UI components.`
+                },
               ]}
-              imageSrc={CustomDropdownInput}
-            />
-
-            <ProjectFeature
-              icon={Trash}
-              title="CONTINUED (UPDATE) Building an accessible custom dropdown input."
-              description={[
-                `To support keyboard navigation, I manage focus with a handler that responds to <code>ArrowUp</code>, <code>ArrowDown</code>, and <code>Escape</code>.`,
-                `This was my first deep dive into accessibility, and it gave me a stronger appreciation for the work that goes into building inclusive UI components.`,
-              ]}
-              imageSrc={HandleOptionNav}
             />
 
             <ProjectFeature
               icon={Textbox}
               title="Formatting the phone number while a user types."
-              description={[
-                `Continuing with the theme of custom inputs, I also built a phone number field that formats the value in real time as the user types.`,
-                `Everything was working smoothly until I ran into an issue when editing a number in the middle of the input. Because controlled inputs re-render on each keystroke, the cursor kept jumping to the end of the string which is not ideal.`,
-                `To fix this, I wrote a function to save the cursor position for each keystroke, then used <code>useLayoutEffect</code> to restore the selection position immediately after each update.`,
-                `This ended up being one of those deceptively simple features that taught me how much thought it takes to get small UX details feeling smooth and intuitive.`
+              contentBlocks={[
+                {
+                  type: "text",
+                  paragraph: `Continuing with the theme of custom inputs, I also built a phone number field that formats the value in real time as the user types.`
+                },
+                {
+                  type: "text",
+                  paragraph: `Everything was working smoothly until I ran into an issue when editing a number in the middle of the input. Because controlled inputs re-render on each keystroke, the cursor kept jumping to the end of the string which is not ideal.`
+                },
+                {
+                  type: "text",
+                  paragraph: `To fix this, I wrote a function to save the cursor position for each keystroke, then used <code>useLayoutEffect</code> to restore the selection position immediately after each update.`
+                },
+                {type: "image", imageSrc: UseLayoutEffect, imageAlt: "Alt text here"},
+                {
+                  type: "text",
+                  paragraph: `This ended up being one of those deceptively simple features that taught me how much thought it takes to get small UX details feeling smooth and intuitive.`
+                },
+                {type: "text", paragraph: ``},
               ]}
-              imageSrc={UseLayoutEffect}
             />
 
             <ProjectFeature
               icon={Stack}
               title="Building a scalable backend."
-              description={[
-                `I built the backend based on provided API specs by setting up routes, request handlers, and database queries to match the defined structure.`,
-                `To keep things organized, I followed an MVC style pattern: routes handle incoming requests and pass them to controllers, which manage the business logic and communicate with models. The models run raw SQL queries directly against the database. This setup helped me get a clearer sense of how data flows through the app and where different responsibilities should live.`,
+              contentBlocks={[
+                {
+                  type: "text",
+                  paragraph: `I built the backend based on provided API specs by setting up routes, request handlers, and database queries to match the defined structure.`
+                },
+                {
+                  type: "text",
+                  paragraph: `To keep things organized, I followed an MVC style pattern: routes handle incoming requests and pass them to controllers, which manage the business logic and communicate with models. The models run raw SQL queries directly against the database. This setup helped me get a clearer sense of how data flows through the app and where different responsibilities should live.`
+                },
+                {type: "image", imageSrc: MvcArchitecture, imageAlt: "Alt text here"},
               ]}
-              imageSrc={MvcArchitecture}
             />
 
             <ProjectFeature
               icon={ShieldCheck}
               title="Centralizing error handling and implementing logging with Winston."
-              description={[
-                `To make the backend feel more 'production-ready', I added centralized error handling middleware and integrated Winston for logging.`,
-                `Since both were new to me, I spent some time digging into the docs to understand how they work and what problems they solve. The <code>errorHandler</code> middleware now catches errors across the app, and  either logs information or returns user-friendly messages, depending on the environment.`,
-                `Adding logging was a great experience and even helped me optimize my frontend API calls. While testing, I noticed frontend API calls we being triggered (even when the first one failed). Thinking this was odd, I looked into what was happening and cleaned up the logic so the second call only fired if the first one succeeded. Catching that in the logs helped me spot and fix a bug I might’ve missed otherwise!`,
+              contentBlocks={[
+                {
+                  type: "text",
+                  paragraph: `To make the backend feel more 'production-ready', I added centralized error handling middleware and integrated Winston for logging.`
+                },
+                {
+                  type: "text",
+                  paragraph: `Since both were new to me, I spent some time digging into the docs to understand how they work and what problems they solve. The <code>errorHandler</code> middleware now catches errors across the app, and  either logs information or returns user-friendly messages, depending on the environment.`
+                },
+                {
+                  type: "text",
+                  paragraph: `Adding logging was a great experience and even helped me optimize my frontend API calls. While testing, I noticed frontend API calls we being triggered (even when the first one failed). Thinking this was odd, I looked into what was happening and cleaned up the logic so the second call only fired if the first one succeeded. Catching that in the logs helped me spot and fix a bug I might’ve missed otherwise!`
+                },
               ]}
             />
 
             <ProjectFeature
               icon={Database}
               title="Keeping the database clean with scheduled reseeds."
-              description={[
-                `In an attempt to keep the demo data clean, I set up a scheduled reseed that runs every three days using <code>node-cron</code>.`,
-                `Setting this up led me to explore how database connections are managed across scheduled scripts and the main application, which gave me a deeper understanding how of background tasks interact with a live system.`,
+              contentBlocks={[
+                {
+                  type: "text",
+                  paragraph: `In an attempt to keep the demo data clean, I set up a scheduled reseed that runs every three days using <code>node-cron</code>.`
+                },
+                {
+                  type: "text",
+                  paragraph: `Setting this up led me to explore how database connections are managed across scheduled scripts and the main application, which gave me a deeper understanding how of background tasks interact with a live system.`
+                },
               ]}
             />
 
             <ProjectFeature
               icon={ClockCountdown}
               title="Protecting the API with rate limiting"
-              description={[
-                `To protect the API from abuse, I added rate-limiting that allows 20 write operations per IP every 15 minutes. This helps protect the demo site from being flooded with requests without requiring users to sign in.`,
-                `<code>GET</code> requests are excluded from this limit so users can explore freely.`,
+              contentBlocks={[
+                {
+                  type: "text",
+                  paragraph: `To protect the API from abuse, I added rate-limiting that allows 20 write operations per IP every 15 minutes. This helps protect the demo site from being flooded with requests without requiring users to sign in.`
+                },
+                {
+                  type: "text",
+                  paragraph: `<code>GET</code> requests are excluded from this limit so users can explore freely.`
+                },
+                {type: "image", imageSrc: RateLimiting, imageAlt: "Alt text here"},
               ]}
-              imageSrc={RateLimiting}
             />
           </div>
         </section>

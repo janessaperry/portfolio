@@ -180,21 +180,26 @@ function ProjectMetaHackathon() {
             <ProjectFeature
               icon={Image}
               title="Discover similar content using visual search."
-              description={[
-                "Iggy Discover lets users search for images from their Instagram feed to find similar posts. Whether it's a photo of pasta or a cityscape, the tool uses AI to return related content, helping users explore more of what they enjoy.",
+              contentBlocks={[
+                {
+                  type: "text",
+                  paragraph: `Iggy Discover lets users search for images from their Instagram feed to find similar posts. Whether it's a photo of pasta or a cityscape, the tool uses AI to return related content, helping users explore more of what they enjoy.`
+                },
+                {type: "video", videoSrc: VisualSearch, videoLayout: "portrait"}
               ]}
-              videoSrc={VisualSearch}
-              videoLayout="portrait"
             />
 
             <ProjectFeature
               icon={Storefront}
               title="Find shops, restaurants, and brands with similar images in their posts."
-              description={[
-                "Beyond posts, Iggy Discover helps users discover businesses or brands that offer products similar to the images being searched for. In the example below, you can discover restaurants serving up some delicious pasta. It's a great way to find new places, products, or services that match your tastes.",
+              contentBlocks={[
+                {
+                  type: "text",
+                  paragraph: `Beyond posts, Iggy Discover helps users discover businesses or brands that offer products similar to the images being searched for. In the example below, you can discover restaurants serving up some delicious pasta. It's a great way to find new places, products, or services that match your tastes.`
+                },
+                {type: "video", videoSrc: ExploreAccounts, videoLayout: "portrait"}
+
               ]}
-              videoSrc={ExploreAccounts}
-              videoLayout="portrait"
             />
           </div>
         </section>

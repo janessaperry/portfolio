@@ -204,39 +204,46 @@ function ProjectPressStart() {
             <ProjectFeature
               icon={TreasureChest}
               title="Keep track of the games you own."
-              description={[
-                "Easily add games to your collection and note which console they're for, whether they're physical or digital. It's a great way to keep everything organized!",
-              ]}
-              videoSrc={AddToCollection}
-            />
+              contentBlocks={[
+                {
+                  type: "text",
+                  paragraph: `Easily add games to your collection and note which console they're for, whether they're physical or digital. It's a great way to keep everything organized!`
+                },
+                {type: "video", videoSrc: AddToCollection}
+              ]}/>
 
             <ProjectFeature
               icon={GameController}
-              title="Manage games in your collection by keeping track of play
-                    status."
-              description={[
-                "Setting the play status lets you quickly filter for games you want to play to you can dive in to your next adventure sooner.",
-              ]}
-              videoSrc={ManageCollection}
-            />
+              title="Manage games in your collection by keeping track of play status."
+              contentBlocks={[
+                {
+                  type: "text",
+                  paragraph: `Setting the play status lets you quickly filter for games you want to play to you can dive in to your next adventure sooner.`
+                },
+                {type: "video", videoSrc: ManageCollection}
+              ]}/>
 
             <ProjectFeature
               icon={Sliders}
               title="Filter games in your collection decide what to play next."
-              description={[
-                "Right now, users can filter by status and console, but I'm working on adding more options—like genre or estimated playtime—so you can really narrow down what you want to play next.",
-              ]}
-              videoSrc={FilterCollection}
-            />
+              contentBlocks={[
+                {
+                  type: "text",
+                  paragraph: `Right now, users can filter by status and console, but I'm working on adding more options (like genre or estimated playtime) so you can really narrow down what you want to play next.`
+                },
+                {type: "video", videoSrc: FilterCollection}
+              ]}/>
 
             <ProjectFeature
               icon={MagnifyingGlass}
               title="Discover new or upcoming games."
-              description={[
-                "The explore page lets you browse through games by platform or see what's coming soon. It's the perfect way to find your next adventure, whether it's a new release or something you missed.",
-              ]}
-              videoSrc={ExploreGames}
-            />
+              contentBlocks={[
+                {
+                  type: "text",
+                  paragraph: `The explore page lets you browse through games by platform or see what's coming soon. It's the perfect way to find your next adventure, whether it's a new release or something you missed.`
+                },
+                {type: "video", videoSrc: ExploreGames}
+              ]}/>
           </div>
         </section>
 
