@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { AllProjects } from "../data/allProjects";
+import {Link} from "react-router-dom";
+import {AllProjects} from "../data/allProjects";
 import ChipList from "./ChipList";
 
 interface ProjectListProps {
@@ -7,7 +7,7 @@ interface ProjectListProps {
   variant?: "showcase" | "default";
 }
 
-function ProjectList({ projectsData, variant = "default" }: ProjectListProps) {
+function ProjectList({projectsData, variant = "default"}: ProjectListProps) {
   const variantClasses = {
     showcase: "col-span-2 py-8 lg:flex-row",
     default:
@@ -41,7 +41,7 @@ function ProjectList({ projectsData, variant = "default" }: ProjectListProps) {
                   </h2>
 
                   <p className="text-blue-500 normal-case">
-                    {projectDetails.overview}
+                    {projectDetails.teaser}
                   </p>
 
                   <ChipList

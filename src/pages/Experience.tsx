@@ -1,10 +1,10 @@
-import { experienceHighlights } from "../data/experienceHighlights";
-import { contactLinks } from "../data/contactLinks";
-import { skillsAndTools } from "../data/skillsAndTools";
-import { experienceDetails } from "../data/experienceDetails";
-import { allProjects } from "../data/allProjects";
-import { educationDetails } from "../data/educationDetails";
-import { DownloadSimple } from "@phosphor-icons/react";
+import {experienceHighlights} from "../data/experienceHighlights";
+import {contactLinks} from "../data/contactLinks";
+import {skillsAndTools} from "../data/skillsAndTools";
+import {experienceDetails} from "../data/experienceDetails";
+import {allProjects} from "../data/allProjects";
+import {educationDetails} from "../data/educationDetails";
+import {DownloadSimple} from "@phosphor-icons/react";
 import LinkButton from "../components/LinkButton";
 import LinkSocial from "../components/LinkSocial";
 import ChipList from "../components/ChipList";
@@ -26,7 +26,7 @@ function Experience() {
               href="/files/JanessaPerry-SoftwareDeveloperResume.pdf"
               size="lg"
               target="_blank"
-              iconRight={<DownloadSimple weight="bold" className="text-xl" />}
+              iconRight={<DownloadSimple weight="bold" className="text-xl"/>}
             />
           </div>
         </div>
@@ -65,7 +65,7 @@ function Experience() {
 
         <section className="section-card md:col-span-1 row-span-1 md:order-3">
           <h2>&lt;Highlights&gt;</h2>
-          <IconList listItems={experienceHighlights} />
+          <IconList listItems={experienceHighlights}/>
         </section>
 
         <section className="section-card md:col-span-2 md:row-span-6 md:order-4">
@@ -98,7 +98,7 @@ function Experience() {
                     })}
                   </ul>
 
-                  <ChipList labels={role.skillsAndTools} />
+                  <ChipList labels={role.skillsAndTools}/>
                 </li>
               );
             })}
@@ -126,7 +126,7 @@ function Experience() {
                   </div>
 
                   <ul className="list-disc pl-4 flex flex-col gap-2">
-                    {project.description.map((item, index) => {
+                    {project.experiencePoints.map((item, index) => {
                       return (
                         <li key={index} className="ps-2">
                           {item}
@@ -135,7 +135,7 @@ function Experience() {
                     })}
                   </ul>
 
-                  <ChipList labels={project.skillsAndTools} />
+                  <ChipList labels={project.skillsAndTools}/>
                 </li>
               );
             })}
@@ -144,17 +144,17 @@ function Experience() {
 
         <section className="section-card md:col-span-2 md:order-8 md:col-start-2">
           <h2>&lt;Education&gt;</h2>
-          <IconList listItems={educationDetails} />
+          <IconList listItems={educationDetails}/>
         </section>
 
         <section className="section-card md:col-span-1 row-span-1 md:order-5">
           <h2>&lt;Skills&gt;</h2>
-          <ChipList labels={skillsAndTools.skills} variant="secondary" />
+          <ChipList labels={skillsAndTools.skills} variant="secondary"/>
         </section>
 
         <section className="section-card md:col-span-1 row-span-1 md:order-6">
           <h2>&lt;Tools&gt;</h2>
-          <ChipList labels={skillsAndTools.tools} variant="secondary" />
+          <ChipList labels={skillsAndTools.tools} variant="secondary"/>
         </section>
       </div>
     </main>

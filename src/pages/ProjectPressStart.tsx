@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {
   ArrowSquareOut,
   GameController,
@@ -8,7 +8,7 @@ import {
   Sliders,
   TreasureChest,
 } from "@phosphor-icons/react";
-import { allProjects } from "../data/allProjects";
+import {allProjects} from "../data/allProjects";
 import ChipList from "../components/ChipList";
 import PressStartHero from "../assets/images/mockups/press-start--collection--laptop.png";
 import AddToCollection from "../assets/videos/press-start--add-to-collection.mp4";
@@ -32,7 +32,7 @@ function ProjectPressStart() {
         <div className="flex flex-col gap-4 lg:max-w-screen-lg">
           <h1 className="text-4xl text-center">{projectDetails?.title}</h1>
           <p className="text-xl md:text-2xl text-center">
-            {projectDetails?.overview}
+            {projectDetails?.teaser}
           </p>
 
           {projectDetails?.githubRepos && (
@@ -46,7 +46,7 @@ function ProjectPressStart() {
                 }`}
                 size="lg"
                 target="_blank"
-                iconRight={<ArrowSquareOut weight="bold" className="text-xl" />}
+                iconRight={<ArrowSquareOut weight="bold" className="text-xl"/>}
               />
             </div>
           )}
@@ -149,7 +149,7 @@ function ProjectPressStart() {
             <div className="col-span-2 lg:col-span-1 flex flex-col gap-4">
               <h3>&lt;Toolkit&gt;</h3>
               {projectDetails?.skillsAndTools?.length ? (
-                <ChipList labels={projectDetails?.skillsAndTools} />
+                <ChipList labels={projectDetails?.skillsAndTools}/>
               ) : (
                 <p>Stay tuned for details!</p>
               )}

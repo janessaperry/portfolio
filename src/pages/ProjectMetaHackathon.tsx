@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
-import { allProjects } from "../data/allProjects";
+import {NavLink} from "react-router-dom";
+import {allProjects} from "../data/allProjects";
 import MetaHackathonHero from "../assets/images/mockups/iggy-discover--flow--mobile.png";
 import VisualSearch from "../assets/videos/iggy-discover--visual-search.mp4";
 import ExploreAccounts from "../assets/videos/iggy-discover--explore-accounts.mp4";
@@ -27,7 +27,7 @@ function ProjectMetaHackathon() {
         <div className="flex flex-col gap-4 lg:max-w-screen-lg">
           <h1 className="text-4xl text-center">{projectDetails?.title}</h1>
           <p className="text-xl md:text-2xl text-center">
-            {projectDetails?.overview}
+            {projectDetails?.teaser}
           </p>
 
           {projectDetails?.githubRepos && (
@@ -41,7 +41,7 @@ function ProjectMetaHackathon() {
                 }`}
                 size="lg"
                 target="_blank"
-                iconRight={<ArrowSquareOut weight="bold" className="text-xl" />}
+                iconRight={<ArrowSquareOut weight="bold" className="text-xl"/>}
               />
             </div>
           )}
@@ -126,7 +126,7 @@ function ProjectMetaHackathon() {
             <div className="md:col-span-1 flex flex-col gap-4">
               <h3>&lt;Toolkit&gt;</h3>
               {projectDetails?.skillsAndTools?.length ? (
-                <ChipList labels={projectDetails?.skillsAndTools} />
+                <ChipList labels={projectDetails?.skillsAndTools}/>
               ) : (
                 <p>Stay tuned for details!</p>
               )}

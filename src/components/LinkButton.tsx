@@ -1,22 +1,24 @@
+import React from "react";
+
 interface LinkButtonProps {
   label: string;
   href: string;
   variant?: "primary" | "secondary";
   size?: "base" | "lg" | "xl";
   target?: "_self" | "_blank";
-  iconLeft?: JSX.Element;
-  iconRight?: JSX.Element;
+  iconLeft?: React.JSX.Element;
+  iconRight?: React.JSX.Element;
 }
 
 function LinkButton({
-  label,
-  href,
-  variant = "primary",
-  size = "base",
-  target = "_self",
-  iconLeft,
-  iconRight,
-}: LinkButtonProps) {
+                      label,
+                      href,
+                      variant = "primary",
+                      size = "base",
+                      target = "_self",
+                      iconLeft,
+                      iconRight,
+                    }: LinkButtonProps) {
   const variantClasses = {
     primary: "text-seafoam-500 hover:text-seafoam-700",
     secondary:
