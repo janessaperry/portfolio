@@ -1,6 +1,6 @@
 import pressStartThumbnail from "../assets/images/mockups/press-start--collection--laptop.png";
 import metaHackathonThumbnail from "../assets/images/mockups/iggy-discover--flow--mobile.png";
-import inStockThumbnail from "../assets/images/mockups/mockups-UPDATE.png";
+import inStockThumbnail from "../assets/images/mockups/in-stock--warehouses.png";
 
 export interface AllProjects {
   id: string;
@@ -19,13 +19,58 @@ export interface AllProjects {
   title: string;
   type: string;
   yearCompleted: string;
-  overview: string;
-  description: string[];
-
+  teaser: string;
+  experiencePoints: string[];
   skillsAndTools: string[];
 }
 
 export const allProjects: AllProjects[] = [
+  {
+    id: "in-stock--brainstation",
+    showcase: true,
+    slug: "in-stock",
+    githubRepos: [
+      {
+        type: "client",
+        title: "InStock: Client",
+        url: "github.com/janessaperry/instock-client",
+      },
+      {
+        type: "server",
+        title: "InStock: Server",
+        url: "github.com/janessaperry/instock-server",
+      },
+    ],
+    categories: ["Development"],
+    thumbnailInfo: {
+      filePath: inStockThumbnail,
+      altText: "InStock - Warehouse and Inventory management web app preview.",
+    },
+    title: "InStock",
+    type: "BrainStation",
+    yearCompleted: "2025",
+    teaser:
+      "A fully responsive, full-stack inventory management system built with React, TypeScript, Node.js, and PostgreSQL.",
+    experiencePoints: [
+      `Built a full-stack inventory management app using React, TypeScript, Node.js, Express, and PostgreSQL.`,
+      `Developed a responsive, accessible frontend in React with reusable components, form validation, and TypeScript.`,
+      `Set up a modular Express server with centralized error handling, request logging (Winston), and API rate limiting.`,
+      `Managed raw SQL migrations and data seeding through custom scripts and a cron job, using Supabase for PostgreSQL hosting.`,
+      `Deployed frontend on Netlify and backend on Render, with secure CORS handling and environmental config.`,
+    ],
+    skillsAndTools: [
+      "React",
+      "TypeScript",
+      "Sass",
+      "Node JS",
+      "Express",
+      "PostgreSQL",
+      "Supabase",
+      "Winston",
+      "Node-Cron",
+      "Figma",
+    ],
+  },
   {
     id: "press-start--capstone",
     showcase: true,
@@ -50,9 +95,9 @@ export const allProjects: AllProjects[] = [
     title: "Press Start",
     type: "BrainStation Capstone",
     yearCompleted: "2024",
-    overview:
+    teaser:
       "Designed and developed a full-stack web app that helps users keep track of their video game collection so they can decide what to play next.",
-    description: [
+    experiencePoints: [
       "Designed and developed a full-stack web app to help user's keep track of their video game collections, using React for the front-end and Node JS and Express for the backend.",
       "Built a proxy server to securely communicate with the IGDB API, retrieving game data while being mindful of API rate limits and handling requests efficiently to ensure a consistent user experience.",
       "Designed and implemented a user-friendly interface with seamless navigation, leveraging responsive design techniques and real-time data synchronization to ensure an optimal experience across devices.",
@@ -73,7 +118,7 @@ export const allProjects: AllProjects[] = [
   },
   {
     id: "meta-hackathon--brainstation",
-    showcase: true,
+    showcase: false,
     slug: "meta-hackathon",
     githubRepos: [
       {
@@ -95,9 +140,9 @@ export const allProjects: AllProjects[] = [
     title: "Meta Hackathon",
     type: "BrainStation | Meta",
     yearCompleted: "2024",
-    overview:
+    teaser:
       "Developed an Instagram Discovery Tool during a 24-hour hackathon that allows users to search for visually similar images.",
-    description: [
+    experiencePoints: [
       "Participated in a 24-hour hackathon with Meta to conceptualize and build a tool aimed at enhancing user engagement and trust in AI features.",
       "Developed an Instagram Discovery Tool that enables users to search for visually similar images from their feed.",
       "Engineered an image-based search feature that allows users to discover visually similar accounts and content, driving engagement and discovery.",
@@ -108,48 +153,6 @@ export const allProjects: AllProjects[] = [
       "JavaScript",
       "Node JS",
       "Express",
-      "Figma",
-    ],
-  },
-  {
-    id: "in-stock--brainstation",
-    showcase: true,
-    slug: "in-stock",
-    githubRepos: [
-      {
-        type: "client",
-        title: "InStock: Client",
-        url: "github.com/janessaperry/UPDATE",
-      },
-      {
-        type: "server",
-        title: "InStock: Server",
-        url: "github.com/janessaperry/UPDATE",
-      },
-    ],
-    categories: ["Development"],
-    thumbnailInfo: {
-      filePath: inStockThumbnail,
-      altText: "InStock - Warehouse and Inventory management web app preview.",
-    },
-    title: "InStock",
-    type: "BrainStation",
-    yearCompleted: "2025",
-    overview:
-      "A fully responsive, full-stack inventory management system built with React, TypeScript, Node.js, and PostgreSQL.",
-    description: [
-      "UPDATE - FOR EXPERIENCE PAGE",
-    ],
-    skillsAndTools: [
-      "React",
-      "TypeScript",
-      "Sass",
-      "Node JS",
-      "Express",
-      "PostgreSQL",
-      "Supabase",
-      "Winston",
-      "Node-Cron",
       "Figma",
     ],
   },
