@@ -66,31 +66,27 @@ function ProjectPressStart() {
             <nav>
               <ul className="space-y-4 list-none">
                 <li>
-                  <a href="#overview" className="text-link">
+                  <a href={"#overview"} className="text-link">
                     Overview
                   </a>
                 </li>
                 <li>
-                  {" "}
-                  <a href="#features" className="text-link">
+                  <a href={"#features"} className="text-link">
                     Features
                   </a>
                 </li>
                 <li>
-                  {" "}
-                  <a href="#challenges" className="text-link">
+                  <a href={"#challenges"} className="text-link">
                     Challenges
                   </a>
                 </li>
                 <li>
-                  {" "}
-                  <a href="#retrospective" className="text-link">
+                  <a href={"#retrospective"} className="text-link">
                     Retrospective
                   </a>
                 </li>
                 <li>
-                  {" "}
-                  <a href="#road-map" className="text-link">
+                  <a href={"#road-map"} className="text-link">
                     Road Map
                   </a>
                 </li>

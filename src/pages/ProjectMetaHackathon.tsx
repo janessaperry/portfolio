@@ -61,19 +61,17 @@ function ProjectMetaHackathon() {
             <nav>
               <ul className="space-y-4 list-none">
                 <li>
-                  <a href="#overview" className="text-link">
+                  <a href={"#overview"} className="text-link">
                     Overview
                   </a>
                 </li>
                 <li>
-                  {" "}
-                  <a href="#features" className="text-link">
+                  <a href={"#features"} className="text-link">
                     Features
                   </a>
                 </li>
                 <li>
-                  {" "}
-                  <a href="#retrospective" className="text-link">
+                  <a href={"#retrospective"} className="text-link">
                     Retrospective
                   </a>
                 </li>
