@@ -75,7 +75,7 @@ function ProjectMetaHackathon() {
                 <li>
                   <a href={"#build-highlights"}
                      className="text-link">
-                    Features
+                    Build Highlights
                   </a>
                 </li>
                 <li>
