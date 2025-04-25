@@ -20,7 +20,7 @@ interface Motivations {
   text: string;
 }
 
-function About() {
+function About () {
   const highlights: Highlights[] = [
     { id: "fast", timeline: "8 years", text: "at a small, fast paced company" },
     { id: "design", timeline: "5 years", text: "UI Design & Development" },
@@ -36,7 +36,7 @@ function About() {
     {
       id: "learning",
       icon: RocketLaunch,
-      text: "Continous Learning",
+      text: "Continuous Learning",
     },
     {
       id: "solving",
@@ -136,7 +136,7 @@ function About() {
                   key={motivation.id}
                   className="p-4 bg-fuschia-100 rounded-xl space-y-2"
                 >
-                  <Icon className="text-fuschia-500 text-3xl" />
+                  <Icon className="text-fuschia-500 text-3xl"/>
                   <p className="text-blue-700 font-heading text-lg md:text-xl">
                     {motivation.text}
                   </p>
