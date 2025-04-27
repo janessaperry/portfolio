@@ -1,5 +1,5 @@
-import {NavLink} from "react-router-dom";
-import {allProjects} from "../data/allProjects";
+import { NavLink } from "react-router-dom";
+import { allProjects } from "../data/allProjects";
 import InStockHero from "../assets/images/mockups/in-stock--warehouses.png";
 import CustomDropdownInput from "../assets/images/code-snippets/in-stock--dropdown-input.png"
 import HandleOptionNav from "../assets/images/code-snippets/in-stock--handleOptionNav.png"
@@ -17,7 +17,7 @@ import LinkSocial from "../components/LinkSocial";
 import ProjectFeature from "../components/ProjectFeature";
 import ProjectHighlight from "../components/ProjectHighlight";
 
-function ProjectMetaHackathon() {
+function ProjectMetaHackathon () {
   const projectDetails = allProjects.find(
     (project) => project.id === "in-stock--brainstation"
   );
@@ -140,8 +140,8 @@ function ProjectMetaHackathon() {
               {projectDetails?.skillsAndTools?.length ? (
                 <ChipList labels={projectDetails?.skillsAndTools}/>
               ) : (
-                <p>Stay tuned for details!</p>
-              )}
+                 <p>Stay tuned for details!</p>
+               )}
             </div>
 
             <div className="md:col-span-1 flex flex-col gap-4">
@@ -149,8 +149,8 @@ function ProjectMetaHackathon() {
               {approach.length ? (
                 <ChipList labels={approach}/>
               ) : (
-                <p>Stay tuned for details!</p>
-              )}
+                 <p>Stay tuned for details!</p>
+               )}
             </div>
 
             <div className="md:col-span-2 flex flex-col gap-4">
@@ -228,12 +228,12 @@ function ProjectMetaHackathon() {
                   type: "text",
                   paragraph: `Each option uses <code>role='radio'</code>, <code>aria-checked</code>, and <code>tabIndex='0'</code> to communicate state to screen readers, while keyboard events handle navigation and selection.`
                 },
-                {type: "image", imageSrc: CustomDropdownInput, imageAlt: "Alt text here"},
+                { type: "image", imageSrc: CustomDropdownInput, imageAlt: "Alt text here" },
                 {
                   type: "text",
                   paragraph: `To support keyboard navigation, I manage focus with a handler that responds to <code>ArrowUp</code>, <code>ArrowDown</code>, and <code>Escape</code>.`
                 },
-                {type: "image", imageSrc: HandleOptionNav, imageAlt: "Alt text here"},
+                { type: "image", imageSrc: HandleOptionNav, imageAlt: "Alt text here" },
                 {
                   type: "text",
                   paragraph: `This was my first deep dive into accessibility, and it gave me a stronger appreciation for the work that goes into building inclusive UI components.`
@@ -257,12 +257,12 @@ function ProjectMetaHackathon() {
                   type: "text",
                   paragraph: `To fix this, I wrote a function to save the cursor position for each keystroke, then used <code>useLayoutEffect</code> to restore the selection position immediately after each update.`
                 },
-                {type: "image", imageSrc: UseLayoutEffect, imageAlt: "Alt text here"},
+                { type: "image", imageSrc: UseLayoutEffect, imageAlt: "Alt text here" },
                 {
                   type: "text",
                   paragraph: `This ended up being one of those deceptively simple features that taught me how much thought it takes to get small UX details feeling smooth and intuitive.`
                 },
-                {type: "text", paragraph: ``},
+                { type: "text", paragraph: `` },
               ]}
             />
 
@@ -278,7 +278,7 @@ function ProjectMetaHackathon() {
                   type: "text",
                   paragraph: `To keep things organized, I followed an MVC style pattern: routes handle incoming requests and pass them to controllers, which manage the business logic and communicate with models. The models run raw SQL queries directly against the database. This setup helped me get a clearer sense of how data flows through the app and where different responsibilities should live.`
                 },
-                {type: "image", imageSrc: MvcArchitecture, imageAlt: "Alt text here"},
+                { type: "image", imageSrc: MvcArchitecture, imageAlt: "Alt text here" },
               ]}
             />
 
@@ -313,6 +313,10 @@ function ProjectMetaHackathon() {
                   type: "text",
                   paragraph: `Setting this up led me to explore how database connections are managed across scheduled scripts and the main application, which gave me a deeper understanding how of background tasks interact with a live system.`
                 },
+                {
+                  type: "text",
+                  paragraph: `After deployment, I made a small update to account for server sleep behaviour by adding a startup check: if the last reseed was over 24 hours ago, the database refreshes automatically when the server wakes up.`
+                },
               ]}
             />
 
@@ -328,7 +332,7 @@ function ProjectMetaHackathon() {
                   type: "text",
                   paragraph: `<code>GET</code> requests are excluded from this limit so users can explore freely.`
                 },
-                {type: "image", imageSrc: RateLimiting, imageAlt: "Alt text here"},
+                { type: "image", imageSrc: RateLimiting, imageAlt: "Alt text here" },
               ]}
             />
           </div>
