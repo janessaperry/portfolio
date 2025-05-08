@@ -35,22 +35,15 @@ function ProjectMetaHackathon () {
             {projectDetails?.teaser}
           </p>
 
-          {projectDetails?.githubRepos && (
-            <div className="w-fit mx-auto">
-              <LinkButton
-                label="View on GitHub"
-                href={`https://${
-                  projectDetails?.githubRepos?.find(
-                    (repo) => repo.type === "client"
-                  )?.url
-                }`}
-                size="lg"
-                target="_blank"
-                iconRight={<ArrowSquareOut weight="bold"
-                                           className="text-xl"/>}
-              />
-            </div>
-          )}
+          <LinkButton label="View demo"
+                      href="https://instock-jp.netlify.app"
+                      iconRight={<ArrowSquareOut weight="bold"
+                                                 className="text-xl"/>}
+                      size="lg"
+                      target="_blank"
+          />
+
+
         </div>
 
         <img
@@ -174,11 +167,11 @@ function ProjectMetaHackathon () {
                 <p className="italic">Note: this demo is hosted using Render's free tier, so the initial load might
                   take up to 60 seconds.
                 </p>
-                <LinkButton label={"View website"}
-                            href={"https://instock-jp.netlify.app"}
+                <LinkButton label="View demo"
+                            href="https://instock-jp.netlify.app"
                             iconRight={<ArrowSquareOut weight="bold"
                                                        className="text-xl"/>}
-                            target={"_blank"}
+                            target="_blank"
                 />
               </div>
 
