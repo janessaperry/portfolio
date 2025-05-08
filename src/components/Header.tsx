@@ -24,7 +24,7 @@ function Header () {
   return (
     <header
       className={`w-full fixed top-0  z-10 ${
-        isScrolled && "bg-blue-700/60 backdrop-blur-sm"
+        isScrolled ? "bg-blue-700/60 backdrop-blur-sm" : ""
       }`}
     >
       <div className="lg:container py-6 px-4 sm:px-6 flex items-center justify-between mx-auto">
