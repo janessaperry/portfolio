@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/logos/jp-logo.svg";
 
-function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
+function Header () {
+  const [ isScrolled, setIsScrolled ] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY >= 50) {
+    if ( window.scrollY >= 50 ) {
       setIsScrolled(true);
-    } else {
+    }
+    else {
       setIsScrolled(false);
     }
   };
@@ -27,17 +28,15 @@ function Header() {
       }`}
     >
       <div className="lg:container py-6 px-4 sm:px-6 flex items-center justify-between mx-auto">
-        <div>
-          <Link to="/">
-            <img
-              src={logo}
-              alt="Janessa Perry logo"
-              className={`${
-                isScrolled && "md:w-12 md:h-8"
-              } w-12 h-8 md:w-20 md:h-14 transition-all ease-in-out`}
-            />
-          </Link>
-        </div>
+        <Link to="/">
+          <img
+            src={logo}
+            alt="Janessa Perry logo"
+            className={`${
+              isScrolled ? "md:w-12 md:h-8" : ""
+            } w-12 h-8 md:w-20 md:h-14 transition-all ease-in-out`}
+          />
+        </Link>
 
         <nav>
           <ul className="flex gap-x-4 sm:gap-x-6">

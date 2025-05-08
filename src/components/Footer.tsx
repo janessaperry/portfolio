@@ -1,7 +1,7 @@
 import { GithubLogo, LinkedinLogo, Envelope } from "@phosphor-icons/react";
 import LinkIcon from "./LinkIcon";
 
-function Footer() {
+function Footer () {
   return (
     <footer className="w-full lg:container py-4 px-4 sm:px-6 flex flex-col items-start gap-4 md:flex-row md:items-center">
       <div className="space-y-2 md:basis-1/2">
@@ -11,18 +11,21 @@ function Footer() {
             url="https://github.com/janessaperry"
             icon={GithubLogo}
             variant="secondary"
+            ariaLabel="Visit my GitHub"
           />
 
           <LinkIcon
             url="https://www.linkedin.com/in/janessa-perry"
             icon={LinkedinLogo}
             variant="secondary"
+            ariaLabel="Visit my LinkedIn"
           />
 
           <LinkIcon
             url="mailto:hello@janessaperry.com"
             icon={Envelope}
             variant="secondary"
+            ariaLabel="Send me an email"
           />
         </div>
       </div>
