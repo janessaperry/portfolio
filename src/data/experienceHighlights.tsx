@@ -26,7 +26,7 @@ export const experienceHighlights: ExperienceHighlights[] = [
     icon: DiamondsFour,
     title: "Freelance Web Design",
     location: "Self-employed",
-    dateInfo: "2022-2024",
+    dateInfo: "2022-Present",
   },
   {
     id: "experience--sentis",
@@ -36,7 +36,7 @@ export const experienceHighlights: ExperienceHighlights[] = [
     dateInfo: "2017-2022",
   },
   {
-    id: "experience--fnesx",
+    id: "experience--fnesc",
     icon: Laptop,
     title: "Online Learning Platform Design",
     location: "FNESC",
