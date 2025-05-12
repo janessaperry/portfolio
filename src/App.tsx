@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
@@ -13,12 +13,13 @@ import ScrollToTop from "./helpers/ScrollToTop.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import "./App.css";
 import LogRocket from "logrocket";
+import ProjectNetolnew from "./pages/ProjectNetolnew.tsx";
 
-if (import.meta.env.PROD && window.location.hostname === "janessaperry.com") {
+if ( import.meta.env.PROD && window.location.hostname === "janessaperry.com" ) {
   LogRocket.init(import.meta.env.VITE_LOGROCKET_ID);
 }
 
-function App() {
+function App () {
   return (
     <>
       <BrowserRouter>
@@ -39,6 +40,10 @@ function App() {
           <Route
             path="/projects/in-stock"
             element={<ProjectInStock/>}
+          />
+          <Route
+            path="/projects/netolnew"
+            element={<ProjectNetolnew/>}
           />
           <Route path="/about"
                  element={<About/>}/>

@@ -1,6 +1,7 @@
 import pressStartThumbnail from "../assets/images/mockups/press-start--collection--laptop.png";
 import metaHackathonThumbnail from "../assets/images/mockups/iggy-discover--flow--mobile.png";
 import inStockThumbnail from "../assets/images/mockups/in-stock--warehouses.png";
+import netolnewThumbnail from "../assets/images/mockups/netolnew--home-page--laptop.png";
 
 export interface AllProjects {
   id: string;
@@ -20,7 +21,7 @@ export interface AllProjects {
   type: string;
   yearCompleted: string;
   teaser: string;
-  experiencePoints: string[];
+  experiencePoints?: string[];
   skillsAndTools: string[];
 }
 
@@ -41,7 +42,7 @@ export const allProjects: AllProjects[] = [
         url: "github.com/janessaperry/instock-server",
       },
     ],
-    categories: ["Development"],
+    categories: [ "Development" ],
     thumbnailInfo: {
       filePath: inStockThumbnail,
       altText: "InStock - Warehouse and Inventory management web app preview.",
@@ -87,7 +88,7 @@ export const allProjects: AllProjects[] = [
         url: "github.com/janessaperry/press-start-server",
       },
     ],
-    categories: ["Design", "Development"],
+    categories: [ "Design", "Development" ],
     thumbnailInfo: {
       filePath: pressStartThumbnail,
       altText: "Press Start laptop mockup preview",
@@ -132,7 +133,7 @@ export const allProjects: AllProjects[] = [
         url: "github.com/janessaperry/meta-hackathon-server",
       },
     ],
-    categories: ["Development"],
+    categories: [ "Development" ],
     thumbnailInfo: {
       filePath: metaHackathonThumbnail,
       altText: "Meta Hackathon - Iggy Discover mobile mockup preview",
@@ -154,6 +155,27 @@ export const allProjects: AllProjects[] = [
       "Node JS",
       "Express",
       "Figma",
+    ],
+  },
+  {
+    id: "website-redesign--netolnew",
+    showcase: false,
+    slug: "netolnew",
+    categories: [ "Design" ],
+    thumbnailInfo: {
+      filePath: netolnewThumbnail,
+      altText: "NETOLNEW - website redesign mockup preview",
+    },
+    title: "NETOLNEW",
+    type: "NETOLNEW Website Redesign",
+    yearCompleted: "2023",
+    teaser:
+      "Improving the user experience and visual appeal of NETOLNEW's website where users can learn about indigenous language revitalization efforts and techniques in Canada.",
+    skillsAndTools: [
+      "Figma",
+      "Affinity Photo",
+      "Affinity Designer",
+      "WordPress",
     ],
   },
 ];
