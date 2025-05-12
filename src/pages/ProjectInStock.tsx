@@ -17,7 +17,7 @@ import LinkSocial from "../components/LinkSocial";
 import ProjectFeature from "../components/ProjectFeature";
 import ProjectHighlight from "../components/ProjectHighlight";
 
-function ProjectMetaHackathon () {
+function ProjectInStock () {
   const projectDetails = allProjects.find(
     (project) => project.id === "in-stock--brainstation"
   );
@@ -357,4 +357,4 @@ function ProjectMetaHackathon () {
   );
 }
 
-export default ProjectMetaHackathon;
+export default ProjectInStock;
