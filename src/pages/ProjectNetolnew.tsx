@@ -1,11 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { allProjects } from "../data/allProjects";
-import NetolnewHero from "../assets/images/mockups/netolnew--home-page--laptop.png";
+import NetolnewHero from "../assets/images/mockups/netolnew--home-page--devices.png";
 import CustomDropdownInput from "../assets/images/code-snippets/in-stock--dropdown-input.png"
 import HandleOptionNav from "../assets/images/code-snippets/in-stock--handleOptionNav.png"
-import UseLayoutEffect from "../assets/images/code-snippets/in-stock--useLayoutEffect.png"
-import MvcArchitecture from "../assets/images/code-snippets/in-stock--mvc-architecture.png"
-import RateLimiting from "../assets/images/code-snippets/in-stock--rate-limiting.png"
 import ChipList from "../components/ChipList";
 import {
   ArrowSquareOut, ClockCountdown, Database,

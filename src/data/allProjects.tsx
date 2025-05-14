@@ -1,7 +1,7 @@
 import pressStartThumbnail from "../assets/images/mockups/press-start--collection--laptop.png";
 import metaHackathonThumbnail from "../assets/images/mockups/iggy-discover--flow--mobile.png";
 import inStockThumbnail from "../assets/images/mockups/in-stock--warehouses.png";
-import netolnewThumbnail from "../assets/images/mockups/netolnew--home-page--laptop.png";
+import netolnewThumbnail from "../assets/images/mockups/netolnew--home-page--devices.png";
 
 export interface AllProjects {
   id: string;
