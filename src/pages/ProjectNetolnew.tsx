@@ -1,18 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { allProjects } from "../data/allProjects";
 import NetolnewHero from "../assets/images/mockups/netolnew--home-page--devices.png";
-import CustomDropdownInput from "../assets/images/code-snippets/in-stock--dropdown-input.png"
-import HandleOptionNav from "../assets/images/code-snippets/in-stock--handleOptionNav.png"
+import NetolnewCollage from "../assets/images/mockups/netolnew--final-design--collage.jpg";
 import ChipList from "../components/ChipList";
 import {
-  ArrowSquareOut, ClockCountdown, Database,
-  GithubLogo, Lightbulb, PersonArmsSpread, ShieldCheck, Stack,
-  Textbox,
+  ArrowSquareOut, Binoculars, Compass, Palette,
 } from "@phosphor-icons/react";
 import LinkButton from "../components/LinkButton";
-import LinkSocial from "../components/LinkSocial";
 import ProjectFeature from "../components/ProjectFeature";
-import ProjectHighlight from "../components/ProjectHighlight";
 
 function ProjectNetolnew () {
   const projectDetails = allProjects.find(
@@ -35,8 +30,6 @@ function ProjectNetolnew () {
                       size="lg"
                       target="_blank"
           />
-
-
         </div>
 
         <img
@@ -61,13 +54,13 @@ function ProjectNetolnew () {
                 <li>
                   <a href={"#UPDATE"}
                      className="text-link">
-                    UPDATE
+                    Objectives
                   </a>
                 </li>
                 <li>
-                  <a href={"#UPDATE"}
+                  <a href={"#highlights"}
                      className="text-link">
-                    UPDATE
+                    Highlights
                   </a>
                 </li>
               </ul>
@@ -102,7 +95,7 @@ function ProjectNetolnew () {
           </h2>
 
           <p className="text-xl">
-            NEȾOLṈEW̱ is an Indigenous-led, Indigenous-governed, relationship-based national partnership of scholars,
+            NETOLNEW is an Indigenous-led, Indigenous-governed, relationship-based national partnership of scholars,
             community leaders, educators, activists, and allies working at the heart of Indigenous language
             revitalization (ILR) in Canada — formed to engage in positive action through collaborative research.
           </p>
@@ -137,7 +130,7 @@ function ProjectNetolnew () {
         </section>
 
         <section className="section-card md:col-span-2 md:col-start-2">
-          <h2 id="build-highlights"
+          <h2 id="objectives"
               className="scroll-mt-40">
             &lt;Objectives&gt;
           </h2>
@@ -148,29 +141,39 @@ function ProjectNetolnew () {
           </p>
 
           <div className="pt-4 flex flex-col gap-y-20">
-            <p>ADD OBJECTIVES</p>
-
             <ProjectFeature
-              icon={PersonArmsSpread}
-              title="Building an accessible custom dropdown input."
+              icon={Compass}
+              title="Streamline navigation and site organization."
               contentBlocks={[
                 {
                   type: "text",
-                  paragraph: `I built a custom dropdown input from scratch that supports screen readers, keyboard navigation, and intuitive focus management.`
+                  paragraph: `Over the years NETOLNEW's website had become confusing to navigate and difficult to maintain. Naturally, this was a major focus of the redesign.`
                 },
+              ]}
+            />
+          </div>
+
+          <div className="pt-4 flex flex-col gap-y-20">
+            <ProjectFeature
+              icon={Binoculars}
+              title="Enhance content discoverability."
+              contentBlocks={[
                 {
                   type: "text",
-                  paragraph: `Each option uses <code>role='radio'</code>, <code>aria-checked</code>, and <code>tabIndex='0'</code> to communicate state to screen readers, while keyboard events handle navigation and selection.`
+                  paragraph: `The primary purpose of NETOLNEW's website is to share knowledge and as such, the design needed to ensure users were able to find the content they were looking for.`
                 },
-                { type: "image", imageSrc: CustomDropdownInput, imageAlt: "Alt text here" },
+              ]}
+            />
+          </div>
+
+          <div className="pt-4 flex flex-col gap-y-20">
+            <ProjectFeature
+              icon={Palette}
+              title="Elevate overall design aesthetics."
+              contentBlocks={[
                 {
                   type: "text",
-                  paragraph: `To support keyboard navigation, I manage focus with a handler that responds to <code>ArrowUp</code>, <code>ArrowDown</code>, and <code>Escape</code>.`
-                },
-                { type: "image", imageSrc: HandleOptionNav, imageAlt: "Alt text here" },
-                {
-                  type: "text",
-                  paragraph: `This was my first deep dive into accessibility, and it gave me a stronger appreciation for the work that goes into building inclusive UI components.`
+                  paragraph: `Create a modern looking website that is consistent, accessible, and engaging for users.`
                 },
               ]}
             />
@@ -179,7 +182,7 @@ function ProjectNetolnew () {
         </section>
 
         <section className="section-card md:col-span-2 md:col-start-2">
-          <h2 id="retrospective"
+          <h2 id="highlights"
               className="scroll-mt-40">
             &lt;Highlights&gt;
           </h2>
@@ -189,39 +192,41 @@ function ProjectNetolnew () {
           </p>
 
           <ul className="list-disc pl-8">
-            <li><span className="font-semibold">Clear, simplified structure</span>: Reorganized the site architecture
+            <li className="mb-2"><span className="font-semibold">Clear, simplified structure</span>: Reorganized the
+              site architecture
               and
               navigation to help users find content
               faster and more intuitively.
             </li>
-            <li><span className="font-semibold">Accessible, cohesive visuals</span>: Standardized spacing, colour, and
+            <li className="mb-2"><span className="font-semibold">Accessible, cohesive visuals</span>: Standardized
+              spacing, colour, and
               typography for a more consistent,
               readable, and inclusive experience across the site.
             </li>
-            <li><span className="font-semibold">User-first interactions</span>: Replaced friction-heavy elements like
+            <li className="mb-2"><span className="font-semibold">User-first interactions</span>: Replaced friction-heavy
+              elements like
               nested tabs and scattered pages with
               modals, accordions, and scannable layouts to improve usability.
             </li>
-            <li><span className="font-semibold">Cultural storytelling on the homepage</span>: Refreshed the intro
+            <li className="mb-2"><span className="font-semibold">Cultural storytelling on the homepage</span>: Refreshed
+              the intro
               section with Indigenous language elements to
               communicate the site's mission right from the start.
             </li>
-            <li><span className="font-semibold">Flexible content system</span>: Built reusable design patterns for
+            <li className="mb-2"><span className="font-semibold">Flexible content system</span>: Built reusable design
+              patterns for
               media, articles, and guides, making the site
               easier to update and maintain long term.
             </li>
-            <li><span className="font-semibold">Responsive & future-friendly</span>: Ensured the design works seamlessly
+            <li className="mb-2"><span className="font-semibold">Responsive & future-friendly</span>: Ensured the design
+              works seamlessly
               across devices and supports consistent
               growth with minimal maintenance overhead.
             </li>
           </ul>
 
-          <p>ADD SCREENSHOT</p>
-
-
+          <img src={NetolnewCollage} alt="NETOLNEW Final Design Collage" className="rounded-2xl"/>
         </section>
-
-
       </div>
     </main>
   );

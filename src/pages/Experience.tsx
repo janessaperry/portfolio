@@ -110,6 +110,8 @@ function Experience () {
 
           <ul className="flex flex-col gap-10 pl-10">
             {allProjects.map((project) => {
+              if ( !project.showOnExperienceProjects ) return null;
+
               return (
                 <li
                   key={project.id}
@@ -126,7 +128,7 @@ function Experience () {
                   </div>
 
                   <ul className="list-disc pl-4 flex flex-col gap-2">
-                    {project.experiencePoints?.map((item, index) => {
+                    {project.experiencePoints.map((item, index) => {
                       return (
                         <li key={index} className="ps-2">
                           {item}
