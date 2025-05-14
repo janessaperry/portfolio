@@ -1,5 +1,5 @@
-import {Link} from "react-router-dom";
-import {AllProjects} from "../data/allProjects";
+import { Link } from "react-router-dom";
+import { AllProjects } from "../data/allProjects";
 import ChipList from "./ChipList";
 
 interface ProjectListProps {
@@ -7,7 +7,7 @@ interface ProjectListProps {
   variant?: "showcase" | "default";
 }
 
-function ProjectList({projectsData, variant = "default"}: ProjectListProps) {
+function ProjectList ({ projectsData, variant = "default" }: ProjectListProps) {
   const variantClasses = {
     showcase: "col-span-2 py-8 lg:flex-row",
     default:
@@ -24,10 +24,10 @@ function ProjectList({projectsData, variant = "default"}: ProjectListProps) {
                 to={`/projects/${projectDetails.slug}`}
                 className={`group
           flex flex-col gap-8
-          ${variantClasses[variant]} 
+          ${variantClasses[ variant ]} 
           `}
               >
-                <div className="md:basis-1/3">
+                <div className="">
                   <img
                     src={projectDetails.thumbnailInfo.filePath}
                     alt={projectDetails.thumbnailInfo.altText}
@@ -35,7 +35,7 @@ function ProjectList({projectsData, variant = "default"}: ProjectListProps) {
                   />
                 </div>
 
-                <div className="md:basis-2/3 flex flex-col gap-2">
+                <div className="flex flex-col gap-2">
                   <h2 className="w-fit text-transparent bg-clip-text bg-fuschia-700 group-hover:bg-gradient-to-b group-hover:from-fuschia-500 group-hover:via-fuschia-500 group-hover:to-fuschia-700">
                     {projectDetails.title}
                   </h2>
@@ -54,14 +54,14 @@ function ProjectList({projectsData, variant = "default"}: ProjectListProps) {
           })}
         </div>
       ) : (
-        <p
-          className={`${
-            variant === "showcase" ? "text-blue-700" : "text-blue-50"
-          }`}
-        >
-          Work in progress...
-        </p>
-      )}
+         <p
+           className={`${
+             variant === "showcase" ? "text-blue-700" : "text-blue-50"
+           }`}
+         >
+           Work in progress...
+         </p>
+       )}
     </>
   );
 }
