@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { allProjects } from "../data/allProjects";
-import NetolnewHero from "../assets/images/mockups/netolnew--home-page--devices.png";
+import NetolnewHero from "../assets/images/mockups/netolnew--home-page--devices.webp";
 import NetolnewCollage from "../assets/images/mockups/netolnew--final-design--collage.jpg";
 import ChipList from "../components/ChipList";
 import {

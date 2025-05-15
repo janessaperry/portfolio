@@ -1,12 +1,11 @@
 import pressStartThumbnail from "../assets/images/mockups/press-start--collection--laptop.png";
 import metaHackathonThumbnail from "../assets/images/mockups/iggy-discover--flow--mobile.png";
 import inStockThumbnail from "../assets/images/mockups/in-stock--warehouses.png";
-import netolnewThumbnail from "../assets/images/mockups/netolnew--home-page--devices.png";
+import netolnewThumbnail from "../assets/images/mockups/netolnew--home-page--devices.webp";
 
 export interface AllProjects {
   id: string;
   showcase: boolean;
-  showOnExperienceProjects: boolean,
   slug: string;
   githubRepos?: {
     type: "client" | "server";
@@ -22,7 +21,7 @@ export interface AllProjects {
   type: string;
   yearCompleted: string;
   teaser: string;
-  experiencePoints: string[];
+  experiencePoints?: string[];
   skillsAndTools: string[];
 }
 
@@ -30,7 +29,6 @@ export const allProjects: AllProjects[] = [
   {
     id: "in-stock--brainstation",
     showcase: true,
-    showOnExperienceProjects: true,
     slug: "in-stock",
     githubRepos: [
       {
@@ -77,7 +75,6 @@ export const allProjects: AllProjects[] = [
   {
     id: "press-start--capstone",
     showcase: true,
-    showOnExperienceProjects: true,
     slug: "press-start",
     githubRepos: [
       {
@@ -123,7 +120,6 @@ export const allProjects: AllProjects[] = [
   {
     id: "meta-hackathon--brainstation",
     showcase: false,
-    showOnExperienceProjects: true,
     slug: "meta-hackathon",
     githubRepos: [
       {
@@ -164,7 +160,6 @@ export const allProjects: AllProjects[] = [
   {
     id: "website-redesign--netolnew",
     showcase: false,
-    showOnExperienceProjects: false,
     slug: "netolnew",
     categories: [ "Design" ],
     thumbnailInfo: {
@@ -176,10 +171,6 @@ export const allProjects: AllProjects[] = [
     yearCompleted: "2023",
     teaser:
       "Improving the user experience and visual appeal of NETOLNEW's website where users can learn about indigenous language revitalization efforts and techniques in Canada.",
-    experiencePoints: [
-      "Designed, built, and customized WordPress website using prebuilt themes and custom CSS.",
-      "Provided comprehensive documentation for client to manage site updates after launch."
-    ],
     skillsAndTools: [
       "Figma",
       "Affinity Photo",
