@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { allProjects } from "../data/allProjects";
-import InStockHero from "../assets/images/mockups/in-stock--warehouses.png";
+import InStockHero from "../assets/images/mockups/in-stock--device-mockups.png";
 import CustomDropdownInput from "../assets/images/code-snippets/in-stock--dropdown-input.png"
 import HandleOptionNav from "../assets/images/code-snippets/in-stock--handleOptionNav.png"
 import UseLayoutEffect from "../assets/images/code-snippets/in-stock--useLayoutEffect.png"

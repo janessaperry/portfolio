@@ -1,6 +1,6 @@
 import pressStartThumbnail from "../assets/images/mockups/press-start--collection--laptop.png";
 import metaHackathonThumbnail from "../assets/images/mockups/iggy-discover--flow--mobile.png";
-import inStockThumbnail from "../assets/images/mockups/in-stock--warehouses.png";
+import inStockThumbnail from "../assets/images/mockups/in-stock--device-mockups.png";
 import netolnewThumbnail from "../assets/images/mockups/netolnew--home-page--devices.webp";
 
 export interface AllProjects {
