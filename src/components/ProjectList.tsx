@@ -31,7 +31,7 @@ function ProjectList ({ projectsData, variant = "default" }: ProjectListProps) {
                   <img
                     src={projectDetails.thumbnailInfo.filePath}
                     alt={projectDetails.thumbnailInfo.altText}
-                    className="sm:w-1/2 md:w-full lg:max-h-56 xl:object-contain justify-self-center group-hover:scale-105 transition ease duration-300"
+                    className="sm:w-1/2 md:w-full md:max-h-80 md:object-contain justify-self-center group-hover:scale-105 transition ease duration-300"
                   />
                 </div>
 
