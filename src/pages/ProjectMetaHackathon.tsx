@@ -1,5 +1,5 @@
-import {NavLink} from "react-router-dom";
-import {allProjects} from "../data/allProjects";
+import { NavLink } from "react-router-dom";
+import { allProjects } from "../data/allProjects";
 import MetaHackathonHero from "../assets/images/mockups/iggy-discover--flow--mobile.png";
 import VisualSearch from "../assets/videos/iggy-discover--visual-search.mp4";
 import ExploreAccounts from "../assets/videos/iggy-discover--explore-accounts.mp4";
@@ -16,7 +16,7 @@ import LinkSocial from "../components/LinkSocial";
 import ProjectFeature from "../components/ProjectFeature";
 import ProjectHighlight from "../components/ProjectHighlight";
 
-function ProjectMetaHackathon() {
+function ProjectMetaHackathon () {
   const projectDetails = allProjects.find(
     (project) => project.id === "meta-hackathon--brainstation"
   );
@@ -54,7 +54,7 @@ function ProjectMetaHackathon() {
         />
       </section>
 
-      <div className="grid md:grid-cols-3 gap-4 md:flex-row md:gap-10">
+      <div className="grid md:grid-cols-3 gap-4 md:flex-row md:gap-6 lg:gap-10">
         <section className="hidden md:section-card md:col-span-1 md:sticky md:top-32 md:h-fit md:!space-y-10">
           <div className="space-y-4">
             <h2>&lt;Contents&gt;</h2>
@@ -126,8 +126,8 @@ function ProjectMetaHackathon() {
               {projectDetails?.skillsAndTools?.length ? (
                 <ChipList labels={projectDetails?.skillsAndTools}/>
               ) : (
-                <p>Stay tuned for details!</p>
-              )}
+                 <p>Stay tuned for details!</p>
+               )}
             </div>
 
             <div className="md:col-span-1 flex flex-col gap-4">
@@ -183,7 +183,7 @@ function ProjectMetaHackathon() {
                   type: "text",
                   paragraph: `Iggy Discover lets users search for images from their Instagram feed to find similar posts. Whether it's a photo of pasta or a cityscape, the tool uses AI to return related content, helping users explore more of what they enjoy.`
                 },
-                {type: "video", videoSrc: VisualSearch, videoLayout: "portrait"}
+                { type: "video", videoSrc: VisualSearch, videoLayout: "portrait" }
               ]}
             />
 
@@ -195,7 +195,7 @@ function ProjectMetaHackathon() {
                   type: "text",
                   paragraph: `Beyond posts, Iggy Discover helps users discover businesses or brands that offer products similar to the images being searched for. In the example below, you can discover restaurants serving up some delicious pasta. It's a great way to find new places, products, or services that match your tastes.`
                 },
-                {type: "video", videoSrc: ExploreAccounts, videoLayout: "portrait"}
+                { type: "video", videoSrc: ExploreAccounts, videoLayout: "portrait" }
 
               ]}
             />

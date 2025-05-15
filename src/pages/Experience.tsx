@@ -32,7 +32,7 @@ function Experience () {
         </div>
       </section>
 
-      <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:gap-10">
+      <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:gap-6 lg:gap-10">
         <section className="section-card md:col-span-2 md:order-2">
           <h2>&lt;Profile&gt;</h2>
           <p className="text-xl">

@@ -3,7 +3,7 @@ import { allProjects } from "../data/allProjects";
 import LinkButton from "../components/LinkButton";
 import ProjectList from "../components/ProjectList";
 
-function Home() {
+function Home () {
   return (
     <main className="main-container">
       <section className="py-8 md:py-16">
@@ -30,7 +30,7 @@ function Home() {
         </div>
       </section>
 
-      <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-10">
+      <div className="grid md:grid-cols-3 grid-auto-rows gap-4 md:flex-row md:gap-6 lg:gap-10">
         <section className="section-card md:col-span-1 md:row-span-1 md:order-1">
           <h2>&lt;Craft&gt;</h2>
           <p className="text-xl">
@@ -65,7 +65,7 @@ function Home() {
               label="View all projects"
               href="/projects"
               variant="secondary"
-              iconRight={<ArrowRight />}
+              iconRight={<ArrowRight/>}
             />
           </div>
 

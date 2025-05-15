@@ -3,16 +3,16 @@ import { allProjects } from "../data/allProjects";
 import ButtonFilter from "../components/ButtonFilter";
 import ProjectList from "../components/ProjectList";
 
-function Projects() {
-  const [filteredProjects, setFilteredProjects] = useState(allProjects);
-  const [activeFilter, setActiveFilter] = useState("All");
+function Projects () {
+  const [ filteredProjects, setFilteredProjects ] = useState(allProjects);
+  const [ activeFilter, setActiveFilter ] = useState("All");
 
   const handleFilterClick = (filter: string) => {
     setActiveFilter(filter);
     setFilteredProjects(
       filter === "All"
-        ? allProjects
-        : allProjects.filter((project) => project.categories.includes(filter))
+      ? allProjects
+      : allProjects.filter((project) => project.categories.includes(filter))
     );
   };
 
@@ -27,7 +27,7 @@ function Projects() {
         </div>
       </section>
 
-      <div className="grid md:grid-cols-3 md:grid-auto-rows gap-4 md:gap-10">
+      <div className="grid md:grid-cols-3 md:grid-auto-rows gap-4 md:gap-6 lg:gap-10">
         <section className="section-card md:col-span-2 md:order-2">
           <h2>&lt;Projects&gt;</h2>
           <p className="text-xl">Check out some of my recent work below.</p>
@@ -50,7 +50,7 @@ function Projects() {
             />
           </div>
 
-          <ProjectList projectsData={filteredProjects} />
+          <ProjectList projectsData={filteredProjects}/>
         </section>
 
         <section className="section-card md:col-span-1 md:order-1 h-fit">

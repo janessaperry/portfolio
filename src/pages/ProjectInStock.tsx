@@ -53,7 +53,7 @@ function ProjectInStock () {
         />
       </section>
 
-      <div className="grid md:grid-cols-3 gap-4 md:flex-row md:gap-10">
+      <div className="grid md:grid-cols-3 gap-4 md:flex-row md:gap-6 lg:gap-10">
         <section className="hidden md:section-card md:col-span-1 md:sticky md:top-32 md:h-fit md:!space-y-10">
           <div className="space-y-4">
             <h2>&lt;Contents&gt;</h2>

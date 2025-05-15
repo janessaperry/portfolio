@@ -1,4 +1,4 @@
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   ArrowSquareOut,
   GameController,
@@ -8,7 +8,7 @@ import {
   Sliders,
   TreasureChest,
 } from "@phosphor-icons/react";
-import {allProjects} from "../data/allProjects";
+import { allProjects } from "../data/allProjects";
 import ChipList from "../components/ChipList";
 import PressStartHero from "../assets/images/mockups/press-start--collection--laptop.png";
 import AddToCollection from "../assets/videos/press-start--add-to-collection.mp4";
@@ -21,7 +21,7 @@ import ProjectFeature from "../components/ProjectFeature";
 import ProjectChallenge from "../components/ProjectChallenge";
 import ProjectHighlight from "../components/ProjectHighlight";
 
-function ProjectPressStart() {
+function ProjectPressStart () {
   const projectDetails = allProjects.find(
     (project) => project.id === "press-start--capstone"
   );
@@ -59,7 +59,7 @@ function ProjectPressStart() {
         />
       </section>
 
-      <div className="grid md:grid-cols-3 gap-4 md:gap-10">
+      <div className="grid md:grid-cols-3 gap-4 md:gap-6 lg:gap-10">
         <section className="hidden md:section-card md:col-span-1 md:sticky md:top-32 md:h-fit md:!space-y-10">
           <div className="space-y-4">
             <h3 className="text-fuschia-300">&lt;Contents&gt;</h3>
@@ -147,8 +147,8 @@ function ProjectPressStart() {
               {projectDetails?.skillsAndTools?.length ? (
                 <ChipList labels={projectDetails?.skillsAndTools}/>
               ) : (
-                <p>Stay tuned for details!</p>
-              )}
+                 <p>Stay tuned for details!</p>
+               )}
             </div>
 
             <div className="col-span-2 lg:col-span-1 flex flex-col gap-4">
@@ -205,7 +205,7 @@ function ProjectPressStart() {
                   type: "text",
                   paragraph: `Easily add games to your collection and note which console they're for, whether they're physical or digital. It's a great way to keep everything organized!`
                 },
-                {type: "video", videoSrc: AddToCollection}
+                { type: "video", videoSrc: AddToCollection }
               ]}/>
 
             <ProjectFeature
@@ -216,7 +216,7 @@ function ProjectPressStart() {
                   type: "text",
                   paragraph: `Setting the play status lets you quickly filter for games you want to play to you can dive in to your next adventure sooner.`
                 },
-                {type: "video", videoSrc: ManageCollection}
+                { type: "video", videoSrc: ManageCollection }
               ]}/>
 
             <ProjectFeature
@@ -227,7 +227,7 @@ function ProjectPressStart() {
                   type: "text",
                   paragraph: `Right now, users can filter by status and console, but I'm working on adding more options (like genre or estimated playtime) so you can really narrow down what you want to play next.`
                 },
-                {type: "video", videoSrc: FilterCollection}
+                { type: "video", videoSrc: FilterCollection }
               ]}/>
 
             <ProjectFeature
@@ -238,7 +238,7 @@ function ProjectPressStart() {
                   type: "text",
                   paragraph: `The explore page lets you browse through games by platform or see what's coming soon. It's the perfect way to find your next adventure, whether it's a new release or something you missed.`
                 },
-                {type: "video", videoSrc: ExploreGames}
+                { type: "video", videoSrc: ExploreGames }
               ]}/>
           </div>
         </section>
