@@ -11,7 +11,7 @@ interface ProjectChallengeProps {
   description: string[];
 }
 
-function ProjectChallenge({
+function ProjectChallenge ({
   title,
   overview,
   challengeAndSolution,
@@ -29,14 +29,14 @@ function ProjectChallenge({
         Challenges & Solutions
       </p>
 
-      <div className="grid md:grid-cols-2 gap-5 md:gap-10">
+      <div className="grid md:grid-cols-2 gap-5 md:gap-6 lg:gap-10">
         <div className="md:col-span-1 flex gap-x-4">
-          <IconGradientFill id="gradient--fuschia" icon={Warning} />
+          <IconGradientFill id="gradient--fuschia" icon={Warning}/>
           <p>{challengeAndSolution.challenge}</p>
         </div>
 
         <div className="md:col-span-1 flex gap-x-4">
-          <IconGradientFill id="gradient--seafoam" icon={Target} />
+          <IconGradientFill id="gradient--seafoam" icon={Target}/>
           <p>{challengeAndSolution.solution}</p>
         </div>
       </div>
