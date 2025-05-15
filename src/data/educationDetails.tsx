@@ -35,6 +35,6 @@ export const educationDetails: EducationDetails[] = [
     icon: GraduationCap,
     title: "Bachelor of Commerce",
     location: "Toronto Metropolitan University",
-    dateInfo: "2009-2013",
+    dateInfo: "2013",
   },
 ];
