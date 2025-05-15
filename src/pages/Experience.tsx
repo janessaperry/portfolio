@@ -1,16 +1,16 @@
-import {experienceHighlights} from "../data/experienceHighlights";
-import {contactLinks} from "../data/contactLinks";
-import {skillsAndTools} from "../data/skillsAndTools";
-import {experienceDetails} from "../data/experienceDetails";
-import {allProjects} from "../data/allProjects";
-import {educationDetails} from "../data/educationDetails";
-import {DownloadSimple} from "@phosphor-icons/react";
+import { experienceHighlights } from "../data/experienceHighlights";
+import { contactLinks } from "../data/contactLinks";
+import { skillsAndTools } from "../data/skillsAndTools";
+import { experienceDetails } from "../data/experienceDetails";
+import { allProjects } from "../data/allProjects";
+import { educationDetails } from "../data/educationDetails";
+import { DownloadSimple } from "@phosphor-icons/react";
 import LinkButton from "../components/LinkButton";
 import LinkSocial from "../components/LinkSocial";
 import ChipList from "../components/ChipList";
 import IconList from "../components/IconList";
 
-function Experience() {
+function Experience () {
   return (
     <main className="main-container">
       <section className="py-8 md:py-16">
@@ -110,6 +110,8 @@ function Experience() {
 
           <ul className="flex flex-col gap-10 pl-10">
             {allProjects.map((project) => {
+              if ( !project.experiencePoints ) return null;
+
               return (
                 <li
                   key={project.id}
