@@ -52,7 +52,7 @@ function ProjectNetolnew () {
                   </a>
                 </li>
                 <li>
-                  <a href={"#UPDATE"}
+                  <a href={"#objectives"}
                      className="text-link">
                     Objectives
                   </a>
