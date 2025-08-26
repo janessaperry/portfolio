@@ -173,9 +173,11 @@ export const allProjects: AllProjects[] = [
     teaser:
       "Improving the user experience and visual appeal of NETOLNEW's website where users can learn about indigenous language revitalization efforts and techniques in Canada.",
     skillsAndTools: [
+      "UI Design",
+      "Responsive Design",
       "Figma",
-      "Affinity Photo",
       "Affinity Designer",
+      "Affinity Photo",
       "WordPress",
     ],
   },
