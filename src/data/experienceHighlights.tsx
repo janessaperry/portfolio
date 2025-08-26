@@ -1,6 +1,6 @@
 import {
   Certificate,
-  CheckSquare,
+  CheckSquare, Code,
   DiamondsFour,
   Laptop,
 } from "@phosphor-icons/react";
@@ -22,6 +22,20 @@ export const experienceHighlights: ExperienceHighlights[] = [
     dateInfo: "2024",
   },
   {
+    id: "experience--teaching-assistant",
+    icon: Laptop,
+    title: "Teaching Assistant, Software Engineering",
+    location: "BrainStation",
+    dateInfo: "2025",
+  },
+  {
+    id: "experience--in-stock",
+    icon: Code,
+    title: "Full-Stack Project: InStock",
+    location: "BrainStation",
+    dateInfo: "2025",
+  },
+  {
     id: "experience--freelance",
     icon: DiamondsFour,
     title: "Freelance Web Design",
@@ -31,15 +45,8 @@ export const experienceHighlights: ExperienceHighlights[] = [
   {
     id: "experience--sentis",
     icon: CheckSquare,
-    title: "Survey Design & Development",
+    title: "UI Design & Development",
     location: "The Sentis Group",
     dateInfo: "2017-2022",
-  },
-  {
-    id: "experience--fnesc",
-    icon: Laptop,
-    title: "Online Learning Platform Design",
-    location: "FNESC",
-    dateInfo: "2023-2024",
   },
 ];
