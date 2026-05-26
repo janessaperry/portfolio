@@ -1,21 +1,21 @@
 import { NavLink } from "react-router-dom";
-import { allProjects } from "../data/allProjects";
-import InStockHero from "../assets/images/mockups/in-stock--device-mockups.png";
-import CustomDropdownInput from "../assets/images/code-snippets/in-stock--dropdown-input.png"
-import HandleOptionNav from "../assets/images/code-snippets/in-stock--handleOptionNav.png"
-import UseLayoutEffect from "../assets/images/code-snippets/in-stock--useLayoutEffect.png"
-import MvcArchitecture from "../assets/images/code-snippets/in-stock--mvc-architecture.png"
-import RateLimiting from "../assets/images/code-snippets/in-stock--rate-limiting.png"
-import ChipList from "../components/ChipList";
+import { allProjects } from "../../data/allProjects.tsx";
+import InStockHero from "../../assets/images/mockups/in-stock--device-mockups.png";
+import CustomDropdownInput from "../../assets/images/code-snippets/in-stock--dropdown-input.png"
+import HandleOptionNav from "../../assets/images/code-snippets/in-stock--handleOptionNav.png"
+import UseLayoutEffect from "../../assets/images/code-snippets/in-stock--useLayoutEffect.png"
+import MvcArchitecture from "../../assets/images/code-snippets/in-stock--mvc-architecture.png"
+import RateLimiting from "../../assets/images/code-snippets/in-stock--rate-limiting.png"
+import ChipList from "../../components/ChipList.tsx";
 import {
   ArrowSquareOut, ClockCountdown, Database,
   GithubLogo, Lightbulb, PersonArmsSpread, ShieldCheck, Stack,
   Textbox,
 } from "@phosphor-icons/react";
-import LinkButton from "../components/LinkButton";
-import LinkSocial from "../components/LinkSocial";
-import ProjectFeature from "../components/ProjectFeature";
-import ProjectHighlight from "../components/ProjectHighlight";
+import LinkButton from "../../components/LinkButton.tsx";
+import LinkSocial from "../../components/LinkSocial.tsx";
+import ProjectFeature from "../../components/ProjectFeature.tsx";
+import ProjectHighlight from "../../components/ProjectHighlight.tsx";
 
 function ProjectInStock () {
   const projectDetails = allProjects.find(

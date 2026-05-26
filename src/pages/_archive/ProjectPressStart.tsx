@@ -8,18 +8,18 @@ import {
   Sliders,
   TreasureChest,
 } from "@phosphor-icons/react";
-import { allProjects } from "../data/allProjects";
-import ChipList from "../components/ChipList";
-import PressStartHero from "../assets/images/mockups/press-start--collection--laptop.png";
-import AddToCollection from "../assets/videos/press-start--add-to-collection.mp4";
-import ManageCollection from "../assets/videos/press-start--manage-collection.mp4";
-import FilterCollection from "../assets/videos/press-start--filter-collection.mp4";
-import ExploreGames from "../assets/videos/press-start--explore.mp4";
-import LinkButton from "../components/LinkButton";
-import LinkSocial from "../components/LinkSocial";
-import ProjectFeature from "../components/ProjectFeature";
-import ProjectChallenge from "../components/ProjectChallenge";
-import ProjectHighlight from "../components/ProjectHighlight";
+import { allProjects } from "../../data/allProjects.tsx";
+import ChipList from "../../components/ChipList.tsx";
+import PressStartHero from "../../assets/images/mockups/press-start--collection--laptop.png";
+import AddToCollection from "../../assets/videos/press-start--add-to-collection.mp4";
+import ManageCollection from "../../assets/videos/press-start--manage-collection.mp4";
+import FilterCollection from "../../assets/videos/press-start--filter-collection.mp4";
+import ExploreGames from "../../assets/videos/press-start--explore.mp4";
+import LinkButton from "../../components/LinkButton.tsx";
+import LinkSocial from "../../components/LinkSocial.tsx";
+import ProjectFeature from "../../components/ProjectFeature.tsx";
+import ProjectChallenge from "../../components/ProjectChallenge.tsx";
+import ProjectHighlight from "../../components/ProjectHighlight.tsx";
 
 function ProjectPressStart () {
   const projectDetails = allProjects.find(
