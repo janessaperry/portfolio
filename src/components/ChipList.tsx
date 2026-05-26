@@ -13,10 +13,7 @@ function ChipList({ labels, variant = "primary" }: ChipListProps) {
     <ul className="flex flex-wrap gap-2">
       {labels.map((label) => {
         return (
-          <li
-            key={label}
-            className={`${variantClasses[variant]} text-base leading-none lowercase py-1.5 px-2 md:py-2 md:px-3 rounded-lg`}
-          >
+          <li key={label} className={`${variantClasses[variant]} text-base leading-none lowercase py-1.5 px-2 rounded-lg`}>
             {label}
           </li>
         );
