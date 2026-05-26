@@ -88,7 +88,7 @@ export const allProjects: AllProjects[] = [
     },
     title: "Gemeindemap",
     role: "Frontend Developer",
-    type: "Freelance",
+    type: "Independent Contractor",
     yearCompleted: "2025",
     teaser: `Contributed to a production civic engagement platform, building modal authentication and participation flows, improving mobile responsiveness, and implemented i18n translations for multi language support.`,
     skillsAndTools: [
@@ -108,7 +108,7 @@ export const allProjects: AllProjects[] = [
     },
     title: "Women of the Ancient World",
     role: "Full Stack Developer • Designer",
-    type: "Freelance",
+    type: "Independent Contractor",
     yearCompleted: "2025",
     teaser: `Designed and contributed to the development of a custom WordPress theme using Blade templating and ACF with React injected to handle dynamic search and filtering without page reloads.`,
     skillsAndTools: [
@@ -181,7 +181,7 @@ export const allProjects: AllProjects[] = [
     },
     title: "NETOLNEW",
     role: "UI Designer",
-    type: "Freelance",
+    type: "Independent Contractor",
     yearCompleted: "2023",
     teaser: `Redesigned the NETOLNEW website in Figma and refined the visual design and layout using a pre-built WordPress theme and custom CSS.`,
     skillsAndTools: [
