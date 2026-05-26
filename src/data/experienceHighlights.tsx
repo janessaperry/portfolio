@@ -1,9 +1,4 @@
-import {
-  Certificate,
-  CheckSquare, Code,
-  DiamondsFour,
-  Laptop,
-} from "@phosphor-icons/react";
+import { Certificate, Code, Laptop } from "@phosphor-icons/react";
 
 interface ExperienceHighlights {
   id: string;
@@ -22,31 +17,24 @@ export const experienceHighlights: ExperienceHighlights[] = [
     dateInfo: "2024",
   },
   {
+    id: "experience--freelance-dev",
+    icon: Code,
+    title: "Junior Web Developer",
+    location: "Independent Contractor",
+    dateInfo: "2025 - Present",
+  },
+  {
+    id: "experience--press-start",
+    icon: Code,
+    title: "Full-Stack Project: Press Start",
+    location: "Personal Project",
+    dateInfo: "Ongoing",
+  },
+  {
     id: "experience--teaching-assistant",
     icon: Laptop,
     title: "Teaching Assistant, Software Engineering",
     location: "BrainStation",
     dateInfo: "2025",
-  },
-  {
-    id: "experience--in-stock",
-    icon: Code,
-    title: "Full-Stack Project: InStock",
-    location: "BrainStation",
-    dateInfo: "2025",
-  },
-  {
-    id: "experience--freelance",
-    icon: DiamondsFour,
-    title: "Freelance Web Design",
-    location: "Self-employed",
-    dateInfo: "2022-Present",
-  },
-  {
-    id: "experience--sentis",
-    icon: CheckSquare,
-    title: "UI Design & Development",
-    location: "The Sentis Group",
-    dateInfo: "2017-2022",
-  },
+  }
 ];

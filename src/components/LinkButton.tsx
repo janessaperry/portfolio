@@ -10,30 +10,15 @@ interface LinkButtonProps {
   iconRight?: React.JSX.Element;
 }
 
-function LinkButton({
-                      label,
-                      href,
-                      variant = "primary",
-                      size = "base",
-                      target = "_self",
-                      iconLeft,
-                      iconRight,
-                    }: LinkButtonProps) {
+function LinkButton({label, href, variant = "primary", size = "base", target = "_self", iconLeft, iconRight}: LinkButtonProps) {
   const variantClasses = {
     primary: "text-seafoam-500 hover:text-seafoam-700",
-    secondary:
-      "text-blue-700 border-b border-transparent hover:text-fuschia-700 hover:border-fuschia-500",
+    secondary: "text-blue-700 border-b border-transparent hover:text-fuschia-700 hover:border-fuschia-500",
   };
 
   return (
-    <a
-      href={href}
-      target={target}
-      className={`
-        ${variantClasses[variant]}
-        font-heading text-${size} lowercase 
-        flex justify-center items-center
-        transition-all ease-in-out duration-300`}
+    <a href={href} target={target}
+      className={`${variantClasses[variant]} font-heading text-${size} lowercase flex justify-center items-center transition-all ease-in-out duration-300`}
     >
       {iconLeft && <span className="pr-3">{iconLeft}</span>}
       {label}

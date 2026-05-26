@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import { allProjects } from "../data/allProjects";
-import MetaHackathonHero from "../assets/images/mockups/iggy-discover--flow--mobile.png";
-import VisualSearch from "../assets/videos/iggy-discover--visual-search.mp4";
-import ExploreAccounts from "../assets/videos/iggy-discover--explore-accounts.mp4";
-import ChipList from "../components/ChipList";
+import { allProjects } from "../../data/allProjects.tsx";
+import MetaHackathonHero from "../../assets/images/mockups/iggy-discover--flow--mobile.png";
+import VisualSearch from "../../assets/videos/iggy-discover--visual-search.mp4";
+import ExploreAccounts from "../../assets/videos/iggy-discover--explore-accounts.mp4";
+import ChipList from "../../components/ChipList.tsx";
 import {
   ArrowSquareOut,
   GithubLogo,
@@ -11,10 +11,10 @@ import {
   Lightbulb,
   Storefront,
 } from "@phosphor-icons/react";
-import LinkButton from "../components/LinkButton";
-import LinkSocial from "../components/LinkSocial";
-import ProjectFeature from "../components/ProjectFeature";
-import ProjectHighlight from "../components/ProjectHighlight";
+import LinkButton from "../../components/LinkButton.tsx";
+import LinkSocial from "../../components/LinkSocial.tsx";
+import ProjectFeature from "../../components/ProjectFeature.tsx";
+import ProjectHighlight from "../../components/ProjectHighlight.tsx";
 
 function ProjectMetaHackathon () {
   const projectDetails = allProjects.find(

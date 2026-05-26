@@ -4,8 +4,6 @@ import { skillsAndTools } from "../data/skillsAndTools";
 import { experienceDetails } from "../data/experienceDetails";
 import { allProjects } from "../data/allProjects";
 import { educationDetails } from "../data/educationDetails";
-import { DownloadSimple } from "@phosphor-icons/react";
-import LinkButton from "../components/LinkButton";
 import LinkSocial from "../components/LinkSocial";
 import ChipList from "../components/ChipList";
 import IconList from "../components/IconList";
@@ -19,16 +17,6 @@ function Experience () {
           <p className="text-xl md:text-2xl text-center">
             Check out my career journey below!
           </p>
-
-          <div className="w-fit mx-auto">
-            <LinkButton
-              label="Download Resume"
-              href="/files/JanessaPerry-SoftwareDeveloperResume.pdf"
-              size="lg"
-              target="_blank"
-              iconRight={<DownloadSimple weight="bold" className="text-xl"/>}
-            />
-          </div>
         </div>
       </section>
 

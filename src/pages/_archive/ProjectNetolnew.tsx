@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
-import { allProjects } from "../data/allProjects";
-import NetolnewHero from "../assets/images/mockups/netolnew--home-page--devices.webp";
-import NetolnewCollage from "../assets/images/mockups/netolnew--final-design--collage.jpg";
-import ChipList from "../components/ChipList";
+import { allProjects } from "../../data/allProjects.tsx";
+import NetolnewHero from "../../assets/images/mockups/netolnew--home-page--devices.webp";
+import NetolnewCollage from "../../assets/images/mockups/netolnew--final-design--collage.jpg";
+import ChipList from "../../components/ChipList.tsx";
 import {
   ArrowSquareOut, Binoculars, Compass, Palette,
 } from "@phosphor-icons/react";
-import LinkButton from "../components/LinkButton";
-import ProjectFeature from "../components/ProjectFeature";
+import LinkButton from "../../components/LinkButton.tsx";
+import ProjectFeature from "../../components/ProjectFeature.tsx";
 
 function ProjectNetolnew () {
   const projectDetails = allProjects.find(

@@ -23,13 +23,9 @@ interface Motivations {
 function About () {
   const highlights: Highlights[] = [
     { id: "fast", timeline: "8 years", text: "at a small, fast paced company" },
-    { id: "design", timeline: "5 years", text: "UI Design & Development" },
-    { id: "freelance", timeline: "2 years", text: "Freelancing in Web Design" },
-    {
-      id: "diploma",
-      timeline: "2024",
-      text: "Diploma in Software Engineering",
-    },
+    { id: "design", timeline: "5+ years", text: "UI Design & Development" },
+    { id: "freelance", timeline: "4+ years", text: "Freelancing in Web Design" },
+    { id: "diploma", timeline: "2024", text: "Diploma in Software Engineering" },
   ];
 
   const motivations: Motivations[] = [
