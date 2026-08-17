@@ -32,6 +32,7 @@ export const allProjects: AllProjects[] = [
   {
     id: "press-start--project",
     showcase: true,
+    liveUrl: "https://press-start.up.railway.app",
     slug: "press-start",
     githubRepos: [
       {
