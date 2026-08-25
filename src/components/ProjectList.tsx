@@ -45,13 +45,13 @@ function ProjectList ({ projectsData, variant = "default" }: ProjectListProps) {
                   {(projectDetails.githubRepos || projectDetails.liveUrl) && (
                     <div className="flex gap-2 mt-2">
                       {projectDetails.liveUrl && (
-                        <a className="button button-primary" href={projectDetails.liveUrl} target="_blank">
+                        <a className="button button-primary" href={projectDetails.liveUrl} target="_blank" rel="noopener noreferrer">
                           View live <ArrowSquareOut weight="bold" className="text-lg"/>
                         </a>
                       )}
 
                       {projectDetails.githubRepos?.map((repo) => (
-                        <a key={repo.url} href={`https://${repo.url}`} target="_blank" className="button button-secondary">
+                        <a key={repo.url} href={`https://${repo.url}`} target="_blank" className="button button-secondary" rel="noopener noreferrer">
                           {repo.type === "client" ? "Client Repo" : "Server Repo"}
                         </a>
                       ))}
