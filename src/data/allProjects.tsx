@@ -32,7 +32,7 @@ export const allProjects: AllProjects[] = [
   {
     id: "press-start--project",
     showcase: true,
-    liveUrl: "https://press-start.up.railway.app",
+    liveUrl: "https://press-start.justpixels.dev",
     slug: "press-start",
     githubRepos: [
       {
